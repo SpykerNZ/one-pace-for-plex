@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-08-24 09:04:03 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>For Whom the Bell Tolls</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>3</season>
+  <episode>5</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>While the fight between Luffy and Kuro continues, Jango is intent on forcing Kaya to bequeath her family's money to the Black Cat captain. Despite the Usopp Pirates' efforts to stop the hypnotist, it seems as if the transaction is all but inevitable.
+
+Manga Chapter(s): 35-39
+
+Anime Episode(s): 15-17</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-10-21</premiered>
+  <aired>2017-10-21</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-08-23 18:17:40</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.33</aspect>
+        <width>640</width>
+        <height>480</height>
+        <durationinseconds>2189</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One Pace - S03E05 - For Whom the Bell Tolls.mkv</original_filename>
+  <user_note/>
+</episodedetails>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-08-24 09:05:21 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Oath</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>5</season>
+  <episode>4</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>As Nami steals the Going Merry, Hawk-Eye Mihawk, known far and wide as the world's greatest swordsman, arrives all the way from the Grand Line to finish off Don Krieg. However, Zoro challenges the deadly Mihawk to a duel in order to achieve his dream.
+
+Manga Chapter(s): 50-52
+
+Anime Episode(s): 23-24, 29, 135</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2023-05-01</premiered>
+  <aired>2023-05-01</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-08-24 08:34:51</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.33</aspect>
+        <width>1440</width>
+        <height>1080</height>
+        <durationinseconds>1315</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One Pace - S05E04 - The Oath.mkv</original_filename>
+  <user_note/>
+</episodedetails>

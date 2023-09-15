@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-08-25 10:40:37 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Summit</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>13</season>
+  <episode>3</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>A devastating avalanche sweeps Drum Island and puts everyone at risk, but Luffy—step-by-step, hand-over-hand—continues his death-defying ascent up the mountain. Meanwhile, Vivi, Usopp, and Zoro reunite in the wake of the disaster.
+
+Manga Chapter(s): 136-139
+
+Anime Episode(s): 82-83</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2022-09-26</premiered>
+  <aired>2022-09-26</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-08-25 10:39:19</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.33</aspect>
+        <width>1440</width>
+        <height>1080</height>
+        <durationinseconds>2069</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>[One Pace][136-139] Drum Island 03 [1080p][2971EF62].mkv</original_filename>
+  <user_note/>
+</episodedetails>

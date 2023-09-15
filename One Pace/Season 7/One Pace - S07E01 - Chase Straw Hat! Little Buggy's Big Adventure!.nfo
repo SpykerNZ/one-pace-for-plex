@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-08-25 11:06:13 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Chase Straw Hat! Little Buggy's Big Adventure!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>7</season>
+  <episode>1</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>After his fight with Luffy, Buggy was sent flying to another island with several body parts missing. Thus, Buggy begins his journey to find his crew and his body parts, making some unlikely friends. He is eventually picked up by a mysterious woman with a pirate ship, who wants him to help her look for Luffy.</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered/>
+  <aired/>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-08-25 11:02:45</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.33</aspect>
+        <width>1440</width>
+        <height>1080</height>
+        <durationinseconds>1480</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>ara</language>
+      </subtitle>
+      <subtitle>
+        <language>por</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One Pace - S07E01 - Chase Straw Hat! Little Buggy's Big Adventure!.mkv</original_filename>
+  <user_note/>
+</episodedetails>

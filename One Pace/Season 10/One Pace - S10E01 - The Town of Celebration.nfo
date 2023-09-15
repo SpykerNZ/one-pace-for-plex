@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-08-25 10:19:41 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Town of Celebration</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>10</season>
+  <episode>1</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>As the Straw Hat Pirates travel from Reverse Mountain to Whisky Peak, Nami adjusts to having to watch the log pose constantly. When they arrive at their destination, the townspeople greet them warmly, despite the sight of their Jolly Roger.&#13;
+&#13;
+Manga Chapter(s): 106-109&#13;
+&#13;
+Anime Episode(s): 64-65</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-12-01</premiered>
+  <aired>2017-12-01</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-08-23 21:34:50</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.33</aspect>
+        <width>640</width>
+        <height>480</height>
+        <durationinseconds>1858</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One Pace - S09E01 - The Town of Celebration.mkv</original_filename>
+  <user_note/>
+</episodedetails>

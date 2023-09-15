@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-08-24 08:45:05 - tinyMediaManager 4.3.13-->
+<tvshow>
+  <title>One Pace</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <sorttitle/>
+  <year/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <outline/>
+  <plot/>
+  <tagline/>
+  <runtime>0</runtime>
+  <namedseason number="1">1. Romance Dawn</namedseason>
+  <namedseason number="2">2. Orange Town</namedseason>
+  <namedseason number="3">3. Syrup Village</namedseason>
+  <namedseason number="4">4. Gaimon</namedseason>
+  <namedseason number="5">5. Baratie</namedseason>
+  <namedseason number="6">6. Fart Supreme</namedseason>
+  <mpaa/>
+  <certification/>
+  <episodeguide>{}</episodeguide>
+  <id/>
+  <imdbid/>
+  <tmdbid/>
+  <premiered/>
+  <status>Unknown</status>
+  <watched>false</watched>
+  <playcount/>
+  <studio/>
+  <country/>
+  <trailer/>
+  <dateadded>2023-08-23 18:17:40</dateadded>
+  <!--tinyMediaManager meta data-->
+  <user_note/>
+</tvshow>
