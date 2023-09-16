@@ -2,6 +2,22 @@
 
 This guide explains how to setup One Pace for Plex
 
+#### Features:
+- Episodes grouped by One Pace arcs
+- Automatic renaming of One Pace episodes to correct format required for this project
+- Can include episodes not completed by the One Pace team yet
+- Currently supports up to Drum Island Arc (Feel free to contribute to help adding more!)
+
+## Final Result
+
+### Specific One Pace show available in your Plex library.
+
+![One Pace Series View](images/series-view.png)
+
+### Show split into the different One Pace seasons. 
+
+![One Pace Seasons View](images/seasons-view.png)
+
 ## Requirements
 
 - Plex
@@ -27,7 +43,6 @@ Download this repo as a zip file then copy the "One Pace" folder to your Anime o
 Download all the one pace episodes you wish to add and place them in their respective season folders.
 
  - Keep the default One Pace episode naming (do not make any changes!)
- - This project currently supports up to the Drum Island arc. (Feel free to contribute to help adding more!)
  - You can delete any season folders you don't want to include, and add them later if you wish.
 
 ```
@@ -99,4 +114,5 @@ Notes:
 
 - Thanks to [@tomatoshadow](https://github.com/Tomatoshadow) for creating the original nfos and instructions for this plex setup
 - Inspired by this alternative plex setup [one-pace-to-plex](https://github.com/Matroxt/one-pace-to-plex) by [@Matroxt](https://github.com/Matroxt)
+- Cheers to [/u/piratezekk](https://www.reddit.com/user/piratezekk) for the awesome posters! 
 - Shoutout to the [One Pace Team](https://onepace.net) - thanks for putting together this amazing project!
