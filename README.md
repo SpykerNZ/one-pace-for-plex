@@ -5,6 +5,7 @@ This guide explains how to setup One Pace for Plex
 #### Features:
 - Episodes grouped by One Pace arcs
 - Automatic renaming of One Pace episodes to correct format required for this project
+- Custom metadata files for each episode
 - Can include episodes not completed by the One Pace team yet
 - Currently supports up to Drum Island Arc (Feel free to contribute to help adding more!)
 
