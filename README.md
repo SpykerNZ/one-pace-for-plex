@@ -21,8 +21,8 @@ This guide explains how to setup One Pace for Plex
 ## Requirements
 
 - Plex
-- Python 3.7+
 - XBMCnfoTVImporter
+- Python 3.7+ (only if running Linux/Mac)
 
 ## Install Instructions
 
