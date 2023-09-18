@@ -88,9 +88,30 @@ Place the missing episodes in their respective season folders.
         └───tvshows
 ```
 
-Note: Inside 'exceptions.json' each missing episode is stored. This is a simple lookup table for matching your episode filenames to the correct .nfo file. It looks in your season directory to see if any of the .mkv files include the given episode number, then adds it if a match is found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
-
 ### 4. File Renaming
+
+#### Option A - Windows Executable
+
+1. Copy the rename.exe to your One Pace directory.
+
+```
+    └───media
+        └───anime
+            └───One Pace
+                ├───Season 01
+                └───Season 02
+                └───rename.exe
+```
+
+2.  Open executable to run
+
+2.  Your files will be renamed automagically!
+
+#### Option B - Python
+
+This approach uses python to rename all your files, which is a bit more complex but allows for more flexibility. 
+- Allows dry-running to check renaming
+- Can modify exceptions.json to suit your needs. [^1]
 
 1. Copy the rename.py, seasons.json and exceptions.json file to your One Pace directory
 
@@ -116,6 +137,8 @@ Note: Inside 'exceptions.json' each missing episode is stored. This is a simple 
 5.  Once you are okay with the changes you see, remove the `--dry-run` flag from the command and run it again.
     Your files will be renamed to the corresponding One Piece episode, i.e.:
     "[One Pace][1] Romance Dawn 01 [1080p][FB72C13F].mkv" -> "One Pace - S01E01 - Romance Dawn, the Dawn of an Adventure.mkv"
+
+[^1]: Inside 'exceptions.json' each missing episode is stored. This is a simple lookup table for matching your episode filenames to the correct .nfo file. It looks in your season directory to see if any of the .mkv files include the given episode number, then adds it if a match is found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
 
 ### 5. Install XBMCnfoTVImporter
 
