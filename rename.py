@@ -140,7 +140,7 @@ def main():
             if episode is not None:
                 # add episode if it exists
                 pending.append((str(filepath), episode))
-            else:
+            elif exception_mapping is not None:
                 # otherwise check if an exception
                 matches = set()
                 for exception_str in exception_mapping:
