@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:23:12 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Raise the Counterattack Signal</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>19</season>
+  <episode>5</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Luffy makes it just outside the courthouse when Blueno of CP9 appears before him, and on the main road, the Straw Hats near the courthouse plaza aboard Sodom and Gomorrah. Meanwhile, Sogeking comes across a dejected Oimo.
+
+Manga Chapter(s): 383-384
+
+Anime Episode(s): 269-271</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2019-03-14</premiered>
+  <aired>2019-03-14</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:13:05</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1536</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E270-E271.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:09:52 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Klabautermann</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>18</season>
+  <episode>11</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>As Usopp works to repair the Going Merry, he contends with Franky's insistence on dismantling it. During this time, Usopp reflects on who it was that conducted the ship's repairs while in Skypiea, and Franky confirms his suspicions.
+
+Manga Chapter(s): 349-352
+
+Anime Episode(s): 246-247</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2022-01-28</premiered>
+  <aired>2022-01-28</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:04:50</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>2302</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E246-E247.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

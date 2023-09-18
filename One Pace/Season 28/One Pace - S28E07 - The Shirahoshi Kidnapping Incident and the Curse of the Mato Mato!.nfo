@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-13 12:05:40 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Shirahoshi Kidnapping Incident and the Curse of the Mato Mato!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>28</season>
+  <episode>7</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Ryugu Palace falls into chaos. While Luffy escapes with Shirahoshi, the pirates who infiltrated its walls attack with a strange desperation. After a scuffle of their own, Sanji and Chopper come across an old friend with troubling injuries.
+
+Manga Chapter(s): 614-615
+
+Anime Episode(s): 533-534</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2013-04-07</premiered>
+  <aired>2013-04-07</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:57</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>2053</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E534.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

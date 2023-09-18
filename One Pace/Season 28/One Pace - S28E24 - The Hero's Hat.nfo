@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-13 11:57:06 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Hero's Hat</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>28</season>
+  <episode>24</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Filled with both excitement and trepidation, the crew finally sets sail for the New World. After bidding their fond farewells, the Straw Hats leave with a new log pose in hand. Overcoming trials and tragedies, Luffy's dream is on course once again!
+
+Manga Chapter(s): 652-653
+
+Anime Episode(s): 572-573</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2013-05-16</premiered>
+  <aired>2013-05-16</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:58</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1969</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E572-E573.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

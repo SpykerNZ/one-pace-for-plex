@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 15:41:45 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Kizaru vs. the Four Captains</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>22</season>
+  <episode>10</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>While four super rookies square off against Kizaru, the Straw Hats combine their strongest attacks to defeat the Pacifista menacing them. The battle is barely won when yet another, deadlier foe comes to take its place.
+
+Manga Chapter(s): 509-511
+
+Anime Episode(s): 402-404</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-12-01</premiered>
+  <aired>2017-12-01</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:00</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1806</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E402-E403.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

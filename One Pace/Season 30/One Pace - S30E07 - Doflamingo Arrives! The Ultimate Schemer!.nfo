@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-13 16:12:13 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Doflamingo Arrives! The Ultimate Schemer!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>30</season>
+  <episode>7</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>All but done for, Sanji is trapped by Violet and her crew when she suddenly changes her mind and mysteriously turns on her own men! Sanji gets in touch with Law to share a shocking secret that could unsettle all their plans in Dressrosa.
+
+Manga Chapter(s): 712-713
+
+Anime Episode(s): 640-643</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2014-05-14</premiered>
+  <aired>2014-05-14</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:00</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1658</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E642-E643.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

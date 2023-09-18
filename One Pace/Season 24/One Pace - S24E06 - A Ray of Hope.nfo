@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 16:42:16 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>A Ray of Hope</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>24</season>
+  <episode>6</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Bon Kurei wanders through Level 5 in search of a mysterious missing prisoner. However, the fearsome wolves and bitter cold eventually take their toll, and he collapses in the Freezing Hell, all while Luffy's life continues to dwindle away.
+
+Manga Chapter(s): 537-538
+
+Anime Episode(s): 438-440</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-02-17</premiered>
+  <aired>2017-02-17</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:00</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1933</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E439-E440.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

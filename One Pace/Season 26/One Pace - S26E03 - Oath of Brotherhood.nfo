@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-13 11:09:02 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Oath of Brotherhood</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>26</season>
+  <episode>3</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Ace, Sabo, and Luffy made a promise to one another over cups of sake that would shape their futures. Yet while the brothers' adventures continue, Sabo's unfortunate past catches up with him. Meanwhile, a horrific plot unfolds.
+
+Manga Chapter(s): 585-586
+
+Anime Episode(s): 496-498, 500-501, Episode of Sabo</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2020-05-25</premiered>
+  <aired>2020-05-25</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:58</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>2548</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E496-E500.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

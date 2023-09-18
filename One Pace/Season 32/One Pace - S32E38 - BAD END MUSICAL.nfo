@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-16 22:26:08 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>BAD END MUSICAL</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>32</season>
+  <episode>38</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Sanji tries his best to save himself and his captain. Now, the fate of Totto Land rests on the taste of the wedding cake! With the help of Germa and the Sun Pirates, the Straw Hats see their chance to escape!
+
+Manga Chapter(s): 898-900
+
+Anime Episode(s): 873-875</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2019-03-22</premiered>
+  <aired>2019-03-22</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:01</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>2487</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E873-E875.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

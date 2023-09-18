@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:34:51 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Fearsome Ability of the Shadow Fruit! The Ultimate Number 900!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>21</season>
+  <episode>7</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Gecko Moria takes his next step toward his goal of eventually becoming king of the pirates by creating the ultimate zombie. Luffy's shadow in hand, Moria begins the revival of the much-anticipated number 900.
+
+Manga Chapter(s): 455-456
+
+Anime Episode(s): 349-350</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2013-09-07</premiered>
+  <aired>2013-09-07</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:32:07</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1484</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E349-E350.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

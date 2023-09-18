@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-17 11:56:29 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>RAMPAGE</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>34</season>
+  <episode>28</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Kanjuro takes Yasuie’s body to bury him with Oden, and Robin, Usopp, and Brook cleverly pass a checkpoint. While Big Mom and Kaido clash at Onigashima, Old Man Hyo finds his former allies in Udon. And in Ringo, Zoro faces Gyukimaru once more.
+
+Manga Chapter(s): 951-953
+
+Anime Episode(s): 952-953</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2022-04-21</premiered>
+  <aired>2022-04-21</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:58</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1677</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E952-E953.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

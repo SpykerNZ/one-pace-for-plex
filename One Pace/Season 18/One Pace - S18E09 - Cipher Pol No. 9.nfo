@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:09:13 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Cipher Pol No. 9</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>18</season>
+  <episode>9</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Robin and her tall, mysterious, masked companion arrive at Iceburg's room, and she learns that he possesses blueprints to the ancient weapon Pluton, spoken of in the poneglyphs. Then, shockingly, the members of CP9 unmask themselves.
+
+Manga Chapter(s): 342-345
+
+Anime Episode(s): 242-243</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2021-07-25</premiered>
+  <aired>2021-07-25</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:04:50</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>2174</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E241-E243.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

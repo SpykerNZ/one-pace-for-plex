@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-15 12:00:20 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>To the East Blue</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>32</season>
+  <episode>10</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Sanji’s tragic history included a rare moment of compassion that was his only chance at escape, but even then, his father’s cruelty haunted him. In the present, Reiju helps Sanji straighten himself out before he meets with his fiancée.
+
+Manga Chapter(s): 841-842
+
+Anime Episode(s): 804-806</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2018-07-15</premiered>
+  <aired>2018-07-15</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:01</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>2145</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E804-E806.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

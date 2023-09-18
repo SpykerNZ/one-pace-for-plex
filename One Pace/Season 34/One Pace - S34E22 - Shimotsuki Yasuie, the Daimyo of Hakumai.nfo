@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-17 11:53:38 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Shimotsuki Yasuie, the Daimyo of Hakumai</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>34</season>
+  <episode>22</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>The smiling Tonoyasu has been strung up and awaits his inevitable execution, and all of Wano is shocked to find out who he really is. The citizens cry out in outrage, and the doomed man raises his voice in a final act of rebellion against Shogun Orochi.
+
+Manga Chapter(s): 941-943
+
+Anime Episode(s): 939-940</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2021-04-28</premiered>
+  <aired>2021-04-28</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:01</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1749</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E939-E940.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

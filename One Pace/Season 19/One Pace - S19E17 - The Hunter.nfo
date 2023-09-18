@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:26:51 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Hunter</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>19</season>
+  <episode>17</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Kalifa attempts to counter Nami’s mirages, and something must be done to save Chopper, still on a monstrous rampage. Zoro, now uncuffed, resumes his duel with Kaku. As Sogeking reaches his limit against Jabra, Sanji reappears, and he is hunting wolves.
+
+Manga Chapter(s): 412-413
+
+Anime Episode(s): 296-297</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2020-05-07</premiered>
+  <aired>2020-05-07</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:13:05</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1269</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E296-E297.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

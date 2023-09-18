@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 11:52:29 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Let's Eat</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>15</season>
+  <episode>5</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Cricket explains how the Straw Hats can ride a dangerous vertical sea current to get to Skypiea. However, they must first catch a south bird to steer them toward the point where the stream will erupt from the ocean.
+
+Manga Chapter(s): 229-230
+
+Anime Episode(s): 149</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2023-08-18</premiered>
+  <aired>2023-08-18</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 11:50:27</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.33</aspect>
+        <width>1440</width>
+        <height>1080</height>
+        <durationinseconds>1297</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>[One Pace][229-230] Jaya 05 [1080p][E468A31D].mkv</original_filename>
+  <user_note/>
+</episodedetails>

@@ -66,6 +66,13 @@ def get_episode_from_mkv(filename: str, seasons: dict[str, int]) -> Optional[Epi
             season=season_number,
             number=episode_number,
         )
+    # Special case for koby meppo as doesn't match standard regex for one pace episodes
+    if "The Trials of Koby-Meppo" in filename:
+        return Episode(
+            show=SHOW_NAME,
+            season=11,
+            number=1,
+        )
 
 
 def debugger_is_active() -> bool:
@@ -105,7 +112,7 @@ def main():
         seasons: dict[str, int] = json.load(json_file)
 
     with open(EXCEPTIONS_JSON, "r") as json_file:
-        exceptions: dict[dict[str, int]] = json.load(json_file)
+        exceptions: dict[list[str]] = json.load(json_file)
 
     # create a lookup table of nfo data
     nfo_data_lookup: dict[tuple(int, int), Episode] = {}
@@ -118,36 +125,40 @@ def main():
     # create a pending rename file list
     pending: list[tuple[str, Episode]] = []
 
-    # iterate over all mkv files
-    mkv_files = show_dir.rglob(f"*{MKV_EXT}")
-    for filepath in mkv_files:
-        episode = get_episode_from_mkv(filepath.name, seasons)
-        if episode is None:
-            continue
-        pending.append((str(filepath), episode))
-
-    # iterate over all exceptions
-    for season in exceptions:
-        season_folder = Path(show_dir / season)
+    # iterate over season folders
+    for season_no in seasons.values():
+        season_name = f"Season {season_no}"
+        # Get the season folder
+        season_folder = Path(show_dir / season_name)
+        # get all exceptions for this folder
+        exception_mapping: list[str] = exceptions.get(season_name)
+        # get all mkv files
         mkv_files = season_folder.rglob(f"*{MKV_EXT}")
-        season_files = [filepath for filepath in mkv_files]
-        exception_mapping: dict[str, int] = exceptions.get(season)
-        for exception_str in exception_mapping:
-            matches = []
-            for filepath in season_files:
-                if exception_str in filepath.name:
-                    matches.append(filepath)
-            if len(matches) >= 2:
-                print("Warning! Multiple exception episodes found:")
-                for match in matches:
-                    print(match)
-                continue
-            elif len(matches) == 1:
-                episode_number = exception_mapping.get(exception_str)
-                season_number = int(season.split(" ")[-1])
-                pending.append(
-                    (str(matches[0]), Episode(SHOW_NAME, season_number, episode_number))
-                )
+        # iterate over mkv files
+        for filepath in mkv_files:
+            episode = get_episode_from_mkv(filepath.name, seasons)
+            if episode is not None:
+                # add episode if it exists
+                pending.append((str(filepath), episode))
+            else:
+                # otherwise check if an exception
+                matches = set()
+                for exception_str in exception_mapping:
+                    if exception_str in filepath.name:
+                        episode_no = int(exception_str)
+                        matches.add(filepath)
+                if len(matches) >= 2:
+                    print("Warning! Multiple exception episodes found:")
+                    for match in matches:
+                        print(match)
+                    continue
+                elif len(matches) == 1:
+                    pending.append(
+                        (
+                            str(filepath),
+                            Episode(SHOW_NAME, season_no, episode_no),
+                        )
+                    )
 
     # rename all files
     for filepath, episode in pending:

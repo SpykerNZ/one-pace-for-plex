@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:27:42 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Sanji vs. Jabra</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>19</season>
+  <episode>18</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>As Nami drags the wounded Sogeking from the fight to go find Robin, he suddenly counters with a better idea. In the meantime, Sanji faces off against Jabra's Iron Body Kenpo, and, to break the latter's defenses, Sanji unveils his latest technique.
+
+Manga Chapter(s): 414-415
+
+Anime Episode(s): 297-298</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2020-05-15</premiered>
+  <aired>2020-05-15</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:13:05</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1197</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E298.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

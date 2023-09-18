@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-15 12:01:35 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Luffy vs. Sanji</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>32</season>
+  <episode>11</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Luffy finishes off Cracker and finally catches up with Sanji, but the Straw Hats’ cook seems far from thrilled about the reunion. A heartbreaking duel commences, but a steadfast Luffy makes a solemn vow to his friend and crewmate.
+
+Manga Chapter(s): 843-844
+
+Anime Episode(s): 806-808</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-12-18</premiered>
+  <aired>2017-12-18</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:57</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1578</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E807-E808.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

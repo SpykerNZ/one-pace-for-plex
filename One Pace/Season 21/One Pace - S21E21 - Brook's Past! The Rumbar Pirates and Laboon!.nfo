@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:40:06 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Brook's Past! The Rumbar Pirates and Laboon!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>21</season>
+  <episode>21</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Brook recalls his past, thinking back on the time when the small whale Laboon started following his pirate ship and befriended the crew.
+
+Manga Chapter(s): 486-487
+
+Anime Episode(s): 378-380</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2014-10-11</premiered>
+  <aired>2014-10-11</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:32:07</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1979</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E378-E379.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

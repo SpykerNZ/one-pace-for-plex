@@ -6,8 +6,7 @@ This guide explains how to setup One Pace for Plex
 - Episodes grouped by One Pace arcs
 - Custom metadata files for each episode
 - Automatic renaming of One Pace episodes to correct format required for this project
-- Can include episodes not completed by the One Pace team yet
-- Currently supports up to Drum Island Arc (Feel free to contribute to help adding more!)
+- Allows to include episodes not completed by the One Pace team yet
 
 ## Final Result
 
@@ -36,12 +35,12 @@ Download this repo as a zip file then copy the "One Pace" folder to your Anime o
         ├───anime
         │   ├───One Pace
         ├───movies
-        └───tvshowsW
+        └───tvshows
 ```
 
 ### 2. Download One Pace Episodes
 
-Download all the one pace episodes you wish to add and place them in their respective season folders.
+Download all the One Pace episodes you wish to add and place them in their respective season folders.
 
  - Keep the default One Pace episode naming (do not make any changes!)
  - You can delete any season folders you don't want to include, and add them later if you wish.
@@ -60,8 +59,38 @@ Download all the one pace episodes you wish to add and place them in their respe
         └───tvshows
 ```
 
+### 3. Download Missing One Piece Episodes
 
-### 3. File Renaming
+One Pace does not currently cover the entire series. Thus you will need to add missing episodes to fill out your collection.
+
+Current missing episodes:
+    - Season 7: 46,47
+    - Season 14: 121-130
+    - Season 15: 145,151,152
+    - Season 16: 160-195, 207
+    - Season 18: 250-263
+    - Season 24: 453-456
+
+See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for a more up to date information on what episodes are avaliable. Check column P for episodes that are still to be completed.
+
+Place the missing episodes in their respective season folders.
+
+```
+    └───media
+        ├───anime
+        │   ├───One Pace    
+        │   │   └───Season 07
+        │   │       ├───One Piece - 46 - Chase Straw Hat! Little Buggy's Big Adventure!.mkv     
+        │   │       ├───One Pace - S07E46 - Chase Straw Hat! Little Buggy's Big Adventure!.nfo           
+        │   │       ├───One Piece - 47 - The Wait is Over! The Return of Captain Buggy!.mkv    
+        │   │       └───One Pace - S07E47 - The Wait is Over! The Return of Captain Buggy!.nfo      
+        ├───movies
+        └───tvshows
+```
+
+Note: Inside 'exceptions.json' each missing episode is stored. This is a simple lookup table for matching your episode filenames to the correct .nfo file. It looks in your season directory to see if any of the .mkv files include the given episode number, then adds it if a match is found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
+
+### 4. File Renaming
 
 1. Copy the rename.py, seasons.json and exceptions.json file to your One Pace directory
 
@@ -88,11 +117,11 @@ Download all the one pace episodes you wish to add and place them in their respe
     Your files will be renamed to the corresponding One Piece episode, i.e.:
     "[One Pace][1] Romance Dawn 01 [1080p][FB72C13F].mkv" -> "One Pace - S01E01 - Romance Dawn, the Dawn of an Adventure.mkv"
 
-### 4. Install XBMCnfoTVImporter
+### 5. Install XBMCnfoTVImporter
 
 You need to install [XBMCnfoTVImporter](https://github.com/gboudreau/XBMCnfoTVImporter.bundle) for plex in order to scan in One Pace. Follow the instructions and install.
 
-### 5. Scan In Plex
+### 6. Scan In Plex
 
 You need to swap to the XBMCnfoTVImporter agent in Plex to scan your new One Pace folder. 
 
@@ -113,7 +142,7 @@ Notes:
 
 ## Acknowledgements
 
-- Thanks to [@tomatoshadow](https://github.com/Tomatoshadow) for creating the original nfos and instructions for this plex setup
+- Thanks to [@tomatoshadow](https://github.com/Tomatoshadow) for creating all the nfo files and original instructions for this plex setup
 - Inspired by this alternative plex setup [one-pace-to-plex](https://github.com/Matroxt/one-pace-to-plex) by [@Matroxt](https://github.com/Matroxt)
 - Cheers to [/u/piratezekk](https://www.reddit.com/user/piratezekk) for the awesome posters! 
 - Shoutout to the [One Pace Team](https://onepace.net) - thanks for putting together this amazing project!

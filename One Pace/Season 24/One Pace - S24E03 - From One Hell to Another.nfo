@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 16:04:34 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>From One Hell to Another</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>24</season>
+  <episode>3</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Luffy and his dubious companions face off against the mythical beasts of Level 2. Impel Down is put on lockdown, its only exit sealed, but Luffy, unaware and unafraid, continues to Ace's floor, only to have another unexpected reunion.
+
+Manga Chapter(s): 529-531
+
+Anime Episode(s): 425, 430-432</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-01-07</premiered>
+  <aired>2017-01-07</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:59</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>2353</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E430-E432.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

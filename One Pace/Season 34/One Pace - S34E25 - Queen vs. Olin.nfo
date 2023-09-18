@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-17 11:55:14 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Queen vs. Olin</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>34</season>
+  <episode>25</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>To Chopper’s surprise, the kind and sweet Olin—a.k.a. Emperor Big Mom—has proven her power to be just as devastating as ever. Olin’s hunger pangs just about reach their limit, and Luffy must act quickly before his mechanical collar executes him.
+
+Manga Chapter(s): 946-947
+
+Anime Episode(s): 945-947</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2021-09-09</premiered>
+  <aired>2021-09-09</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:00</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>2007</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E945-E947.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

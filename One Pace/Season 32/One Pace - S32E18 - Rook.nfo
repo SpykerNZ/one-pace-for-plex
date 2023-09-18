@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-15 12:04:22 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Rook</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>32</season>
+  <episode>18</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Jinbe tells the Straw Hats about Capone “Gang” Bege and proposes a shocking plan to take down Big Mom! But before they are granted an audience with Bege, they must make themselves presentable.
+
+Manga Chapter(s): 857-858
+
+Anime Episode(s): 826-828</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2018-07-31</premiered>
+  <aired>2018-07-31</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:57</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>2170</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E826-E828.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-13 16:27:16 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Soldier-san's Conviction</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>30</season>
+  <episode>47</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Major players in the Navy arrive to search Dressrosa for the Straw Hats, and Rebecca's history is whitewashed with a cover story. Luffy and the others make a mad dash for the east port, but not before finishing up a piece of business.
+
+Manga Chapter(s): 796-797
+
+Anime Episode(s): 740-742</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-09-02</premiered>
+  <aired>2017-09-02</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:00</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>2222</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E742-E743.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-13 11:59:01 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>I'll Protect Everything</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>28</season>
+  <episode>18</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Shirahoshi flees into the open sea, hoping to draw the Noah away from Fishman Island. Luffy follows her, but he must contend with Hody Jones along the way. Luckily, the appearance of a new ally gives Luffy a chance to protect Shirahoshi.
+
+Manga Chapter(s): 638-639
+
+Anime Episode(s): 559-560</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2013-04-28</premiered>
+  <aired>2013-04-28</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:01</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1499</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E559-E560.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

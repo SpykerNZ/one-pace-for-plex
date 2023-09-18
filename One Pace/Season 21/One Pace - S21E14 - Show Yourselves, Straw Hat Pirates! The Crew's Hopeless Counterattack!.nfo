@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-12 12:37:46 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Show Yourselves, Straw Hat Pirates! The Crew's Hopeless Counterattack!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>21</season>
+  <episode>14</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>With Oars now a fully obedient zombie, Gecko Moria takes his leave while instructing the giant to hunt down the pirates, whose wanted posters are sewn onto his arm. One by one, the Straw Hats' battles are interrupted by Oars' march around Thriller Bark.
+
+Manga Chapter(s): 469-470
+
+Anime Episode(s): 364-365</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2013-12-08</premiered>
+  <aired>2013-12-08</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:32:06</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1151</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E364-E365.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>
