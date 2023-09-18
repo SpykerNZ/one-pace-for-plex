@@ -92,6 +92,8 @@ Place the missing episodes in their respective season folders.
 
 #### Option A - Windows Executable
 
+This approach uses an executable to rename all your files.
+
 1. Copy rename.exe to your One Pace directory. (from /dist/ foler)
 
 ```
