@@ -64,12 +64,12 @@ Download all the One Pace episodes you wish to add and place them in their respe
 One Pace does not currently cover the entire series. Thus you will need to add missing episodes to fill out your collection.
 
 Current missing episodes:
-    - Season 7: 46,47
-    - Season 14: 121-130
-    - Season 15: 145,151,152
-    - Season 16: 160-195, 207
-    - Season 18: 250-263
-    - Season 24: 453-456
+- Season 7: 46,47
+- Season 14: 121-130
+- Season 15: 145,151,152
+- Season 16: 160-195, 207
+- Season 18: 250-263
+- Season 24: 453-456
 
 See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for a more up to date information on what episodes are avaliable. Check column P for episodes that are still to be completed.
 
