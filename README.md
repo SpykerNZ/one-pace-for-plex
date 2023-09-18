@@ -92,7 +92,7 @@ Place the missing episodes in their respective season folders.
 
 #### Option A - Windows Executable
 
-1. Copy the rename.exe to your One Pace directory. (from /dist/ foler)
+1. Copy rename.exe to your One Pace directory. (from /dist/ foler)
 
 ```
     └───media
@@ -105,7 +105,9 @@ Place the missing episodes in their respective season folders.
 
 2.  Open executable to run.
 
-2.  Your files will be renamed automagically!
+3.  Your files will be renamed automagically!
+
+4.  Check output to see what files were renamed.
 
 #### Option B - Python
 
