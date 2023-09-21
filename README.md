@@ -1,4 +1,4 @@
-# One Pace To Plex
+# One Pace for Plex
 
 This guide explains how to setup One Pace for Plex
 
@@ -21,8 +21,8 @@ This guide explains how to setup One Pace for Plex
 ## Requirements
 
 - Plex
-- Python 3.7+
 - XBMCnfoTVImporter
+- Python 3.7+ (only if running Linux/Mac)
 
 ## Install Instructions
 
@@ -92,6 +92,8 @@ Place the missing episodes in their respective season folders.
 
 #### Option A - Windows Executable
 
+This approach uses an executable to rename all your files. Only works on windows machines.
+
 1. Copy rename.exe to your One Pace directory. (from /dist/ foler)
 
 ```
@@ -111,11 +113,12 @@ Place the missing episodes in their respective season folders.
 
 #### Option B - Python
 
-This approach uses python to rename all your files, which is a bit more complex but allows for more flexibility. 
+This approach uses python to rename all your files, which is a bit more complex but allows for more flexibility.
+- Works on Windows/Linux/Mac
 - Allows dry-running to check renaming
 - Can modify exceptions.json to suit your needs. [^1]
 
-1. Copy the rename.py, seasons.json and exceptions.json file to your One Pace directory. (from /scripts/ foler)
+1. Copy the rename.py, seasons.json and exceptions.json file to your One Pace directory. (from /scripts/ folder)
 
 ```
     └───media
