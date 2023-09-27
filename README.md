@@ -26,7 +26,7 @@ This guide explains how to setup One Pace for Plex
 
 ## Install Instructions
 
-### 1. Copy Folder Structre
+### 1. Copy Folder Structure
 
 Download this repo as a zip file then copy the "One Pace" folder to your Anime or TV folder as used in Plex.
 
@@ -143,7 +143,7 @@ This approach uses python to rename all your files, which is a bit more complex 
     Your files will be renamed to the corresponding One Piece episode, i.e.:
     "[One Pace][1] Romance Dawn 01 [1080p][FB72C13F].mkv" -> "One Pace - S01E01 - Romance Dawn, the Dawn of an Adventure.mkv"
 
-[^1]: Inside 'exceptions.json' each missing episode is stored. This is a simple lookup table for matching your episode filenames to the correct .nfo file. It looks in your season directory to see if any of the .mkv files include the given episode number, then adds it if a match is found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
+[^1]: Inside 'exceptions.json' each missing episode is stored. This is a simple lookup table for matching your episode filenames to the correct .nfo file. It looks in your season directory to see if any of the .mkv files have matching text, then adds it as the corresponding episode number if found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
 
 ### 5. Install XBMCnfoTVImporter
 
