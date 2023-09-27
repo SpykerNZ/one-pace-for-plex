@@ -92,9 +92,11 @@ Place the missing episodes in their respective season folders.
 
 #### Option A - Windows Executable
 
-This approach uses an executable to rename all your files. Only works on windows machines.
+This approach uses an executable to rename all your files. 
+- Only works on windows machines.
+- Can modify exceptions.json to suit your needs. [^1]
 
-1. Copy rename.exe to your One Pace directory. (from /dist/ foler)
+1. Copy rename.exe, seasons.json and exceptions.json to your One Pace directory. (from /dist/ foler)
 
 ```
     └───media
@@ -103,6 +105,8 @@ This approach uses an executable to rename all your files. Only works on windows
                 ├───Season 01
                 └───Season 02
                 └───rename.exe
+                └───seasons.json
+                └───exceptions.json
 ```
 
 2.  Open executable to run.
@@ -143,7 +147,7 @@ This approach uses python to rename all your files, which is a bit more complex 
     Your files will be renamed to the corresponding One Piece episode, i.e.:
     "[One Pace][1] Romance Dawn 01 [1080p][FB72C13F].mkv" -> "One Pace - S01E01 - Romance Dawn, the Dawn of an Adventure.mkv"
 
-[^1]: Inside 'exceptions.json' each missing episode is stored. This is a simple lookup table for matching your episode filenames to the correct .nfo file. It looks in your season directory to see if any of the .mkv files have matching text, then adds it as the corresponding episode number if found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
+[^1]: Inside 'exceptions.json' you can map any file name to a specific episode number. It looks in your specified season directory to see if any of the .mkv files have matching text in their filenames, then renames it as the corresponding episode number if found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
 
 ### 5. Install XBMCnfoTVImporter
 
