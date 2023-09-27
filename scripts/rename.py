@@ -112,7 +112,7 @@ def main():
         seasons: dict[str, int] = json.load(json_file)
 
     with open(EXCEPTIONS_JSON, "r") as json_file:
-        exceptions: dict[list[str]] = json.load(json_file)
+        exceptions: dict[dict[str, int]] = json.load(json_file)
 
     # create a lookup table of nfo data
     nfo_data_lookup: dict[tuple(int, int), Episode] = {}
@@ -131,7 +131,7 @@ def main():
         # Get the season folder
         season_folder = Path(show_dir / season_name)
         # get all exceptions for this folder
-        exception_mapping: list[str] = exceptions.get(season_name)
+        exception_mapping: dict[str, int] = exceptions.get(season_name)
         # get all mkv files
         mkv_files = season_folder.rglob(f"*{MKV_EXT}")
         # iterate over mkv files
@@ -143,9 +143,9 @@ def main():
             elif exception_mapping is not None:
                 # otherwise check if an exception
                 matches = set()
-                for exception_str in exception_mapping:
+                for exception_str, exception_ep in exception_mapping.items():
                     if exception_str in filepath.name:
-                        episode_no = int(exception_str)
+                        episode_no = exception_ep
                         matches.add(filepath)
                 if len(matches) >= 2:
                     print("Warning! Multiple exception episodes found:")
