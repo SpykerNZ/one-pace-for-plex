@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-13 12:43:03 - tinyMediaManager 4.3.13-->
+<!--created on 2023-09-13 12:42:50 - tinyMediaManager 4.3.13-->
 <episodedetails>
-  <title>The Wait is Over! The Return of Captain Buggy!</title>
+  <title>The Adventures of Buggy's Crew</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>7</season>
-  <episode>47</episode>
+  <episode>1</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
   <userrating>0.0</userrating>
-  <plot>The Buggy Pirates fight each other for the right to take their lost captain's place. While they're busy beating each other's brains out, a cannibalistic tribe makes plans to have something special for dinner.</plot>
+  <plot>Buggy, after being defeated by Luffy, Zoro, and Nami, begins his quest to regain his body parts and his crew, and then he will get his flashy revenge on Luffy.&#13;
+&#13;
+Manga Chapter(s): 35-75 cover stories&#13;
+&#13;
+Anime Episode(s): 46-47</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered/>
-  <aired/>
+  <premiered>2023-10-06</premiered>
+  <aired>2023-10-06</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
-  <dateadded>2023-08-25 11:02:45</dateadded>
+  <dateadded>2023-10-06 11:02:45</dateadded>
   <epbookmark/>
   <code/>
   <fileinfo>
@@ -29,7 +33,7 @@
         <aspect>1.33</aspect>
         <width>1440</width>
         <height>1080</height>
-        <durationinseconds>1480</durationinseconds>
+        <durationinseconds>1346</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -49,18 +53,15 @@
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>ara</language>
-      </subtitle>
-      <subtitle>
-        <language>por</language>
-      </subtitle>
-      <subtitle>
         <language>spa</language>
+      </subtitle>
+      <subtitle>
+        <language>fre</language>
       </subtitle>
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
   <source>UNKNOWN</source>
-  <original_filename>One Pace - S07E47 - The Wait is Over! The Return of Captain Buggy!.mkv</original_filename>
+  <original_filename>One Pace - S07E01 - The Adventures of Buggy's Crew.mkv</original_filename>
   <user_note/>
 </episodedetails>
