@@ -66,13 +66,6 @@ def get_episode_from_mkv(filename: str, seasons: dict[str, int]) -> Optional[Epi
             season=season_number,
             number=episode_number,
         )
-    # Special case for koby meppo as doesn't match standard regex for one pace episodes
-    if "The Trials of Koby-Meppo" in filename:
-        return Episode(
-            show=SHOW_NAME,
-            season=11,
-            number=1,
-        )
 
 
 def debugger_is_active() -> bool:
