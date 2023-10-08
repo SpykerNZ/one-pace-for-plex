@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-13 12:46:28 - tinyMediaManager 4.3.13-->
+<!--created on 2023-09-21 11:53:53 - tinyMediaManager 4.3.13-->
 <episodedetails>
-  <title>Take to the Sky! Ride the Knockup Stream!</title>
+  <title>The Knock-Up Stream</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>15</season>
-  <episode>152</episode>
+  <episode>8</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
   <userrating>0.0</userrating>
-  <plot>The Going Merry is refitted by Masira and Shōjo to be more flight capable, and the Straw Hats catch a ride on the Knock-Up Stream for Skypeia.</plot>
+  <plot>Luffy returns victorious from his showdown with Bellamy, and the Going Merry has been refit by the Saruyama Alliance to handle its upcoming upward flight. The Straw Hats follow their captive south bird and steel themselves for their journey to the sky.
+
+Manga Chapter(s): 235-236
+
+Anime Episode(s): 152</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered/>
-  <aired/>
+  <premiered>2023-09-29</premiered>
+  <aired>2023-09-29</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
-  <dateadded>2023-09-13 12:15:06</dateadded>
+  <dateadded>2023-07-10 04:54:27</dateadded>
   <epbookmark/>
   <code/>
   <fileinfo>
     <streamdetails>
       <video>
         <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
+        <aspect>1.33</aspect>
+        <width>1440</width>
         <height>1080</height>
-        <durationinseconds>1440</durationinseconds>
+        <durationinseconds>1033</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -46,10 +50,10 @@
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>ara</language>
+        <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>por</language>
+        <language>fra</language>
       </subtitle>
       <subtitle>
         <language>spa</language>
@@ -58,6 +62,6 @@
   </fileinfo>
   <!--tinyMediaManager meta data-->
   <source>UNKNOWN</source>
-  <original_filename>[Anime Time] One Piece -S15E152 - Take to the Sky! Ride the Knockup Stream!.mkv</original_filename>
+  <original_filename>[One Pace][235-236] Jaya 08 [1080p][FA2E5ADD]</original_filename>
   <user_note/>
 </episodedetails>
