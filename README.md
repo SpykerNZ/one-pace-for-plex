@@ -122,7 +122,7 @@ This approach uses python to rename all your files, which is a bit more complex 
 - Allows dry-running to check renaming
 - Can modify exceptions.json to suit your needs. [^1]
 
-1. Copy the rename.py, seasons.json and exceptions.json file to your One Pace directory. (from /scripts/ folder)
+1. Copy the rename.py, seasons.json and exceptions.json file to your One Pace directory. (from /dist/ folder)
 
 ```
     └───media
