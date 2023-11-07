@@ -158,8 +158,11 @@ def main():
         nfo_data = nfo_data_lookup.get((episode.season, episode.number))
         if nfo_data is None:
             continue
+
         episode.title = nfo_data.title
         new_episode_name = episode.get_file_name()
+        if Path(filepath).name == new_episode_name:
+            continue
 
         if dry_run:
             print('DRYRUN: "{}" -> "{}"'.format(Path(filepath).name, new_episode_name))
