@@ -4,3 +4,8 @@ One Pace - Test Data/
 One Pace - Debug/
 rename.spec
 todo.txt
+One Pace/rename.py
+One Pace/seasons.json
+One Pace/exceptions.json
+One Pace/**/*.mkv
+
