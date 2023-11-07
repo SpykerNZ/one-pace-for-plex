@@ -23,3 +23,19 @@ jobs:
         with:
           name: rename.exe
           path: dist/rename/rename.exe
+
+  commit:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: rename.exe
+          path: dist
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update rename.exe"
+          file_pattern: dist/rename.exe
