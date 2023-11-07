@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-13 12:59:27 - tinyMediaManager 4.3.13-->
+<!--created on 2023-11-07 01:18:47 - tinyMediaManager 4.3.14-->
 <episodedetails>
-  <title>The End of the Legendary Man! The Day the Sea Train Cried!</title>
+  <title>Vearth</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
-  <season>18</season>
-  <episode>250</episode>
+  <season>16</season>
+  <episode>8</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
   <userrating>0.0</userrating>
-  <plot>Franky said that if a ship of his were to be used as a weapon, then it's no longer one of his ships. That enraged Tom and he punched Franky for the first time, telling him he had to take pride in the ships he created. He then told the judge that he would accept the punishment for both his previous crime and the recent attack. Franky tried to stop the train to Enies Lobby with his bare hands.</plot>
+  <plot>The Shandians’ attack on Upper Yard commences! At the Sacrificial Altar, the crew is finally reunited, and everyone recounts what has happened. Chopper looks after the injured Gan Fall, and the pirates devise a plan to steal the gold on the island.
+
+Manga Chapter(s): 252-254
+
+Anime Episode(s): 165-167</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered/>
-  <aired/>
+  <premiered>2023-10-28</premiered>
+  <aired>2023-10-28</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
-  <dateadded>2023-09-13 12:15:14</dateadded>
+  <dateadded>2023-11-07 01:16:35</dateadded>
   <epbookmark/>
   <code/>
   <fileinfo>
     <streamdetails>
       <video>
         <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
+        <aspect>1.33</aspect>
+        <width>1440</width>
         <height>1080</height>
-        <durationinseconds>1440</durationinseconds>
+        <durationinseconds>2215</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -46,18 +50,15 @@
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>ara</language>
+        <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>por</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
+        <language>fra</language>
       </subtitle>
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
   <source>UNKNOWN</source>
-  <original_filename>S18E250 - The End of the Legendary Man! The Day the Sea Train Cried!.mkv</original_filename>
+  <original_filename>One Pace - S16E08 - Vearth.mkv</original_filename>
   <user_note/>
 </episodedetails>

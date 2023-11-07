@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-13 12:59:34 - tinyMediaManager 4.3.13-->
+<!--created on 2023-11-07 02:06:03 - tinyMediaManager 4.3.14-->
 <episodedetails>
-  <title>The Truth Behind Her Betrayal! Robin's Sorrowful Decision!</title>
+  <title>Bingo</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>18</season>
-  <episode>251</episode>
+  <episode>14</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
   <userrating>0.0</userrating>
-  <plot>Chopper escapes the burning building with Paulie and Iceburg on his back and collapses outside. Iceburg makes it clear to Nami that Robin wanted to recover the blueprints and to do that, she wanted her companions to leave the island without her. Nami rushes to tell Chopper so they can go looking for the rest of the crew. Elsewhere, the foremen let go of the Going Merry so she would be destroyed at sea.</plot>
+  <plot>CP9 hauls away Franky and Usopp, but not before giving a coldhearted farewell to the Merry. At Galley-La’s HQ, Nami learns from Iceburg the truth behind Robin's betrayal and the difficult choice she had to make to save the lives of the Straw Hats.
+
+Manga Chapter(s): 358-359
+
+Anime Episode(s): 250-251, 256, 320</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered/>
-  <aired/>
+  <premiered>2023-11-03</premiered>
+  <aired>2023-11-03</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
-  <dateadded>2023-09-13 12:58:23</dateadded>
+  <dateadded>2023-11-07 01:37:03</dateadded>
   <epbookmark/>
   <code/>
   <fileinfo>
@@ -29,7 +33,7 @@
         <aspect>1.78</aspect>
         <width>1920</width>
         <height>1080</height>
-        <durationinseconds>1559</durationinseconds>
+        <durationinseconds>1507</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -46,18 +50,15 @@
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>ara</language>
+        <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>por</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
+        <language>fra</language>
       </subtitle>
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
   <source>UNKNOWN</source>
-  <original_filename>S18E251 - The Truth Behind Her Betrayal! Robin's Sorrowful Decision!.mkv</original_filename>
+  <original_filename>One Pace - S18E14 - Bingo.mkv</original_filename>
   <user_note/>
 </episodedetails>
