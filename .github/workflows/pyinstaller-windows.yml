@@ -1,0 +1,25 @@
+name: pyinstaller-windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - run: pip install pyinstaller
+      - run: pyinstaller dist/rename.py
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: rename.exe
+          path: dist/rename/rename.exe
