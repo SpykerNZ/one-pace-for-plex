@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 11:48:23 - tinyMediaManager 4.3.13-->
+<!--created on 2023-12-03 02:48:31 - tinyMediaManager 4.3.14-->
 <episodedetails>
   <title>Yuba, the Town of Rebels</title>
   <originaltitle/>
@@ -15,11 +15,11 @@
 
 Manga Chapter(s): 159-164
 
-Anime Episode(s): 96, 98, 100-104</plot>
+Anime Episode(s): 98, 100-101, 103</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered>2021-02-21</premiered>
-  <aired>2021-02-21</aired>
+  <premiered>2023-11-25</premiered>
+  <aired>2023-11-25</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
@@ -29,11 +29,11 @@ Anime Episode(s): 96, 98, 100-104</plot>
   <fileinfo>
     <streamdetails>
       <video>
-        <codec>h264</codec>
+        <codec>HEVC</codec>
         <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1514</durationinseconds>
+        <width>1440</width>
+        <height>1080</height>
+        <durationinseconds>1508</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -50,10 +50,13 @@ Anime Episode(s): 96, 98, 100-104</plot>
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>spa</language>
+        <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>eng</language>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
       </subtitle>
     </streamdetails>
   </fileinfo>
