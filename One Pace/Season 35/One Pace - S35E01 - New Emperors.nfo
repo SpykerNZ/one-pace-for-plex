@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2023-09-16 22:28:49 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>New Emperors</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>35</season>
+  <episode>1</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>The Straw Hats rave over new bounties, and Crocodile and Mihawk pay Buggy a visit. Elsewhere, Dragon and his revolutionaries are shocked when they read about Sabo in the news, and an old comrade returns, a shell of his former self.
+
+Manga Chapter(s): 1058-1059
+
+Anime Episode(s): 1086-1088</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2024-01-12</premiered>
+  <aired>2019-01-12</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2024-01-12 8:00:00</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1420</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>[One Pace][1058-1059] Egghead 01 [1080p][1B5D9178].mkv</original_filename>
+  <user_note/>
+</episodedetails>
