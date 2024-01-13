@@ -66,7 +66,7 @@ One Pace does not currently cover the entire series. Thus you will need to add m
 Current missing episodes:
 - Season 14: 121-130
 - Season 16: 172-195, 207
-- Season 18: 255-263
+- Season 18: 254-263
 - Season 24: 453-456
 
 See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for a more up to date information on what episodes are avaliable. Check column P for episodes that are still to be completed.
