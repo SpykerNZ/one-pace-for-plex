@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-25 10:22:10 - tinyMediaManager 4.3.13-->
+<!--created on 2024-01-13 21:25:44 - tinyMediaManager 4.3.14-->
 <episodedetails>
   <title>Cape Promise</title>
   <originaltitle/>
@@ -11,15 +11,15 @@
   <id/>
   <ratings/>
   <userrating>0.0</userrating>
-  <plot>After learning of Laboon the whale's plight, Luffy comes up with a solution befitting his style. As thanks, Crocus reveals that navigating the Grand Line will not be as simple as following a compass or relying on currents and wind.&#13;
-&#13;
-Manga Chapter(s): 104-105&#13;
-&#13;
-Anime Episode(s): 63</plot>
+  <plot>After learning of Laboon the whale's plight, Luffy comes up with a solution befitting his style. As thanks, Crocus reveals that navigating the Grand Line will not be as simple as following a compass or relying on currents and wind.
+
+Manga Chapter(s): 103-105
+
+Anime Episode(s): 62-63</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered>2017-12-01</premiered>
-  <aired>2017-12-01</aired>
+  <premiered>2024-01-05</premiered>
+  <aired>2024-01-05</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
@@ -31,9 +31,9 @@ Anime Episode(s): 63</plot>
       <video>
         <codec>HEVC</codec>
         <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1071</durationinseconds>
+        <width>1440</width>
+        <height>1080</height>
+        <durationinseconds>1988</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -42,17 +42,26 @@ Anime Episode(s): 63</plot>
         <channels>2</channels>
       </audio>
       <audio>
-        <codec>MP3</codec>
+        <codec>AAC</codec>
         <language>eng</language>
         <channels>2</channels>
       </audio>
       <subtitle>
         <language>eng</language>
       </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
   <source>UNKNOWN</source>
-  <original_filename>One Pace - S08E02 - Cape Promise.mkv</original_filename>
+  <original_filename>One Pace - S09E02 - Cape Promise.mkv</original_filename>
   <user_note/>
 </episodedetails>

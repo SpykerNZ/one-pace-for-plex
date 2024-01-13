@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-25 10:22:10 - tinyMediaManager 4.3.13-->
+<!--created on 2024-01-13 21:25:26 - tinyMediaManager 4.3.14-->
 <episodedetails>
   <title>Reverse Mountain</title>
   <originaltitle/>
@@ -11,15 +11,15 @@
   <id/>
   <ratings/>
   <userrating>0.0</userrating>
-  <plot>Following a near disaster in the Calm Belt, the Straw Hats take a wild ride up and down a mountain… and are promptly swallowed by a giant whale!&#13;
-&#13;
-Manga Chapter(s): 101-103&#13;
-&#13;
-Anime Episode(s): 55, 61-62</plot>
+  <plot>Following a near disaster in the Calm Belt, the Straw Hats take a wild ride up and down a mountain… and are promptly swallowed by a giant whale!
+
+Manga Chapter(s): 101-102
+
+Anime Episode(s): 54-55, 61-62</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered>2017-12-01</premiered>
-  <aired>2017-12-01</aired>
+  <premiered>2024-01-05</premiered>
+  <aired>2024-01-05</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
@@ -31,9 +31,9 @@ Anime Episode(s): 55, 61-62</plot>
       <video>
         <codec>HEVC</codec>
         <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1912</durationinseconds>
+        <width>1440</width>
+        <height>1080</height>
+        <durationinseconds>1226</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -42,17 +42,26 @@ Anime Episode(s): 55, 61-62</plot>
         <channels>2</channels>
       </audio>
       <audio>
-        <codec>MP3</codec>
+        <codec>AAC</codec>
         <language>eng</language>
         <channels>2</channels>
       </audio>
       <subtitle>
         <language>eng</language>
       </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
   <source>UNKNOWN</source>
-  <original_filename>One Pace - S08E01 - Reverse Mountain.mkv</original_filename>
+  <original_filename>One Pace - S09E01 - Reverse Mountain.mkv</original_filename>
   <user_note/>
 </episodedetails>
