@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-17 14:20:13 - tinyMediaManager 4.3.13-->
+<!--created on 2024-01-19 23:00:28 - tinyMediaManager 4.3.14-->
 <tvshow>
   <title>One Pace</title>
   <originaltitle/>
@@ -46,6 +46,7 @@
   <namedseason number="32">32. Whole Cake Island</namedseason>
   <namedseason number="33">33. Reverie</namedseason>
   <namedseason number="34">34. Wano</namedseason>
+  <namedseason number="35">35. Egghead</namedseason>
   <mpaa/>
   <certification/>
   <episodeguide>{}</episodeguide>
