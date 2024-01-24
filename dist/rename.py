@@ -13,6 +13,7 @@ SEASONS_JSON = "seasons.json"
 EXCEPTIONS_JSON = "exceptions.json"
 SHOW_NAME = "One Pace"
 MKV_EXT = ".mkv"
+MP4_EXT = ".mp4"
 NFO_EXT = ".nfo"
 
 
@@ -52,11 +53,11 @@ def get_episode_from_nfo(filename: str) -> Optional[Episode]:
         )
 
 
-def get_episode_from_mkv(filename: str, seasons: dict[str, int]) -> Optional[Episode]:
-    mkv_pattern = (
-        r"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{1,2}(?:-\d{1,2})?)\s\[(.*?)\]\[(.*?)\]\.mkv"
+def get_episode_from_media(filename: str, seasons: dict[str, int]) -> Optional[Episode]:
+    media_pattern = (
+        rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{1,2}(?:-\d{1,2})?)\s\[(.*?)\]\[(.*?)\]\.({MKV_EXT}|{MP4_EXT})"
     )
-    match = re.search(mkv_pattern, filename)
+    match = re.search(media_pattern, filename)
     if match:
         season_title = match.group(2)
         episode_number = int(match.group(3))
@@ -125,11 +126,12 @@ def main():
         season_folder = Path(show_dir / season_name)
         # get all exceptions for this folder
         exception_mapping: dict[str, int] = exceptions.get(season_name)
-        # get all mkv files
-        mkv_files = season_folder.rglob(f"*{MKV_EXT}")
+        # get all media files
+        media_files = list(season_folder.rglob(f"*{MKV_EXT}")) + \
+            list(season_folder.rglob(f"*{MP4_EXT}"))
         # iterate over mkv files
-        for filepath in mkv_files:
-            episode = get_episode_from_mkv(filepath.name, seasons)
+        for filepath in media_files:
+            episode = get_episode_from_media(filepath.name, seasons)
             if episode is not None:
                 # add episode if it exists
                 pending.append((str(filepath), episode))
@@ -160,7 +162,9 @@ def main():
             continue
 
         episode.title = nfo_data.title
-        new_episode_name = episode.get_file_name()
+        new_episode_name = episode.get_file_name(
+            extension=Path(filepath).suffix
+        )
         if Path(filepath).name == new_episode_name:
             continue
 
