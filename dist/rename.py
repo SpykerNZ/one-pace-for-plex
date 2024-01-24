@@ -55,7 +55,7 @@ def get_episode_from_nfo(filename: str) -> Optional[Episode]:
 
 def get_episode_from_media(filename: str, seasons: dict[str, int]) -> Optional[Episode]:
     media_pattern = (
-        rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{1,2}(?:-\d{1,2})?)\s\[(.*?)\]\[(.*?)\]\.({MKV_EXT}|{MP4_EXT})"
+        rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{{1,2}}(?:-\d{{1,2}})?)\s\[(.*?)\]\[(.*?)\]({MKV_EXT}|{MP4_EXT})"
     )
     match = re.search(media_pattern, filename)
     if match:
