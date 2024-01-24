@@ -8,5 +8,6 @@ One Pace/rename.py
 One Pace/seasons.json
 One Pace/exceptions.json
 One Pace/**/*.mkv
+One Pace/**/*.mp4
 One Pace/.DS_Store
 .DS_Store
