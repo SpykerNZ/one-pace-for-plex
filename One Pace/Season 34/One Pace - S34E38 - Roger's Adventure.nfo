@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2024-01-26 18:59:08 - tinyMediaManager 4.3.14-->
+<episodedetails>
+  <title>Roger's Adventure</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>34</season>
+  <episode>38</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Oden visits Wano and sees his retainers for the first time in years, but he immediately returns to the sea and leaves his family behind in their care. After stopping at Zou for the final red poneglyph, the Roger Pirates finally make it to the last island.
+
+Manga Chapter(s): 967
+
+Anime Episode(s): 967-968</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2024-01-26</premiered>
+  <aired>2024-01-26</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2024-01-26 18:58:45</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1308</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>[One Pace][967] Wano 38 [1080p][298A4284].mkv</original_filename>
+  <user_note/>
+</episodedetails>
