@@ -19,12 +19,12 @@ jobs:
           python-version: 3.11
 
       - run: pip install pyinstaller
-      - run: pyinstaller dist/rename.py
+      - run: pyinstaller --onefile dist/rename.py
 
       - uses: actions/upload-artifact@v3
         with:
           name: rename.exe
-          path: dist/rename/rename.exe
+          path: dist/rename.exe
 
   commit:
     runs-on: ubuntu-latest
