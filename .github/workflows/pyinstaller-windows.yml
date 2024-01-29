@@ -39,5 +39,5 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update rename.exe"
+          commit_message: "Update rename.exe (CI-${{ github.run_id }})"
           file_pattern: dist/rename.exe
