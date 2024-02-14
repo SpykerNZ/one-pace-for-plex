@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2024-01-19 23:00:50 - tinyMediaManager 4.3.14-->
+<!--created on 2024-02-14 22:20:54 - tinyMediaManager 4.3.14-->
 <episodedetails>
   <title>Future Island Egghead</title>
   <originaltitle/>
@@ -23,7 +23,7 @@ Anime Episode(s): 1089-1090</plot>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
-  <dateadded>2024-02-109 07:25:00</dateadded>
+  <dateadded>2024-02-14 22:20:30</dateadded>
   <epbookmark/>
   <code/>
   <fileinfo>
@@ -33,7 +33,7 @@ Anime Episode(s): 1089-1090</plot>
         <aspect>1.78</aspect>
         <width>1920</width>
         <height>1080</height>
-        <durationinseconds>1438</durationinseconds>
+        <durationinseconds>1720</durationinseconds>
         <stereomode/>
       </video>
       <audio>
