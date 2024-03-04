@@ -66,7 +66,7 @@ One Pace does not currently cover the entire series. Thus, you will need to add 
 Current missing episodes:
 - Season 14: 121-130
 - Season 16: 171-195, 207
-- Season 18: 260-263
+- Season 18: 262-263
 - Season 24: 453-456
 
 See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for up-to-date information on what episodes are available. Check column Q to see which original One Piece episodes need to be added to your library.
