@@ -1,6 +1,6 @@
 # One Pace for Plex
 
-This guide explains how to setup One Pace for Plex
+This guide explains how to set up One Pace for Plex
 
 #### Features:
 - Episodes grouped by One Pace arcs
@@ -61,7 +61,7 @@ Download all the One Pace episodes you wish to add and place them in their respe
 
 ### 3. Download Missing One Piece Episodes
 
-One Pace does not currently cover the entire series. Thus you will need to add missing episodes to fill out your collection.
+One Pace does not currently cover the entire series. Thus, you will need to add missing episodes to fill out your collection.
 
 Current missing episodes:
 - Season 14: 121-130
@@ -69,7 +69,7 @@ Current missing episodes:
 - Season 18: 260-263
 - Season 24: 453-456
 
-See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for a more up to date information on what episodes are avaliable. Check column P for episodes that are still to be completed.
+See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for up-to-date information on what episodes are available. Check column Q to see which original One Piece episodes need to be added to your library.
 
 Place the missing episodes in their respective season folders.
 
@@ -91,10 +91,10 @@ Place the missing episodes in their respective season folders.
 #### Option A - Windows Executable
 
 This approach uses an executable to rename all your files. 
-- Only works on windows machines.
+- Only works on Windows machines.
 - Can modify exceptions.json to suit your needs. [^1]
 
-1. Copy rename.exe, seasons.json and exceptions.json to your One Pace directory. (from /dist/ foler)
+1. Copy rename.exe, seasons.json and exceptions.json to your One Pace directory. (from /dist/ folder)
 
 ```
     └───media
@@ -159,7 +159,7 @@ You need to swap to the XBMCnfoTVImporter agent in Plex to scan your new One Pac
 2. Navigate to your anime library
 3. Click 'Manage Library' -> 'Edit...'
 4. Click on the 'Advanced' tab
-5. Click the 'Agent' dropdown box. (and note what you have set to currently so you can change it back)
+5. Click the 'Agent' dropdown box. (and note what you have set to currently so that you can change it back)
 6. Select the 'XBMCnfoTVImporter' option. (If this does not exist XBMCnfoTVImporter may not be installed correctly)
 7. Click "Save Changes"
 8. Click "Scan Library Files"
