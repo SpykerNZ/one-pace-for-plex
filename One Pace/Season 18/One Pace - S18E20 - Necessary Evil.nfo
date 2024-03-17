@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-13 13:01:26 - tinyMediaManager 4.3.13-->
+<!--created on 2024-03-03 05:30:41 - tinyMediaManager 5.0.3-->
 <episodedetails>
-  <title>The Judicial Island! Full View of Enies Lobby!</title>
+  <title>Necessary Evil</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>18</season>
-  <episode>263</episode>
+  <episode>20</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
   <userrating>0.0</userrating>
-  <plot>Robin willingly follows Blueno into his improvised door and Sogeking and Sanji are left alone. For a while, Blueno explains a little of Robin's past involving the Buster Call. Back at the Rocket Man, Yokuzuna the frog jumps onto the front of the train, knocking them from the rails. After Kokoro speaks with him, he joins the group. The CP9, Franky, and Robin finally reach Enies Lobby and disembark.</plot>
+  <plot>Sanji and Franky conclude their fights and enter the train car where CP9’s agents lie in wait. When Sogeking sees the danger of the situation, it falls to him to formulate a plan for escape. However, CP9 is far from being thwarted!
+
+Manga Chapter(s): 372-374
+
+Anime Episode(s): 261-263</plot>
   <runtime>0</runtime>
   <mpaa/>
-  <premiered/>
-  <aired/>
+  <premiered>2024-03-15</premiered>
+  <aired>2024-03-15</aired>
   <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
-  <dateadded>2023-09-13 12:58:24</dateadded>
+  <dateadded>2024-03-15 12:00:00</dateadded>
   <epbookmark/>
   <code/>
   <fileinfo>
@@ -29,7 +33,7 @@
         <aspect>1.78</aspect>
         <width>1920</width>
         <height>1080</height>
-        <durationinseconds>1430</durationinseconds>
+        <durationinseconds>1476</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -46,18 +50,15 @@
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>ara</language>
+        <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>por</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
+        <language>fra</language>
       </subtitle>
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
   <source>UNKNOWN</source>
-  <original_filename>S18E263 - The Judicial Island! Full View of Enies Lobby!.mkv</original_filename>
+  <original_filename>[One Pace][372-374] Water Seven 20 [1080p][F0FBC907].mkv</original_filename>
   <user_note/>
 </episodedetails>
