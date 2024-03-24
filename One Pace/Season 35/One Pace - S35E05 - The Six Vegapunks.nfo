@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2024-03-23 15:16:37 - tinyMediaManager 5.0.3-->
+<episodedetails>
+  <title>The Six Vegapunks</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>35</season>
+  <episode>5</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0</userrating>
+  <plot>Lilith takes the Sunny and its remaining crew to the laboratory in the clouds, where a new threat lurking within its corridors attacks unexpectedly. As the battle ensues, Vegapunk's sattelites look on with excitement.
+
+Manga Chapter(s): 1064-1065
+
+Anime Episode(s): 1093-1095</plot>
+  <runtime>32</runtime>
+  <mpaa/>
+  <premiered/>
+  <aired/>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2024-03-23 15:16:26</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1954</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One Pace - S35E05 - The Six Vegapunks.mkv</original_filename>
+  <user_note/>
+</episodedetails>
