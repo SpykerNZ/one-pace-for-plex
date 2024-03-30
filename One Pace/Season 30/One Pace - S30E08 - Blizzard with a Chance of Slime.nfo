@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-13 16:02:26 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Blizzard with a Chance of Slime</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>30</season>
+  <episode>8</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Zoro, Sanji, and Brook continue their search for the samurai, and Law tries to sneak Chopper into the laboratory! And then, Luffy’s battle with his old nemesis Smoker is interrupted by the arrival of a terrifying toxic blob.
+
+Manga Chapter(s): 669-670
+
+Anime Episode(s): 595-596</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2013-06-02</premiered>
+  <aired>2013-06-02</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:59</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1670</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E595-E596.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

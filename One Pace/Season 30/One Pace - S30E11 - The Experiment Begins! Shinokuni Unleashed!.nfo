@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-13 16:03:16 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Experiment Begins! Shinokuni Unleashed!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>30</season>
+  <episode>11</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>A candy addiction leads the children to return, and Caesar plans to show the world his new and improved Smiley! Luffy and the Straw Hats next find themselves pursued by a deadly cloud of gas that turns living things into statues of ash!
+
+Manga Chapter(s): 675-676
+
+Anime Episode(s): 601-602</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2013-07-08</premiered>
+  <aired>2013-07-08</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:57</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1558</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E601-E602.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

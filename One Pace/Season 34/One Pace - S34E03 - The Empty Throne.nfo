@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-16 22:28:12 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Empty Throne</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>34</season>
+  <episode>3</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>As the Reverie commences, Emperors Big Mom and Kaido both set their sights on Luffy! Meanwhile, a mysterious outsider visits the highest authority in the world, and the Revolutionary Army confirms its desire to save Kuma.
+
+Manga Chapter(s): 907-908
+
+Anime Episode(s): 886-889</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2021-01-04</premiered>
+  <aired>2021-01-04</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:01</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>1926</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E886-E889.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

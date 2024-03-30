@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-13 11:10:49 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>NEWS</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>27</season>
+  <episode>7</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Although Navy HQ is in ruins after the Summit War, marines and reporters still stalk its grounds. Luffy, Rayleigh, and Jinbe return to where Ace died to carry out a mysterious plan. If all goes well, Luffy’s crew will understand his actions.
+
+Manga Chapter(s): 593-594
+
+Anime Episode(s): 510-512</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2020-12-20</premiered>
+  <aired>2020-12-20</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:57</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>2210</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E511-E512.1080p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

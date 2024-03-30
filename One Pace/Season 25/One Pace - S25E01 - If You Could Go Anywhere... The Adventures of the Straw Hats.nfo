@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2024-03-29 21:50:17 - tinyMediaManager 5.0.3-->
+<episodedetails>
+  <title>If You Could Go Anywhere... The Adventures of the Straw Hats</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>25</season>
+  <episode>1</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0</userrating>
+  <plot>Somewhere in the world... Sanji resists, while Robin meets terrible people. Franky's not himself, and Usopp learns to survive. Chopper avoids becoming food, and Nami reports on the weather. Brook is repaid in underpants, and Zoro... is lost and annoyed.
+
+Manga Chapter(s): 543-560
+
+Anime Episode(s): 453-456</plot>
+  <runtime>11</runtime>
+  <mpaa/>
+  <premiered>2024-03-29 21:49:40</premiered>
+  <aired>2024-03-29 21:49:40</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2024-03-29 21:49:40</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1912</width>
+        <height>1080</height>
+        <durationinseconds>692</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>eng</language>
+        <channels>2</channels>
+      </audio>
+      <audio>
+        <codec>AAC</codec>
+        <language>spa</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>[One Pace][543-560] If You Could Go Anywhere... The Adventures of the Straw Hats [1080p][12026418].mkv</original_filename>
+  <user_note/>
+</episodedetails>

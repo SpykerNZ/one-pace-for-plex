@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-13 16:24:16 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The Spear of Elbaf and Don Sai</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>31</season>
+  <episode>36</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Hajrudin has been beaten down, but a fire still burns within him to pay back the favor he owes! Lao G and Don Chinjao bring their most devastating attacks to bear, but a misunderstanding caused by Baby 5 has Sai and Don Chinjao distracted.
+
+Manga Chapter(s): 770-771
+
+Anime Episode(s): 708-711</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2017-01-14</premiered>
+  <aired>2017-01-14</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:59</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1579</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E711-E713.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>
