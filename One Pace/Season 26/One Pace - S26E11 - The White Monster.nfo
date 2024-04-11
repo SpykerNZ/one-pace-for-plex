@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-12 16:58:46 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>The White Monster</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>26</season>
+  <episode>11</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Faced with the might of the admirals, even Whitebeard's commanders falter. Refusing to relent, Luffy begs Ivankov for a final chance at victory. Amid a bevy of marines, an old friend of Luffy’s appears for a much too premature reunion.
+
+Manga Chapter(s): 568-569
+
+Anime Episode(s): 477-478</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2019-01-06</premiered>
+  <aired>2019-01-06</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:58</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1560</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E477-E478.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

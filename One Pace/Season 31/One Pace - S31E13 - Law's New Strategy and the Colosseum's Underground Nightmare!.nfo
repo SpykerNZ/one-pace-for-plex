@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-13 16:14:55 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Law's New Strategy and the Colosseum's Underground Nightmare!</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>31</season>
+  <episode>13</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>Law must put himself in harm's way to defend the Sunny and the Straw Hats from Doflamingo's all-out assault. Meanwhile, Bartolomeo searches the colosseum for Luffy and discovers something strange about the medical center for the defeated.
+
+Manga Chapter(s): 724-725
+
+Anime Episode(s): 655-657</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2014-09-11</premiered>
+  <aired>2014-09-11</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:55:00</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1341</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E655-E657.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>

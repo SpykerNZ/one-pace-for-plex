@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--created on 2023-09-16 21:55:35 - tinyMediaManager 4.3.13-->
+<episodedetails>
+  <title>Way of Life</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>33</season>
+  <episode>32</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0.0</userrating>
+  <plot>When Chiffon comes under attack, Sanji must choose between defending her or revealing his whereabouts to his enemies. Elsewhere, Luffy uses Charlotte Brûlée as a human shield to avoid the wrath of Big Mom.
+
+Manga Chapter(s): 885-886
+
+Anime Episode(s): 858-860</plot>
+  <runtime>0</runtime>
+  <mpaa/>
+  <premiered>2019-02-24</premiered>
+  <aired>2019-02-24</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <trailer/>
+  <dateadded>2023-09-12 12:54:57</dateadded>
+  <epbookmark/>
+  <code/>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1280</width>
+        <height>720</height>
+        <durationinseconds>1931</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>spa</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <source>UNKNOWN</source>
+  <original_filename>One.Piece.E859-E860.720p.mkv</original_filename>
+  <user_note/>
+</episodedetails>
