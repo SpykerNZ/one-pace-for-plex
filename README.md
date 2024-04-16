@@ -65,7 +65,7 @@ One Pace does not currently cover the entire series. Thus, you will need to add 
 
 Current missing episodes:
 - Season 14: 121-130
-- Season 16: 171-195, 207
+- Season 16: 173-195, 207
 - Season 24: 453-456
 - Season 35: 972-1085
 
