@@ -67,7 +67,7 @@ Current missing episodes:
 - Season 14: 121-130
 - Season 16: 175-195, 207
 - Season 24: 453-456
-- Season 35: 972-1085
+- Season 35: 975-1085
 
 See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for up-to-date information on what episodes are available. Check column Q to see which original One Piece episodes need to be added to your library.
 
