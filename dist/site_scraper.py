@@ -1,7 +1,6 @@
 import shutil
 import subprocess
 import os
-import time
 import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -19,7 +18,6 @@ import datetime
 
 # TODO
 # Support parsing files that have already been renamed
-# Get WebDriverWait working for the Selenium section
 
 ########################################## Change these to match your system ##########################################
 library_path = Path("E:\\Anime\\One Pace Team\\One Pace")  # Where you want the video file to go
@@ -81,22 +79,17 @@ for file in os.listdir(tmm_folder):
                 print("Scrapping data from One Pace")
 
                 driver = webdriver.Firefox()
+                driver.implicitly_wait(10)
                 driver.get("https://onepace.net/watch")
 
                 episode_name = f"{parsed_arc_name.lower().replace(" ", "-")}-{parsed_episode_number}"
 
-                time.sleep(1)  # TODO - Try and get WebDriverWait working so that we don't need the sleeps
-
                 # Open episode card
-                # episode_card = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, f"//img[contains(@src, '{episode_name}')]")))
                 episode_card = driver.find_element(By.XPATH, f"//img[contains(@src, '{episode_name}')]")
                 driver.execute_script("arguments[0].click();", episode_card)
 
-                time.sleep(1)  # TODO - Try and get WebDriverWait working so that we don't need the sleeps
-
                 # Find episode card
-                # episode_info = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'Carousel_infoContainer')]")))
-                episode_info = driver.find_element(By.XPATH, "//div[contains(@class, 'Carousel_infoContainer')]")
+                episode_info = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'Carousel_infoContainer')]")))
 
                 # Parse the fields we want
                 title = driver.find_element(By.XPATH, "//div[contains(@class, 'Carousel_infoContainer')]/h3").text
