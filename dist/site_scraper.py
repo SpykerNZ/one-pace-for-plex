@@ -167,10 +167,11 @@ for file in os.listdir(tmm_folder):
 
                 if do_rename:
                     new_episode_name = f"One Pace - S{parsed_season_number}E{parsed_episode_number} - {title}"
-                    renamed_path = tmm_folder / new_episode_name
+                    renamed_video = str(tmm_folder / new_episode_name) + '.mkv'
+                    renamed_nfo = str(tmm_folder / new_episode_name) + '.nfo'
 
-                    os.rename((tmm_folder / file).with_suffix(".mkv"), renamed_path.with_suffix(".mkv"))
-                    os.rename((tmm_folder / file).with_suffix(".nfo"), renamed_path.with_suffix(".nfo"))
+                    os.rename((tmm_folder / file).with_suffix(".mkv"), renamed_video)
+                    os.rename((tmm_folder / file).with_suffix(".nfo"), renamed_nfo)
 
                     print(new_episode_name)
 
@@ -184,9 +185,9 @@ for file in os.listdir(tmm_folder):
                         print(episode_path)
                         print(git_path)
 
-                        shutil.copy2(renamed_path.with_suffix(".nfo"), episode_path)
-                        shutil.move(renamed_path.with_suffix(".nfo"), git_path)
-                        shutil.move(renamed_path.with_suffix(".mkv"), episode_path)
+                        shutil.copy2(renamed_nfo, episode_path)
+                        shutil.move(renamed_nfo, git_path)
+                        shutil.move(renamed_video, episode_path)
 
 
 print("Done")
