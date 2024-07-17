@@ -135,7 +135,7 @@ def main():
         # iterate over mkv files
         for filepath in media_files:
             episode = get_episode_from_media(filepath.name, seasons)
-            if episode is not None:
+            if episode is not None and season_no != 0:
                 # add episode if it exists
                 pending.append((str(filepath), episode))
             elif exception_mapping is not None:
