@@ -194,5 +194,14 @@
 		"1083": 1083,
 		"1084": 1084,
 		"1085": 1085
+	},
+	"Specials": {
+		"Strong World": 1,
+		"Straw Hat Theatre": 2,
+		"Romance Dawn v2": 3,
+		"Wapol's Omnivorous Hurrah": 4,
+		"Whole Cake Island 01": 5,
+		"Gaimon": 7,
+		"Tournament of Power": 8
 	}
 }

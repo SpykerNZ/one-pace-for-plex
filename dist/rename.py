@@ -121,7 +121,10 @@ def main():
 
     # iterate over season folders
     for season_no in seasons.values():
-        season_name = f"Season {season_no}"
+        if season_no == 0:
+            season_name = "Specials"
+        else:
+            season_name = f"Season {season_no}"
         # Get the season folder
         season_folder = Path(show_dir / season_name)
         # get all exceptions for this folder
@@ -132,7 +135,7 @@ def main():
         # iterate over mkv files
         for filepath in media_files:
             episode = get_episode_from_media(filepath.name, seasons)
-            if episode is not None:
+            if episode is not None and season_no != 0:
                 # add episode if it exists
                 pending.append((str(filepath), episode))
             elif exception_mapping is not None:
@@ -169,10 +172,10 @@ def main():
             continue
 
         if dry_run:
-            print('DRYRUN: "{}" -> "{}"'.format(Path(filepath).name, new_episode_name))
+            print(f'DRYRUN: "{Path(filepath).name}" -> "{new_episode_name}"')
             continue
 
-        print('RENAMING: "{}" -> "{}"'.format(Path(filepath).name, new_episode_name))
+        print(f'RENAMING: "{Path(filepath).name}" -> "{new_episode_name}"')
         os.rename(filepath, Path(filepath).parent.absolute() / new_episode_name)
 
 
