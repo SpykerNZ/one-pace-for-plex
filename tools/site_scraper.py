@@ -69,8 +69,9 @@ for file in os.listdir(tmm_folder):
             parsed_season_number = str(json.load(f)[parsed_arc_name]).zfill(2)
 
         if do_tmm:
-            print("Generating NFO file via TinyMediaManager")
-            generate_nfo = subprocess.run(tmm_cmd, capture_output=True, text=True)
+            if not Path(str(tmm_folder / file)).with_suffix(".nfo").exists():
+                print("Generating NFO files via TinyMediaManager")
+                generate_nfo = subprocess.run(tmm_cmd, capture_output=True, text=True)
 
             if do_selenium:
                 print("Scrapping data from One Pace")
