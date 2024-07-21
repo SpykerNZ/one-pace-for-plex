@@ -16,9 +16,6 @@ import datetime
 # When a new epiosde releases, put it in the One Piece TinyMediaManager folder (tmm_folder). The season folder doesn't matter, since we parse that from the filename
 # Then run `python site_scraper.py` and wait. The NFO will automatically be copied to the git repo and your One Pace folder, along with the video file.
 
-# TODO
-# Support parsing files that have already been renamed
-
 ########################################## Change these to match your system ##########################################
 library_path = Path("E:\\Anime\\One Pace Team\\One Pace")  # Where you want the video file to go
 tmm_folder = Path("E:\\.One Pace Stuff\\tinyMediaManager\\tv_shows\\One Piece\\Season 35")  # Where episodes will be moved for xml generation.
@@ -27,16 +24,16 @@ tmm_cmd = "E:\\.One Pace Stuff\\tinyMediaManager\\tinyMediaManagerCMD.exe tvshow
 
 
 def updateTag(key, value, delete=False):
-    existingTag = tree.find(key)
+    existing_tag = tree.find(key)
 
     if value is not None:
         value = str(value)
 
-    if existingTag is not None:
+    if existing_tag is not None:
         if delete:
-            root.remove(existingTag)
+            root.remove(existing_tag)
             return
-        existingTag.text = value
+        existing_tag.text = value
 
     else:
         ET.SubElement(root, key).text = value
