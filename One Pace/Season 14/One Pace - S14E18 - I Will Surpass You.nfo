@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--created on 2024-08-13 16:44:50 - tinyMediaManager 5.0.3-->
 <episodedetails>
-  <title>Skypiea 15</title>
+  <title>I Will Surpass You</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
-  <season>35</season>
-  <episode>15</episode>
+  <season>14</season>
+  <episode>18</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
   <userrating>0</userrating>
-  <plot>Chapter(s): 273-276
+  <plot>Chapter(s): 206-210
 
-Episode(s): 179-181</plot>
-  <runtime>36</runtime>
+Episode(s): 125-126</plot>
+  <runtime>34</runtime>
   <mpaa/>
-  <premiered>2024-07-19 16:44:47</premiered>
-  <aired>2024-07-19 16:44:47</aired>
+  <premiered>2024-07-05 17:20:15</premiered>
+  <aired>2024-07-05 17:20:15</aired>
   <watched>false</watched>
   <playcount>0</playcount>
-  <dateadded>2024-07-19 16:44:47</dateadded>
+  <dateadded>2024-07-05 17:20:15</dateadded>
   <fileinfo>
     <streamdetails>
       <video>
@@ -28,7 +28,7 @@ Episode(s): 179-181</plot>
         <aspect>1.33</aspect>
         <width>1440</width>
         <height>1080</height>
-        <durationinseconds>2171</durationinseconds>
+        <durationinseconds>2079</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -56,5 +56,5 @@ Episode(s): 179-181</plot>
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
-  <original_filename>[One Pace][273-276] Skypiea 15 [1080p][9863ADF4].mkv</original_filename>
+  <original_filename>One Pace - S14E18 - Arabasta 18.mkv</original_filename>
 </episodedetails>
