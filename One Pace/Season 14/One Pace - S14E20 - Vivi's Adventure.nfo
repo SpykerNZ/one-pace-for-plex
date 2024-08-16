@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-13 12:44:14 - tinyMediaManager 4.3.13-->
+<!--created on 2024-08-13 16:44:50 - tinyMediaManager 5.0.3-->
 <episodedetails>
-  <title>I Will Surpass You! Rain Falls in Alabasta!</title>
+  <title>Vivi's Adventure</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>14</season>
-  <episode>126</episode>
+  <episode>20</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
-  <userrating>0.0</userrating>
-  <plot>Luffy defeats Crocodile by punching him through solid bedrock. When Crocodile falls, the rain-drops calm the soldiers.</plot>
-  <runtime>0</runtime>
+  <userrating>0</userrating>
+  <plot>Chapter(s): 214-216
+
+Episode(s): 128-129</plot>
+  <runtime>31</runtime>
   <mpaa/>
-  <premiered/>
-  <aired/>
+  <premiered>2024-08-09 17:20:15</premiered>
+  <aired>2024-08-09 17:20:15</aired>
   <watched>false</watched>
   <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-13 12:15:09</dateadded>
-  <epbookmark/>
-  <code/>
+  <dateadded>2024-08-09 16:18:46</dateadded>
   <fileinfo>
     <streamdetails>
       <video>
         <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
+        <aspect>1.33</aspect>
+        <width>1440</width>
         <height>1080</height>
-        <durationinseconds>1440</durationinseconds>
+        <durationinseconds>1884</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -46,10 +45,10 @@
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>ara</language>
+        <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>por</language>
+        <language>fra</language>
       </subtitle>
       <subtitle>
         <language>spa</language>
@@ -57,7 +56,5 @@
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S14E126 - I Will Surpass You! Rain Falls in Alabasta!.mkv</original_filename>
-  <user_note/>
+  <original_filename>One Pace - S14E20 - Arabasta 20.mkv</original_filename>
 </episodedetails>
