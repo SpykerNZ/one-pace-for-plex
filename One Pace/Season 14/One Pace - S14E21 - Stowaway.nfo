@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-13 12:44:59 - tinyMediaManager 4.3.13-->
+<!--created on 2024-08-19 15:55:34 - tinyMediaManager 5.0.3-->
 <episodedetails>
-  <title>Scent of Danger! The Seventh Member is Nico Robin!</title>
+  <title>Stowaway</title>
   <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>14</season>
-  <episode>130</episode>
+  <episode>21</episode>
   <displayseason>-1</displayseason>
   <displayepisode>-1</displayepisode>
   <id/>
   <ratings/>
-  <userrating>0.0</userrating>
-  <plot>The Marines fail again to catch the Straw Hats. After escaping from the Marines, Nico Robin (Ms. All Sunday) appears from inside of the Straw Hats ship. She manages to persuade the crew to let her join. Pell is seen at the end standing over his own grave.</plot>
-  <runtime>0</runtime>
+  <userrating>0</userrating>
+  <plot>Chapter(s): 217-218
+
+Episode(s): 130</plot>
+  <runtime>17</runtime>
   <mpaa/>
   <premiered/>
   <aired/>
   <watched>false</watched>
+  <premiered>2024-08-16 17:20:15</premiered>
+  <aired>2024-08-16 17:20:15</aired>
+  <watched>false</watched>
   <playcount>0</playcount>
   <trailer/>
-  <dateadded>2023-09-13 12:15:11</dateadded>
-  <epbookmark/>
-  <code/>
+  <dateadded>2024-08-16 15:55:29</dateadded>
   <fileinfo>
     <streamdetails>
       <video>
         <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
+        <aspect>1.33</aspect>
+        <width>1440</width>
         <height>1080</height>
-        <durationinseconds>1455</durationinseconds>
+        <durationinseconds>1037</durationinseconds>
         <stereomode/>
       </video>
       <audio>
@@ -46,10 +49,10 @@
         <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>ara</language>
+        <language>eng</language>
       </subtitle>
       <subtitle>
-        <language>por</language>
+        <language>fra</language>
       </subtitle>
       <subtitle>
         <language>spa</language>
@@ -57,7 +60,5 @@
     </streamdetails>
   </fileinfo>
   <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S14E130 - Scent of Danger! The Seventh Member is Nico Robin!.mkv</original_filename>
-  <user_note/>
+  <original_filename>[One Pace][217-218] Arabasta 21 [1080p][EAA06203].mkv</original_filename>
 </episodedetails>
