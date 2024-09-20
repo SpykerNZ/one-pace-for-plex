@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--created on 2024-09-06 23:59:00 - tinyMediaManager 5.0.3-->
+<episodedetails>
+  <title>Emperor Red Hair's Pirate Crew (Extended)</title>
+  <originaltitle/>
+  <showtitle>One Pace</showtitle>
+  <season>36</season>
+  <episode>13</episode>
+  <displayseason>-1</displayseason>
+  <displayepisode>-1</displayepisode>
+  <id/>
+  <ratings/>
+  <userrating>0</userrating>
+  <plot>Chapter(s): 1079
+  
+  Episode(s): 1112</plot>
+  <runtime>16</runtime>
+  <mpaa/>
+  <premiered>2024-09-06 23:58:59</premiered>
+  <aired>2024-09-06 23:58:59</aired>
+  <watched>false</watched>
+  <playcount>0</playcount>
+  <dateadded>2024-09-06 23:58:59</dateadded>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>HEVC</codec>
+        <aspect>1.78</aspect>
+        <width>1920</width>
+        <height>1080</height>
+        <durationinseconds>990</durationinseconds>
+        <stereomode/>
+      </video>
+      <audio>
+        <codec>AAC</codec>
+        <language>jpn</language>
+        <channels>2</channels>
+      </audio>
+      <subtitle>
+        <language>eng</language>
+      </subtitle>
+      <subtitle>
+        <language>fra</language>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+  <!--tinyMediaManager meta data-->
+  <original_filename>[One Pace][1079] Egghead 13 Extended [1080p][88019227].mkv</original_filename>
+</episodedetails>
