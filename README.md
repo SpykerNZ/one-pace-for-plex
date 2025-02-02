@@ -87,6 +87,7 @@ This approach uses python to rename all your files, which is a bit more complex 
 2. Open a shell/powershell terminal.
 3. Change directory to where your One Pace script folder is: e.g. `cd /home/myself/one-pace-to-jellyfin/`
 4. Run the script in dry-run mode to see what change would occur (you can try with Docker or Python):
+
    a. If you want to rename media files to the standard SxxEyy format:
 
    ```shell
