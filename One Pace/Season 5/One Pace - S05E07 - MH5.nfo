@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-24 09:04:57 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>MH5</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>5</season>
   <episode>7</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>In a surprising twist, Gin finishes Pearl off himself, claiming Sanji as his own target. Though still wounded, Sanji rises to the challenge and faces off with Gin. As the battle draws to a close, Don Krieg unleashes a deadly toxin into the air.
 
 Manga Chapter(s): 59-63
 
 Anime Episode(s): 27-28</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-07-02</premiered>
   <aired>2023-07-02</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-24 08:34:51</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1626</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S05E07 - MH5.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

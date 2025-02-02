@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:01:42 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Yeti Cool Brothers</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>30</season>
   <episode>6</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The giant children fly into a mysterious rage, and Chopper discovers the true reason for their unusual condition! Meanwhile, Zoro, Brook, and Sanji cross paths with a dangerous duo, and the story of how Trafalgar Law arrived at Punk Hazard is revealed.
 
 Manga Chapter(s): 665-666
 
 Anime Episode(s): 591-592</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2013-05-31</premiered>
   <aired>2013-05-31</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1757</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E591-E592.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

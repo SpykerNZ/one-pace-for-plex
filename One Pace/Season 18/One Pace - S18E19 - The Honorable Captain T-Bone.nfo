@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2024-03-03 05:30:41 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The Honorable Captain T-Bone</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>18</season>
   <episode>19</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>In his battle against Wanze and his strange Ramen Kenpo, Sanji makes an exception to his rule of never using his hands. Meanwhile, Franky and Nero are baffled by each other’s abilities, and back on Rocketman, Zoro clashes with “Ship-Slasher” T-Bone.
 
 Manga Chapter(s): 370-371
 
 Anime Episode(s): 259-261</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-03-02</premiered>
   <aired>2024-03-02</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2024-03-02 12:30:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1476</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][370-371] Water Seven 19 [1080p][1206A42A].mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

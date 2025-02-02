@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 16:40:45 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Friend</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>24</season>
   <episode>5</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>With nowhere to run, Luffy's desperation to save Ace forces him to make a very grim sacrifice against his venomous adversary. Down in the frozen depths of Level 5, Bon Kurei rushes to his friend's aid, betting on a distant hope.
 
 Manga Chapter(s): 534-536
 
 Anime Episode(s): 435-438, 446</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2017-02-10</premiered>
   <aired>2017-02-10</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>2106</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E435-E438.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

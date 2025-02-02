@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:24:52 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Ohara vs. The World Government</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>19</season>
   <episode>9</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Robin's mother Olvia was on the run from the World Government, and tragedy was unavoidable from the moment Professor Clover and his colleagues decided to continue their research. No one on Ohara was safe.
 
 Manga Chapter(s): 394-396
 
 Anime Episode(s): 276-277</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2019-06-27</premiered>
   <aired>2019-06-27</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:13:05</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1868</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E277.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

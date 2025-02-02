@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 15:41:07 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Roger and Rayleigh</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>22</season>
   <episode>8</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Navy surrounds the auction house, and super rookies Monkey D. Luffy, Eustass Kid, and Trafalgar Law all want a piece of the action. Later, Rayleigh reveals his shocking past to the Straw Hats.
 
 Manga Chapter(s): 505-506
 
 Anime Episode(s): 399-400</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2017-12-01</premiered>
   <aired>2017-12-01</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1419</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E399-E400.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

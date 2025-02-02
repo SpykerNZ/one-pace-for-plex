@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:25:54 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Gear Fourth</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>31</season>
   <episode>42</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The birdcage tightens its grip on Dressrosa, so Zoro sets off with a plan to stop it from slicing apart the country. Meanwhile, Luffy digs deep into his training to provide an answer born of rubber and haki to combat Doflamingo’s might.
 
 Manga Chapter(s): 784-785
 
 Anime Episode(s): 726-728</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2017-05-13</premiered>
   <aired>2017-05-13</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:57</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1718</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E728-E730.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

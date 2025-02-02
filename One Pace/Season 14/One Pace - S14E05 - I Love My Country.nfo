@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 11:48:30 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>I Love My Country</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>14</season>
   <episode>5</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
-  <plot>At Rain Dinners, the Baroque Works officer agents are finally let on to Mr. 0's true identity. And just outside Yuba, Luffy confronts a stubborn Vivi to remind her who else is willing to stand with her.&#13;
-&#13;
-Manga Chapter(s): 164-166&#13;
-&#13;
+  <plot>At Rain Dinners, the Baroque Works officer agents are finally let on to Mr. 0's true identity. And just outside Yuba, Luffy confronts a stubborn Vivi to remind her who else is willing to stand with her.
+
+Manga Chapter(s): 164-166
+
 Anime Episode(s): 100, 103-104</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2021-05-09</premiered>
   <aired>2021-05-09</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-25 10:39:51</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1928</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S14E05 - I Love My Country.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

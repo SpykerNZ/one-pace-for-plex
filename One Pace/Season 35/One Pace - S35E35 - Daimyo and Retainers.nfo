@@ -1,64 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-11-12 00:27:14 - tinyMediaManager 4.3.14-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Daimyo and Retainers</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>35</season>
   <episode>35</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Oden transforms Kuri and is made Daimyo over it. He also meets a kappa fishman and two minks, who soon become his followers. Kin’emon and the other vassals take Yasuie's strong words to heart and begin transforming themselves for their lord.
 
 Manga Chapter(s): 962-963
 
 Anime Episode(s): 961-963</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-11-10</premiered>
   <aired>2023-11-10</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-11-12 00:24:44</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1832</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S34E35 - Daimyo and Retainers.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

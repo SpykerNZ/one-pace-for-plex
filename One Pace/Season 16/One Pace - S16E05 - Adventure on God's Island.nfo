@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:04:00 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Adventure on God's Island</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>16</season>
   <episode>5</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Aboard the Little Crow, Luffy, Usopp, and Sanji enter Upper Yard and must choose an ordeal. Meanwhile, Zoro and co. have their own troubles at the Sacrificial Altar. When they leave to explore the forest, Chopper is left to repair the Merry.
 
 Manga Chapter(s): 245-246
 
 Anime Episode(s): 159-160</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-06-12</premiered>
   <aired>2023-06-12</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 11:45:02</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1374</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S16E159 - Adventure on God's Island.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

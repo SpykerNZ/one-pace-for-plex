@@ -2,16 +2,9 @@
 <!--created on 2024-01-19 23:00:28 - tinyMediaManager 4.3.14-->
 <tvshow>
   <title>One Pace</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
-  <sorttitle/>
-  <year/>
-  <ratings/>
-  <userrating>0.0</userrating>
-  <outline/>
-  <plot/>
-  <tagline/>
-  <runtime>0</runtime>
+  <originaltitle>One Piece</originaltitle>
+  <plot>One Pace è un progetto gestito dai fan che riedita l'anime di One Piece nel tentativo di renderlo più in linea con il ritmo del manga originale di Eiichiro Oda. Il team di One Pace realizza questo rimuovendo scene filler non presenti nel materiale originale e correggendo errori di animazione e di sottotitoli.</plot>
   <namedseason number="1">1. Romance Dawn</namedseason>
   <namedseason number="2">2. Orange Town</namedseason>
   <namedseason number="3">3. Syrup Village</namedseason>
@@ -48,20 +41,4 @@
   <namedseason number="34">34. Reverie</namedseason>
   <namedseason number="35">35. Wano</namedseason>
   <namedseason number="36">36. Egghead</namedseason>
-  <mpaa/>
-  <certification/>
-  <episodeguide>{}</episodeguide>
-  <id/>
-  <imdbid/>
-  <tmdbid/>
-  <premiered/>
-  <status>Unknown</status>
-  <watched>false</watched>
-  <playcount/>
-  <studio/>
-  <country/>
-  <trailer/>
-  <dateadded>2023-08-23 18:17:40</dateadded>
-  <!--tinyMediaManager meta data-->
-  <user_note/>
 </tvshow>

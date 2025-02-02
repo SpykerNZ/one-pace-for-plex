@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:24:19 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Gear Second</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>19</season>
   <episode>7</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Straw Hats storm the courthouse where the three-headed judge Baskerville awaits to enact violent judgment upon them. On the roof, Luffy thanks CP9's Blueno for the strength of his opponents, and he activates a new ability.
 
 Manga Chapter(s): 388-390
 
 Anime Episode(s): 273-274</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2019-05-13</premiered>
   <aired>2019-05-13</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:13:05</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1730</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E274.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

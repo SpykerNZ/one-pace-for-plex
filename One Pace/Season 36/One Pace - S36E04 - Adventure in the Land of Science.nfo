@@ -1,56 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2024-03-09 01:09:00 - tinyMediaManager 4.3.15-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Adventure in the Land of Science</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>36</season>
   <episode>4</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0</userrating>
   <plot>Franky and Luffy's groups are split up, but each encounter a person claiming to be Dr. Vegapunk. On the island, Luffy and co. find convenient food and futuristic clothing, but when a pacifista shows up, Bonney reveals her shocking relationship with Kuma.
 
 Manga Chapter(s): 1062-1063
 
 Anime Episode(s): 1091-1093</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-03-08</premiered>
   <aired>2024-03-08</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2024-03-09 01:08:24</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1817</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][1062-1063] Egghead 04 [1080p][92F9FD5D].mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

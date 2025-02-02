@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:13:34 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The Tontatta Rebellion and the C Block Finale!</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>31</season>
   <episode>10</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Tontattas gear up for their all-out assault on the Doflamingo Family, and Usopp and Robin are caught up in the war effort! Meanwhile, Luffy concludes his earth-shattering fight to the death with Don Chinjao.
 
 Manga Chapter(s): 718-719
 
 Anime Episode(s): 648-649</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2014-07-04</premiered>
   <aired>2014-07-04</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1291</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E648-E649.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

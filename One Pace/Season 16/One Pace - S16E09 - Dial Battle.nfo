@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-11-07 01:18:47 - tinyMediaManager 4.3.14-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Dial Battle</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>16</season>
   <episode>9</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The crew splits up into Nami's escape team and Luffy's exploration team. Unfortunately, a giant snake attacks and separates Luffy's team. To top it all off, the Priests have set up their ordeals across the whole island.
 
 Manga Chapter(s): 255-257
 
 Anime Episode(s): 168-169</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-11-17</premiered>
   <aired>2023-11-17</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-11-17 01:30:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>2215</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S16E09 - Dial Battle.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-24 09:06:37 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>My Turn</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>6</season>
   <episode>8</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The top officers are defeated, but as they currently are, Sanji and Zoro prove to be no match for Arlong. However, with Luffy finally free, he just may just be able to pull it off. Meanwhile, Nami finally gathers the courage to face Arlong.
 
 Manga Chapter(s): 88-90
 
 Anime Episode(s): 40-42</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2020-06-05</premiered>
   <aired>2020-06-05</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-23 21:34:50</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1528</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S06E08 - My Turn.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

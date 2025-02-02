@@ -1,56 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-15 12:04:38 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Emperor Assassination Plan</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>33</season>
   <episode>19</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The plan for Big Mom’s assassination is all set. Sanji heads back to his room to avoid suspicion, but Mont d’Or is hot on his trail. The day arrives, and guests from the criminal underground pour in in droves, some with their own agendas to settle.
 
 Manga Chapter(s): 859-860
 
 Anime Episode(s): 828-830</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2018-08-31</premiered>
   <aired>2018-08-31</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:58</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>2008</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E829-E830.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

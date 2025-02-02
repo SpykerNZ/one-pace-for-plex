@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 11:59:36 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>100,000 vs. 10! The Straw Hats' Explosive Moves</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>29</season>
   <episode>16</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Straw Hats have reassembled at last, an army of New Fishman Pirates standing before them. With the last two years still fresh in their minds, the Straw Hats’ training is put to the test, and they unleash a flurry of new techniques.
 
 Manga Chapter(s): 634-635
 
 Anime Episode(s): 554-556</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2013-04-25</premiered>
   <aired>2013-04-25</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:59</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>2165</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E554-E556.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2024-02-03 02:46:33 - tinyMediaManager 4.3.14-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Ramen Kenpo</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>18</season>
   <episode>18</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Sogeking appears in grand fashion! Wanze threatens Sanji's group with his ramen kenpo, so the Straw Hat cook urges the others ahead. Franky takes on CP9's newest recruit “Sea Weasel” Nero, and Sogeking moves forward to meet up with Robin.
 
 Manga Chapter(s): 368-369
 
 Anime Episode(s): 258-259</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-02-23</premiered>
   <aired>2024-02-23</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2024-02-23 17:12:30</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1294</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][368-369] Water Seven 18 [1080p][47D68652].mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

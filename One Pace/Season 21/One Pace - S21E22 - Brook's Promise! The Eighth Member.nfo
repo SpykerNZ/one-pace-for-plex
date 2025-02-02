@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:40:38 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Brook's Promise! The Eighth Member</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>21</season>
   <episode>22</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>At death's door, the Rumbar Pirates sang "Binks' Sake" one last time and recorded it in a tone dial, hoping to one day deliver it to Laboon. With their new crewmate and musician Brook on board, the Straw Hats bid farewell to Lola’s crew.
 
 Manga Chapter(s): 488-489
 
 Anime Episode(s): 380-381</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2014-10-12</premiered>
   <aired>2014-10-12</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:32:06</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1461</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E380-E381.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

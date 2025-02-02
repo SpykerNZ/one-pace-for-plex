@@ -1,62 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2024-06-08 00:22:56 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Pirate Zoro vs. Priest Ohm</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>16</season>
   <episode>14</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>After being swallowed by the giant snake, Nami, Gan Fall, and Aisa meet someone they never expected would be in the serpent's stomach. As Priest Ohm’s Ordeal of Iron comes to a close in the Upper Ruins, Zoro unleashes a powerful new technique.
 
 Manga Chapter(s): 270-273
 
 Anime Episode(s): 177-179</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-06-08</premiered>
   <aired>2024-06-08</aired>
-  <watched>false</watched>
-  <dateadded>2024-06-08 00:22:54</dateadded>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1741</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][270-273] Skypiea 14 [1080p][704F68EA].mkv</original_filename>
   </episodedetails>

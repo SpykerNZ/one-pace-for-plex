@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:55:51 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Flying Fish Riders</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>22</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>As the Straw Hats journey to Fishman Island, they reach the Red Line, the halfway point along the Grand Line. When a sea king appears, Luffy easily dispatches it, but it spits up a mermaid and a talking starfish onto the deck of the Sunny.
 
 Manga Chapter(s): 490-491
 
 Anime Episode(s): 385-386</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2014-12-09</premiered>
   <aired>2014-12-09</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1705</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E385-E386.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>
