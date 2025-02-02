@@ -100,9 +100,9 @@ This approach uses python to rename all your files, which is a bit more complex 
 
    ```shell
    # if you extracted the zip file in the same directory as your One Pace episodes
-   python3 rename.py --dry-run --keep-original
+   python3 dist/rename.py --dry-run --keep-original
    # if you have your One Pace episodes in a different directory
-   python3 rename.py --dry-run --keep-original --directory '/media/anime/One Pace'
+   python3 dist/rename.py --dry-run --keep-original --directory '/media/anime/One Pace'
    ```
 
    c. If you want to use Docker, prepend the commands with:
@@ -113,8 +113,8 @@ This approach uses python to rename all your files, which is a bit more complex 
      e.g.
 
    ```shell
-   docker run --rm -v "$PWD":/data -w="/data" python:3 python rename.py -- --dry-run
-   docker run --rm -v "$PWD":/data -w="/data" -v "/path/to/One Pace":/media python:3 python rename.py -- --dry-run --keep-original --directory '/media'
+   docker run --rm -v "$PWD":/data -w="/data" python:3 python dist/rename.py -- --dry-run
+   docker run --rm -v "$PWD":/data -w="/data" -v "/path/to/One Pace":/media python:3 python dist/rename.py -- --dry-run --keep-original --directory '/media'
    ```
 
 5. Once you are okay with the changes you see, remove the `--dry-run` flag from the command and run it again.
