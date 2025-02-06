@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:22:51 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
-  <title>The Island of Fate: Minion</title>
-  <originaltitle/>
+  <title>The Island of Fate Minion</title>
   <showtitle>One Pace</showtitle>
   <season>31</season>
   <episode>33</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Things grew stranger for Law when he learned the secret behind why Corazón feigned being mute. But the mysterious Corazón’s actions were only beginning to baffle Law when he took him on a journey to cure the youth’s disease.
 
 Manga Chapter(s): 764-765
 
 Anime Episode(s): 703-704</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2016-11-05</premiered>
   <aired>2016-11-05</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1779</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E703-E704.720p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

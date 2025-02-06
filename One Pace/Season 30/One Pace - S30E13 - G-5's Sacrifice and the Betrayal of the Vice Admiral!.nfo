@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:04:28 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>G-5's Sacrifice and the Betrayal of the Vice Admiral!</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>30</season>
   <episode>13</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Caesar hatches a plan to forever silence his enemies, and Tashigi’s men make the ultimate sacrifice! Luffy races toward Caesar to deliver on his promise to beat and capture him, and Chopper does all he can to keep the children from consuming more candy.
 
 Manga Chapter(s): 679-680
 
 Anime Episode(s): 604-606</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2013-08-11</premiered>
   <aired>2013-08-11</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:58</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1332</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E605-E606.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

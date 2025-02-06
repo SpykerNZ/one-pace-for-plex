@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-24 09:05:27 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Storm</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>5</season>
   <episode>3</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>It's revealed that Chef Zeff was once a great pirate known as "Blaze Leg" Zeff, and his fighting spirit is as strong as ever. Meanwhile, Gin explains how his men met disaster in the Grand Line when they ran afoul of a devastatingly strong opponent.
 
 Manga Chapter(s): 47-49
 
 Anime Episode(s): 23-24</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2022-07-15</premiered>
   <aired>2022-07-15</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-24 08:34:51</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1116</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>deu</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S05E03 - Storm.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

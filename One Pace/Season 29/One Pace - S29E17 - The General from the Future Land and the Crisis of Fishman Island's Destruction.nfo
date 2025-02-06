@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 11:59:18 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The General from the Future Land and the Crisis of Fishman Island's Destruction</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>29</season>
   <episode>17</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Franky’s mechanical masterpieces have transformations in store that can only be described as "super!" However, onlookers curb their enthusiasm when a foreboding shadow is cast upon Gyoncorde Plaza by a giant ship hurtling toward the island!
 
 Manga Chapter(s): 636-637
 
 Anime Episode(s): 556-558</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2013-04-26</premiered>
   <aired>2013-04-26</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1689</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E557-E558.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

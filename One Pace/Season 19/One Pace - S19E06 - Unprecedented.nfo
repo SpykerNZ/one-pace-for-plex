@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:23:32 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Unprecedented</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>19</season>
   <episode>6</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Kaku and Kalifa of CP9 are offered a rare chance for new powers and are each served a devil fruit. The Straw Hats finally arrive at the courthouse plaza when Spandam receives an urgent call, and he realizes things are much worse than previously reported.
 
 Manga Chapter(s): 385-387
 
 Anime Episode(s): 271-273</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2019-05-02</premiered>
   <aired>2019-05-02</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:13:05</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1792</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E272-E273.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

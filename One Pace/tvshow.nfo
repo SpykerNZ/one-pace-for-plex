@@ -2,16 +2,11 @@
 <!--created on 2024-01-19 23:00:28 - tinyMediaManager 4.3.14-->
 <tvshow>
   <title>One Pace</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
-  <sorttitle/>
-  <year/>
-  <ratings/>
-  <userrating>0.0</userrating>
-  <outline/>
-  <plot/>
-  <tagline/>
-  <runtime>0</runtime>
+  <originaltitle>One Piece</originaltitle>
+  <plot>One Pace is a fan project that recuts the One Piece anime in an endeavor to bring it more in line with the pacing of the original manga by Eiichiro Oda. The team accomplishes this by removing filler scenes not present in the source material. This process requires meticulous editing and quality control to ensure seamless music and transitions.
+
+The project is an ongoing labor of love that started in 2013. Recently, its scope has expanded to include high-quality subtitles for multiple languages, the English dub, animation error fixes, and much more. In addition, we hope to provide a standard middle ground between the anime's presentation and manga's story-telling for fans looking for an alternative watching experience.</plot>
   <namedseason number="1">1. Romance Dawn</namedseason>
   <namedseason number="2">2. Orange Town</namedseason>
   <namedseason number="3">3. Syrup Village</namedseason>
@@ -48,20 +43,4 @@
   <namedseason number="34">34. Reverie</namedseason>
   <namedseason number="35">35. Wano</namedseason>
   <namedseason number="36">36. Egghead</namedseason>
-  <mpaa/>
-  <certification/>
-  <episodeguide>{}</episodeguide>
-  <id/>
-  <imdbid/>
-  <tmdbid/>
-  <premiered/>
-  <status>Unknown</status>
-  <watched>false</watched>
-  <playcount/>
-  <studio/>
-  <country/>
-  <trailer/>
-  <dateadded>2023-08-23 18:17:40</dateadded>
-  <!--tinyMediaManager meta data-->
-  <user_note/>
 </tvshow>
