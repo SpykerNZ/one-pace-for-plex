@@ -93,6 +93,36 @@ def ensure_tag_value(root, tag, value):
     return False
 
 
+def clean_tree(tree):
+    to_remove = []
+    found = set()
+    for child in tree.getroot():
+        if child.tag not in [
+            "title",
+            "showtitle",
+            "season",
+            "episode",
+            "plot",
+            "premiered",
+            "aired",
+            "seasonnumber",
+            "namedseason",
+            "showtitle",
+        ]:
+            to_remove.append(child)
+            continue
+        if child.text is None:
+            to_remove.append(child)
+            continue
+        if child.tag not in found:
+            found.add(child.tag)
+        else:
+            to_remove.append(child)
+    for child in to_remove:
+        tree.getroot().remove(child)
+    return len(to_remove) > 0
+
+
 def fix_season_nfo(fpath: Path, sno: int, sname: str):
     try:
         tree = ET.parse(str(fpath.absolute()))
@@ -100,80 +130,23 @@ def fix_season_nfo(fpath: Path, sno: int, sname: str):
         print(fpath, e)
         return
     root = tree.getroot()
-    to_remove = []
-    for child in root:
-        if child.tag in [
-            "originaltitle",
-            "id",
-            "ratings",
-            "userrating",
-            "playcount",
-            "runtime",
-            "mpaa",
-            "watched",
-            "trailer",
-            "dateadded",
-            "epbookmark",
-            "code",
-            "fileinfo",
-            "source",
-            "original_filename",
-            "user_note",
-            "displayseason",
-            "displayepisode",
-        ]:
-            to_remove.append(child)
-            continue
-        if child.text is None:
-            to_remove.append(child)
-            continue
-    for child in to_remove:
-        root.remove(child)
-    edited = len(to_remove) > 0
+    edited = clean_tree(tree)
     if root.tag == "season":
         edited = ensure_tag_value(root, "title", f"{sno}. {sname}") or edited
         edited = ensure_tag_value(root, "seasonnumber", str(sno)) or edited
     if edited:
+        ET.indent(tree)
         tree.write(str(fpath.absolute()), xml_declaration=True, encoding="UTF-8")
 
 
-def fix_nfo_data(nfo_data: Episode):
+def fix_episode_nfo(nfo_data: Episode):
     try:
         tree = ET.parse(str(nfo_data.filepath.absolute()))
     except Exception as e:
         print(nfo_data)
         return
     root = tree.getroot()
-    to_remove = []
-    for child in root:
-        if child.tag in [
-            "originaltitle",
-            "id",
-            "ratings",
-            "userrating",
-            "playcount",
-            "runtime",
-            "mpaa",
-            "watched",
-            "trailer",
-            "dateadded",
-            "epbookmark",
-            "code",
-            "fileinfo",
-            "source",
-            "original_filename",
-            "user_note",
-            "displayseason",
-            "displayepisode",
-        ]:
-            to_remove.append(child)
-            continue
-        if child.text is None:
-            to_remove.append(child)
-            continue
-    for child in to_remove:
-        root.remove(child)
-    edited = len(to_remove) > 0
+    edited = clean_tree(tree)
     if root.tag == "episodedetails":
         edited = (
             ensure_tag_value(
@@ -186,6 +159,7 @@ def fix_nfo_data(nfo_data: Episode):
         edited = ensure_tag_value(root, "season", str(nfo_data.season)) or edited
         edited = ensure_tag_value(root, "episode", str(nfo_data.number)) or edited
     if edited:
+        ET.indent(tree)
         tree.write(
             str(nfo_data.filepath.absolute()), xml_declaration=True, encoding="UTF-8"
         )
@@ -241,7 +215,7 @@ def main():
             nfo_data_lookup[(nfo_data.season, nfo_data.number, nfo_data.extended)] = (
                 nfo_data
             )
-            fix_nfo_data(nfo_data)
+            fix_episode_nfo(nfo_data)
 
     # create a pending rename file list
     pending: list[Episode] = []
@@ -300,14 +274,14 @@ def main():
 
     # rename all files
     copy_if_different(
-        SCRIPT_DIR.parent / SHOW_NAME / "tvshow.nfo", show_dir / "tvshow.nfo"
+        SCRIPT_DIR.parent / SHOW_NAME / "tvshow.nfo", show_dir / "tvshow.nfo", dry_run
     )
     for src, dst, sno, sname in pending_snfo:
         fix_season_nfo(src, sno, sname)
-        copy_if_different(src, dst)
+        copy_if_different(src, dst, dry_run)
 
     for poster in (SCRIPT_DIR.parent / SHOW_NAME).glob("*.png"):
-        copy_if_different(poster, show_dir / poster.name)
+        copy_if_different(poster, show_dir / poster.name, dry_run)
 
     for episode in pending:
         nfo_data = nfo_data_lookup.get(
@@ -327,11 +301,11 @@ def main():
             continue
 
 
-def copy_if_different(src, dst):
+def copy_if_different(src, dst, dry_run):
     if dst.is_file():
         if filecmp.cmp(src, dst):
             return
-    if args.get("dry_run"):
+    if dry_run:
         print(f'DRYRUN: copy "{src}" -> "{dst}"')
         return
     print(f'COPYING: "{src}" -> "{dst}"')
@@ -341,7 +315,7 @@ def copy_if_different(src, dst):
 def rename_nfo(episode, nfo_data, dry_run):
     media = episode.filepath.absolute()
     nfo_fname = media.with_suffix(".nfo")
-    copy_if_different(nfo_data.filepath, nfo_fname)
+    copy_if_different(nfo_data.filepath, nfo_fname, dry_run)
 
 
 def rename_media(episode, nfo_data, dry_run):
