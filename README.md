@@ -1,6 +1,8 @@
-# One Pace for Plex
+# One Pace for Jellyfin & Plex
 
-This guide explains how to set up One Pace for Plex or Jellyfin. It has been only tested with Jellyfin, but it should work with Plex as well.
+This guide explains how to set up One Pace for Plex or Jellyfin.
+The current version has only been tested with Jellyfin, but it should work with Plex as well.
+If you can, please test it with Plex and let me know if it works!
 
 #### Features:
 
