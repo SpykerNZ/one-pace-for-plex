@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 15:48:10 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The Underwater Prison, Impel Down</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>24</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>To rescue his brother Ace, Luffy must infiltrate the well-guarded prison Impel Down. He eludes the watchful eyes of security for a time, and then, for better or worse, a certain red-nosed criminal appears.
 
 Manga Chapter(s): 525-526
 
 Anime Episode(s): 422-423, 454</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2016-05-21</premiered>
   <aired>2016-05-21</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:59</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1654</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E422-E423.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

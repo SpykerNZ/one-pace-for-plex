@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:20:10 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The State of the War</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>31</season>
   <episode>26</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Law's reason for despising Doflamingo is revealed! Luffy heads toward Doflamingo's refuge, making his way through the guards, while down below Admiral Fujitora faces off against Sabo, who is now armed with a familiar fiery power!
 
 Manga Chapter(s): 750-751
 
 Anime Episode(s): 685-688</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2016-08-16</premiered>
   <aired>2016-08-16</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1494</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E686-E688.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

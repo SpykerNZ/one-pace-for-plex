@@ -1,56 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-16 21:54:37 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Merienda</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>33</season>
   <episode>31</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Katakuri retires to his sanctuary to enjoy a merienda—a sweet chance to replenish his haki! But he is not the only one munching away. A mochi mountain has crushed Luffy, and he has found a delectable way to escape.
 
 Manga Chapter(s): 883-884
 
 Anime Episode(s): 856-858</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2019-02-23</premiered>
   <aired>2019-02-23</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:58</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1867</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E856-E858.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

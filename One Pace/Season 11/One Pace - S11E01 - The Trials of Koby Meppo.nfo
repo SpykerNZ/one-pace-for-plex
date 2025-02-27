@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 11:37:53 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The Trials of Koby Meppo</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>11</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
-  <plot>Koby and Helmeppo are new cabin boys for the marines, but they become unwillingly involved in an escape attempt by Morgan. Their bravery will either earn them the respect of their superiors—as well as Vice Admiral Garp—or it will spell their doom.&#13;
-&#13;
-Manga Chapter(s): 83-119 cover stories&#13;
-&#13;
+  <plot>Koby and Helmeppo are new cabin boys for the marines, but they become unwillingly involved in an escape attempt by Morgan. Their bravery will either earn them the respect of their superiors—as well as Vice Admiral Garp—or it will spell their doom.
+
+Manga Chapter(s): 83-119 cover stories
+
 Anime Episode(s): 68-69</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-06-04</premiered>
   <aired>2023-06-04</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-25 10:11:57</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>910</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S11E19 - The Trials of Koby Meppo.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

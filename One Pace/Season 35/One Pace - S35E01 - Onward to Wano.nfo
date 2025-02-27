@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-16 22:28:49 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Onward to Wano</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>35</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Luffy and the others see familiar faces in a newspaper article about the Reverie right as they approach Wano. However, this dangerous and foreboding land is as inaccessible as it is mysterious, with the sea itself acting as a barrier!
 
 Manga Chapter(s): 909-910
 
 Anime Episode(s): 890-891</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2019-07-07</premiered>
   <aired>2019-07-07</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:58</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1420</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E890-E891.1080p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

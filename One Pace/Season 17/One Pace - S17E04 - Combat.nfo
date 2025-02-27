@@ -1,58 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:02:42 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Combat</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>17</season>
   <episode>4</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The two captains face off in a final game: a battle of brawn aboard Foxy's ship in round #3, Combat! Luffy, sporting a killer afro and an attitude to match, steps into the boxing ring to put the hurt on Foxy.
 
 Manga Chapter(s): 313-316
 
 Anime Episode(s): 212, 215, 217-218</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2017-05-16</premiered>
   <aired>2017-05-16</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:00:38</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>2178</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E215-E218.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

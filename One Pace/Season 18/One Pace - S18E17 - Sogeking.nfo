@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2024-02-03 02:46:33 - tinyMediaManager 4.3.14-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Sogeking</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>18</season>
   <episode>17</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Rocketman blasts out of Water Seven and connects with the sea tracks, and old foes become allies for the coming struggle. Aqua Laguna swells, and it's up to Luffy and Zoro to combine their might and create safe passage for all aboard.
 
 Manga Chapter(s): 366-367
 
 Anime Episode(s): 256-257</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-02-17</premiered>
   <aired>2024-02-17</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2024-02-17 17:12:30</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1509</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][366-367] Water Seven 17 [1080p][AB231A9E].mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

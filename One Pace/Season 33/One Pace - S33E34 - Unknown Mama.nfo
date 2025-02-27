@@ -1,56 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-16 22:24:36 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Unknown Mama</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>33</season>
   <episode>34</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Wielding Napoleon and backed by Zeus and Prometheus, Big Mom wreaks havoc on the Sunny. As the Straw Hats try to kick out the emperor, their ship catches fire! But then, Jinbe steps up to the plate to take a swing.
 
 Manga Chapter(s): 889-891
 
 Anime Episode(s): 862-865</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2019-03-01</premiered>
   <aired>2019-03-01</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>2266</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E863-E865.720p.mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

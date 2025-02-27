@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 11:51:44 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>People's Dreams</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>15</season>
   <episode>3</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>After a one-sided brawl with Bellamy, the Straw Hats meet a black-haired pirate outside the bar who reaffirms their dreams and insists the sky island is real. As they depart for the other side of Jaya, another salvager of the Saruyama Alliance appears.
 
 Manga Chapter(s): 225-226
 
 Anime Episode(s): 147</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-03-11</premiered>
   <aired>2023-03-11</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 11:50:27</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1205</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][225-226] Jaya 03 [1080p][B4950266].mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>

@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-25 10:41:30 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Unbreakable</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>13</season>
   <episode>6</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Wapol and his comrades reach the mountaintop castle to wrest control of it back from Dr. Kureha and Chopper. Luffy, Sanji, and Chopper go head-to-head against his Munch-Munch powers, vowing to keep Wapol and his men from bringing down Hiriluk's flag.
 
 Manga Chapter(s): 140-141, 145-148
 
 Anime Episode(s): 83, 86-88</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-05-07</premiered>
   <aired>2023-05-07</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-25 10:39:19</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1533</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][145-148] Drum Island 06 [1080p][A5145C90].mkv</original_filename>
-  <user_note/>
-</episodedetails>
+  </episodedetails>
