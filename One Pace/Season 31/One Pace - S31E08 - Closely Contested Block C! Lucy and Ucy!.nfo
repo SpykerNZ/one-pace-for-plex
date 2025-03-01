@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:12:28 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Closely Contested Block C! Lucy and Ucy!</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>31</season>
   <episode>8</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Sunny is mysteriously deformed by Giolla’s strange powers! Meanwhile, the battle for Block C is under way, but Luffy suffers a staggering setback. He eventually knocks down the giant Hajrudin, but Chinjao has his sights set on Garp’s grandson!
 
 Manga Chapter(s): 714-715
 
 Anime Episode(s): 643-645</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2014-06-01</premiered>
   <aired>2014-06-01</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1257</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E644-E645.720p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

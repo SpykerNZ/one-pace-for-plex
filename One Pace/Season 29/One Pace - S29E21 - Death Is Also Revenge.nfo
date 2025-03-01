@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 11:58:00 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Death Is Also Revenge</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>29</season>
   <episode>21</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Luffy has a fist of fire with Hody’s name on it, and the rest of the Straw Hats push forward with all their might. Hody takes even more energy steroids, and a gravely injured Luffy struggles to overcome the fishman's unbelievable stamina.
 
 Manga Chapter(s): 643-646
 
 Anime Episode(s): 562-567</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2013-05-07</premiered>
   <aired>2013-05-07</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1748</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E565-E566.720p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-24 09:06:07 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Bell-mère</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>6</season>
   <episode>4</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Nojiko goes into detail about Nami's childhood and their adoptive mother Bell-mère, a former marine. Despite being poor and unrelated by blood, they had a happy life on their tangerine orchard.
 
 Manga Chapter(s): 77-78
 
 Anime Episode(s): 34-36</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2020-04-27</premiered>
   <aired>2020-04-27</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-23 21:34:50</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1592</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S06E04 - Bell-mère.mkv</original_filename>
-  <user_note/>
 </episodedetails>

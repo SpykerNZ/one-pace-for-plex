@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 16:17:42 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Usoland the Liar</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>31</season>
   <episode>21</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>With the Tontattas beaten, Robin turned into a toy, and Luffy, Franky, and the others busy elsewhere, Usopp is the last hope for Operation SOP! Among the cries of the Tontattas, Usopp has a difficult decision to make.
 
 Manga Chapter(s): 740-741
 
 Anime Episode(s): 672-675</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2015-03-02</premiered>
   <aired>2015-03-02</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:01</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1614</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E673-E675.720p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

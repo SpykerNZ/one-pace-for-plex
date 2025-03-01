@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 11:53:37 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Why the Log Pose Is Spherical</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>15</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>When a galleon-size ship falls from the sky and Nami's log pose begins to point straight up, the Straw Hats sense a new adventure on the horizon. Right after a mysterious map is pulled from the wreckage, a group of salvagers come to claim the fallen ship.
 
 Manga Chapter(s): 218-220
 
 Anime Episode(s): 143-144</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-01-28</premiered>
   <aired>2023-01-28</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 11:50:27</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1263</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S15E01 - The Hundred Million Man.mkv</original_filename>
-  <user_note/>
 </episodedetails>

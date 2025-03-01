@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-24 09:06:01 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Sea Charts and Fishmen</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>6</season>
   <episode>3</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Luffy’s group has reached the island but are met with a shocking revelation. Unmoved by Nami’s apparent actions and her insistence that he leaves, Luffy stubbornly sticks around.
 
 Manga Chapter(s): 74-76
 
 Anime Episode(s): 33-34</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2020-04-20</premiered>
   <aired>2020-04-20</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-23 21:34:50</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1445</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S06E03 - Sea Charts and Fishmen.mkv</original_filename>
-  <user_note/>
 </episodedetails>

@@ -1,61 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-13 11:10:02 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Will of the Winds</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>27</season>
   <episode>5</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Luffy and Ace buried their sorrow and grew stronger day by day as they trained to be pirates. Time marched on, and they eventually bade farewell to their childhood home and took to the sea, hoping to achieve the dream that Sabo could not.
 
 Manga Chapter(s): 589-590
 
 Anime Episode(s): 503-505</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2020-07-26</premiered>
   <aired>2020-07-26</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>2733</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E504-E505.1080p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

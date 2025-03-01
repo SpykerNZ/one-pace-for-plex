@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-25 10:40:55 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
-  <title>Enter: Tony Tony Chopper</title>
-  <originaltitle/>
+  <title>Enter Tony Tony Chopper</title>
   <showtitle>One Pace</showtitle>
   <season>13</season>
   <episode>4</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Enter Chopper: a talking, transforming blue-nosed reindeer who was trained by Dr. Kureha in medicine. The Straw Hats immediately see the positives and want him on their crew, but Chopper must first deal with the monstrous pain in his heart.
 
 Manga Chapter(s): 139-140
 
 Anime Episode(s): 84</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2022-09-26</premiered>
   <aired>2022-09-26</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-25 10:39:19</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1215</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][139-140] Drum Island 04 [1080p][902076E8].mkv</original_filename>
-  <user_note/>
 </episodedetails>
