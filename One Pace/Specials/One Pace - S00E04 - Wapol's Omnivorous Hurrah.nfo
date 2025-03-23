@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-17 14:50:34 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Wapol's Omnivorous Hurrah</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>0</season>
   <episode>4</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
-  <plot>Description unavailable.&#13;
-&#13;
-Manga Chapter(s): 236-262 Covers&#13;
-&#13;
+  <plot>Description unavailable.
+
+Manga Chapter(s): 236-262 Covers
+
 Anime Episode(s): 778</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2017-02-26</premiered>
   <aired>2017-02-26</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-17 12:04:02</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>125</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S00E04 - Wapol's Omnivorous Hurrah.mkv</original_filename>
-  <user_note/>
 </episodedetails>

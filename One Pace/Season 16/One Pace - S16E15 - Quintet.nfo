@@ -1,60 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2024-08-13 16:44:50 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Quintet</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>16</season>
   <episode>15</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0</userrating>
   <plot>Chapter(s): 273-276
 
 Episode(s): 179-181</plot>
-  <runtime>36</runtime>
-  <mpaa/>
   <premiered>2024-07-19 16:44:47</premiered>
   <aired>2024-07-19 16:44:47</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <dateadded>2024-07-19 16:44:47</dateadded>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>2171</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <original_filename>[One Pace][273-276] Skypiea 15 [1080p][9863ADF4].mkv</original_filename>
 </episodedetails>

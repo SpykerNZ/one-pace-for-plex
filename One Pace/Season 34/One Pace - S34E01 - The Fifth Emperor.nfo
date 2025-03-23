@@ -1,59 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-16 22:27:27 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The Fifth Emperor</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>34</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Luffy’s reputation grows as all eyes look toward the Straw Hats’ next move. Meanwhile, the royals of the world make their way to the Reverie, but their absence welcomes a raid by a vicious band of pirates on the Kingdom of Lulucia.
 
 Manga Chapter(s): 903-904
 
 Anime Episode(s): 878-880</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2021-01-04</premiered>
   <aired>2021-01-04</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:56</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>2010</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E878-E880.1080p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:36:13 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Already Negative! Usopp's Courageous Stand!</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>21</season>
   <episode>10</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Oars' entry into the fight suddenly changes everything! Then, when Perona attacks, only one of the pirates seems to be immune to her negative powers. Due to his glass-half-empty personality, Usopp might have what it takes to defeat the Ghost Princess.
 
 Manga Chapter(s): 461-462
 
 Anime Episode(s): 356-357</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2013-10-18</premiered>
   <aired>2013-10-18</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:32:06</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1357</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E356-E357.720p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

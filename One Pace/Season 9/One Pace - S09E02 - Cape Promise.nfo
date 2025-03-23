@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2024-01-13 21:25:44 - tinyMediaManager 4.3.14-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Cape Promise</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>9</season>
   <episode>2</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>After learning of Laboon the whale's plight, Luffy comes up with a solution befitting his style. As thanks, Crocus reveals that navigating the Grand Line will not be as simple as following a compass or relying on currents and wind.
 
 Manga Chapter(s): 103-105
 
 Anime Episode(s): 62-63</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-01-05</premiered>
   <aired>2024-01-05</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-23 21:34:50</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1988</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S09E02 - Cape Promise.mkv</original_filename>
-  <user_note/>
 </episodedetails>

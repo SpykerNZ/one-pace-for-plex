@@ -1,58 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:03:27 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Navy HQ Admiral Aokiji</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>17</season>
   <episode>6</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Only three officers in all the Navy hold the position of admiral, literal paramount powers of the World Government. The icy Aokiji, one such admiral, catches up with the Straw Hats, but Luffy is not the one he is after.
 
 Manga Chapter(s): 319-321
 
 Anime Episode(s): 227-228</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2016-06-05</premiered>
   <aired>2016-06-05</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:00:38</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>1834</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E227-E228.720p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

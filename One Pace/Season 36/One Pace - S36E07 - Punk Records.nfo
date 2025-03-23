@@ -1,51 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2024-05-03 22:17:07 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Punk Records</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>36</season>
   <episode>7</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>After Vegapunk shares his dream with Luffy's group, he asks the Straw Hat captain for a big favor. Meanwhile, CP0 ignores their lack of invitation to Egghead and get around the island defenses to make landfall.
 
 Manga Chapter(s): 1067-1068
 
 Anime Episode(s): 1097-1099</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-05-03</premiered>
   <aired>2024-05-03</aired>
-  <watched>false</watched>
-  <dateadded>2024-05-03 22:13:18</dateadded>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1949</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][1067-1068] Egghead 07 [1080p][713FF32B].mkv</original_filename>
-  </episodedetails>
+</episodedetails>

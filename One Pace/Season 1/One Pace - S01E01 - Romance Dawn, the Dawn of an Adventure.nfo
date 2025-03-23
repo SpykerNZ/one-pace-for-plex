@@ -1,73 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-08-24 09:01:24 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Romance Dawn, the Dawn of an Adventure</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>1</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Influenced by the straw-hat-wearing pirate Red-Haired Shanks, an enthusiastic young boy named Monkey D. Luffy dreams of one day becoming king of the pirates.
 
 Manga Chapter(s): 1
 
 Anime Episode(s): Episode of East Blue, 312 (Intro)</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2020-12-02</premiered>
   <aired>2020-12-02</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-08-23 18:17:40</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1180</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-      <subtitle>
-        <language>ara</language>
-      </subtitle>
-      <subtitle>
-        <language>deu</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S01E01 - Romance Dawn, the Dawn of an Adventure.mkv</original_filename>
-  <user_note/>
 </episodedetails>

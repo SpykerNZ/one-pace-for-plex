@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:03:47 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Heaven's Gate</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>16</season>
   <episode>1</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Straw Hats, having used the Knock-Up Stream to fly into the sky, arrive on a white ocean above the clouds. While they marvel at the otherworldly sights, they are attacked by a powerful masked figure, and a mysterious flying knight comes to their aid.
 
 Manga Chapter(s): 237-238
 
 Anime Episode(s): 153</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-06-12</premiered>
   <aired>2023-06-12</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 11:45:02</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1177</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S16E153 - Heaven's Gate.mkv</original_filename>
-  <user_note/>
 </episodedetails>

@@ -1,73 +1,8 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2024-03-04 14:14:52 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Luffy is on the Move! A Turning Point of a New Era!</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>35</season>
   <episode>1063</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Usopp finds Kin’emon’s upper body and the heavily wounded Kiku. However, they are surrounded by the Gifters and can’t find a way out. Seeing the samurai giving up hope, Usopp remembers his determination.</plot>
-  <runtime>0</runtime>
-  <mpaa/>
-  <premiered/>
-  <aired/>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2024-03-04 14:12:37</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>h264</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1431</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>por</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-      <subtitle>
-        <language>ara</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>deu</language>
-      </subtitle>
-      <subtitle>
-        <language>ita</language>
-      </subtitle>
-      <subtitle>
-        <language>rus</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - E1063.mkv</original_filename>
-  <user_note/>
 </episodedetails>

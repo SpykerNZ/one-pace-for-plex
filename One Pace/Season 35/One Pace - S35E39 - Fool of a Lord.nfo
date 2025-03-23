@@ -1,63 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2024-04-06 11:54:58 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Fool of a Lord</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>35</season>
   <episode>39</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Roger Pirates have completed their grand adventure, and the King of the Pirates is born! Gol D. Roger disbands his merry crew and Oden returns triumphant to his homeland of Wano. However, a sinister surprise awaits him upon his rightful throne.
 
 Manga Chapter(s): 968-969
 
 Anime Episode(s): 969-971</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-04-05</premiered>
   <aired>2023-04-05</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <dateadded>2024-04-06 11:54:55</dateadded>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>2281</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][968-969] Wano 39 [1080p][56CFB8B0].mkv</original_filename>
-  </episodedetails>
+</episodedetails>
