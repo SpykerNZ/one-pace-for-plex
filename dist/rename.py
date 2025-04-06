@@ -305,8 +305,11 @@ def main():
 
 def copy_if_different(src, dst, dry_run):
     if dst.is_file():
-        if filecmp.cmp(src, dst):
-            return
+        try:
+            if filecmp.cmp(src, dst):
+                return
+        except Exception as e:
+            print(f'Issues comparing {src} with {dst}: {e}')
     if dry_run:
         print(f'DRYRUN: copy "{src}" -> "{dst}"')
         return
