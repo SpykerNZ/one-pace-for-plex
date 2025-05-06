@@ -48,7 +48,7 @@ def get_episode_from_id(show_name: str, id: str) -> Optional[Episode]:
 
 
 def get_episode_from_nfo(filepath: Path) -> Optional[Episode]:
-    nfo_pattern = r"^(.*?) - S(\d+)E(\d+) - (.*?)(?:\s\((Extended)\))?\.nfo$"
+    nfo_pattern = r"^(.*?) - S(\d+)E(\d+) - (.*?)(?:\s\((\w[\w\s\(\)-]+)\))?\.nfo$"
     match = re.search(nfo_pattern, filepath.name)
     if match:
         return Episode(
@@ -56,7 +56,7 @@ def get_episode_from_nfo(filepath: Path) -> Optional[Episode]:
             season=int(match.group(2)),
             number=int(match.group(3)),
             title=match.group(4),
-            extended=match.group(5) is not None,
+            extended=match.group(5) or False,
             filepath=filepath,
         )
 
@@ -64,7 +64,7 @@ def get_episode_from_nfo(filepath: Path) -> Optional[Episode]:
 def get_episode_from_media(
     filepath: Path, seasons: dict[str, int]
 ) -> Optional[Episode]:
-    media_pattern = rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{{1,2}}(?:-\d{{1,2}})?)(?:\s(Extended))?\s\[(?:.*?)\]\[(?:.*?)\]({MKV_EXT}|{MP4_EXT})"
+    media_pattern = rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{{1,2}}(?:-\d{{1,2}})?)(?:\s(\w[\w\s\(\)-]+))?\s\[(?:.*?)\]\[(?:.*?)\]({MKV_EXT}|{MP4_EXT})"
     match = re.search(media_pattern, filepath.name)
     if match:
         season_title = match.group(2)
@@ -74,7 +74,7 @@ def get_episode_from_media(
             show=SHOW_NAME,
             season=season_number,
             number=episode_number,
-            extended=match.group(4) is not None,
+            extended=match.group(4) or False,
             filepath=filepath,
         )
 
@@ -154,7 +154,7 @@ def fix_episode_nfo(nfo_data: Episode):
             ensure_tag_value(
                 root,
                 "title",
-                nfo_data.title + (" (Extended)" if nfo_data.extended else ""),
+                nfo_data.title + (" (" + nfo_data.extended + ")" if nfo_data.extended else ""),
             )
             or edited
         )
@@ -218,6 +218,15 @@ def main():
                 nfo_data
             )
             fix_episode_nfo(nfo_data)
+            if nfo_data.extended:
+                nfo_data_lookup[(nfo_data.season, nfo_data.number, True)] = Episode(
+                            show=nfo_data.show,
+                            season=nfo_data.season,
+                            number=nfo_data.number,
+                            title=nfo_data.title + " (" + nfo_data.extended + ")",
+                            extended=True,
+                            filepath=filepath,
+                        )
 
     # create a pending rename file list
     pending: list[Episode] = []
@@ -289,6 +298,10 @@ def main():
         nfo_data = nfo_data_lookup.get(
             (episode.season, episode.number, episode.extended)
         )
+        if nfo_data is None:
+            nfo_data = nfo_data_lookup.get(
+                (episode.season, episode.number, True)
+            )
         if nfo_data is None:
             print(
                 f"Warning! Episode {episode.number} in season {episode.season} found, but metadata is missing"
