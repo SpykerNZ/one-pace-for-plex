@@ -83,6 +83,9 @@ def debugger_is_active() -> bool:
     return hasattr(sys, "gettrace") and sys.gettrace() is not None
 
 
+### NFO PATCH METHODS ###
+
+
 def ensure_tag_value(root, tag, value):
     if root.find(tag) is None:
         el = ET.Element(tag)
@@ -95,10 +98,16 @@ def ensure_tag_value(root, tag, value):
     return False
 
 
-def clean_tree(tree):
+def clean_tree(fpath: Path):
+    try:
+        tree = ET.parse(str(fpath.absolute()))
+    except Exception as e:
+        print(fpath, e)
+        return
+    root = tree.getroot()
     to_remove = []
     found = set()
-    for child in tree.getroot():
+    for child in root:
         if child.tag not in [
             "title",
             "showtitle",
@@ -121,34 +130,26 @@ def clean_tree(tree):
         else:
             to_remove.append(child)
     for child in to_remove:
-        tree.getroot().remove(child)
-    return len(to_remove) > 0
+        root.remove(child)
+    return root, tree, len(to_remove) > 0
 
 
-def fix_season_nfo(fpath: Path, sno: int, sname: str):
-    try:
-        tree = ET.parse(str(fpath.absolute()))
-    except Exception as e:
-        print(fpath, e)
-        return
-    root = tree.getroot()
-    edited = clean_tree(tree)
-    if root.tag == "season":
-        edited = ensure_tag_value(root, "title", f"{sno}. {sname}") or edited
-        edited = ensure_tag_value(root, "seasonnumber", str(sno)) or edited
+def save_tree(tree, edited: bool, fpath: Path):
     if edited:
         ET.indent(tree)
         tree.write(str(fpath.absolute()), xml_declaration=True, encoding="UTF-8")
 
 
+def fix_season_nfo(fpath: Path, sno: int, sname: str):
+    root, tree, edited = clean_tree(fpath)
+    if root.tag == "season":
+        edited = ensure_tag_value(root, "title", f"{sno}. {sname}") or edited
+        edited = ensure_tag_value(root, "seasonnumber", str(sno)) or edited
+    save_tree(tree, edited, fpath)
+
+
 def fix_episode_nfo(nfo_data: Episode):
-    try:
-        tree = ET.parse(str(nfo_data.filepath.absolute()))
-    except Exception as e:
-        print(nfo_data)
-        return
-    root = tree.getroot()
-    edited = clean_tree(tree)
+    root, tree, edited = clean_tree(nfo_data.filepath)
     if root.tag == "episodedetails":
         edited = (
             ensure_tag_value(
@@ -160,11 +161,10 @@ def fix_episode_nfo(nfo_data: Episode):
         )
         edited = ensure_tag_value(root, "season", str(nfo_data.season)) or edited
         edited = ensure_tag_value(root, "episode", str(nfo_data.number)) or edited
-    if edited:
-        ET.indent(tree)
-        tree.write(
-            str(nfo_data.filepath.absolute()), xml_declaration=True, encoding="UTF-8"
-        )
+    save_tree(tree, edited, nfo_data.filepath)
+
+
+### NFO PATCH METHODS /END ###
 
 
 def main():
@@ -189,6 +189,11 @@ def main():
         action="store_true",
         help="If this flag is passed, the output will only show how the files would be renamed",
     )
+    parser.add_argument(
+        "--patch-nfo",
+        action="store_true",
+        help="If this flag is passed, the source .nfo files will be patched if the information is different",
+    )
     args = vars(parser.parse_args())
 
     if (arg_dir := args.get("directory")) is None:
@@ -197,6 +202,7 @@ def main():
         show_dir = Path(arg_dir)
 
     dry_run = args.get("dry_run")
+    patch_nfo = args.get("patch_nfo")
 
     if debugger_is_active():
         dry_run = True
@@ -217,7 +223,8 @@ def main():
             nfo_data_lookup[(nfo_data.season, nfo_data.number, nfo_data.extended)] = (
                 nfo_data
             )
-            fix_episode_nfo(nfo_data)
+            if patch_nfo:
+                fix_episode_nfo(nfo_data)
             if nfo_data.extended:
                 nfo_data_lookup[(nfo_data.season, nfo_data.number, True)] = Episode(
                             show=nfo_data.show,
@@ -288,7 +295,8 @@ def main():
         SCRIPT_DIR.parent / SHOW_NAME / "tvshow.nfo", show_dir / "tvshow.nfo", dry_run
     )
     for src, dst, sno, sname in pending_snfo:
-        fix_season_nfo(src, sno, sname)
+        if patch_nfo:
+            fix_season_nfo(src, sno, sname)
         copy_if_different(src, dst, dry_run)
 
     for poster in (SCRIPT_DIR.parent / SHOW_NAME).glob("*.png"):
@@ -343,7 +351,7 @@ def rename_media(episode, nfo_data, dry_run):
         return
 
     if dry_run:
-        print(f'DRYRUN: "{episode.filepath.name}" -> "{new_episode_name}"')
+        print(f'DRYRUN: rename "{episode.filepath.name}" -> "{new_episode_name}"')
         return
 
     print(f'RENAMING: "{episode.filepath.name}" -> "{new_episode_name}"')
