@@ -1,14 +1,18 @@
+#!/usr/bin/env python3
+
 import argparse
 import dataclasses
 import re
 import json
-import os
+import shutil
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Optional
+import filecmp
 
-args = None
-
+args: Optional[dict] = None
+SCRIPT_DIR = Path(__file__).parent
 SEASONS_JSON = "seasons.json"
 EXCEPTIONS_JSON = "exceptions.json"
 SHOW_NAME = "One Pace"
@@ -22,7 +26,9 @@ class Episode:
     show: str
     season: int
     number: int
+    extended: bool = False
     title: Optional[str] = None
+    filepath: Optional[Path] = None
 
     @property
     def episode_id(self) -> str:
@@ -41,23 +47,25 @@ def get_episode_from_id(show_name: str, id: str) -> Optional[Episode]:
         )
 
 
-def get_episode_from_nfo(filename: str) -> Optional[Episode]:
-    nfo_pattern = r"^(.*?) - S(\d+)E(\d+) - (.*?)\.nfo$"
-    match = re.search(nfo_pattern, filename)
+def get_episode_from_nfo(filepath: Path) -> Optional[Episode]:
+    nfo_pattern = r"^(.*?) - S(\d+)E(\d+) - (.*?)(?:\s\((\w[\w\s\(\)-]+)\))?\.nfo$"
+    match = re.search(nfo_pattern, filepath.name)
     if match:
         return Episode(
             show=match.group(1),
             season=int(match.group(2)),
             number=int(match.group(3)),
             title=match.group(4),
+            extended=match.group(5) or False,
+            filepath=filepath,
         )
 
 
-def get_episode_from_media(filename: str, seasons: dict[str, int]) -> Optional[Episode]:
-    media_pattern = (
-        rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{{1,2}}(?:-\d{{1,2}})?)\s\[(.*?)\]\[(.*?)\]({MKV_EXT}|{MP4_EXT})"
-    )
-    match = re.search(media_pattern, filename)
+def get_episode_from_media(
+    filepath: Path, seasons: dict[str, int]
+) -> Optional[Episode]:
+    media_pattern = rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{{1,2}}(?:-\d{{1,2}})?)(?:\s(\w[\w\s\(\)-]+))?\s\[(?:.*?)\]\[(?:.*?)\]({MKV_EXT}|{MP4_EXT})"
+    match = re.search(media_pattern, filepath.name)
     if match:
         season_title = match.group(2)
         episode_number = int(match.group(3))
@@ -66,6 +74,8 @@ def get_episode_from_media(filename: str, seasons: dict[str, int]) -> Optional[E
             show=SHOW_NAME,
             season=season_number,
             number=episode_number,
+            extended=match.group(4) or False,
+            filepath=filepath,
         )
 
 
@@ -73,7 +83,92 @@ def debugger_is_active() -> bool:
     return hasattr(sys, "gettrace") and sys.gettrace() is not None
 
 
+### NFO PATCH METHODS ###
+
+
+def ensure_tag_value(root, tag, value):
+    if root.find(tag) is None:
+        el = ET.Element(tag)
+        el.text = value
+        root.append(el)
+        return True
+    if root.find(tag).text != value:
+        root.find(tag).text = value
+        return True
+    return False
+
+
+def clean_tree(fpath: Path):
+    try:
+        tree = ET.parse(str(fpath.absolute()))
+    except Exception as e:
+        print(fpath, e)
+        return
+    root = tree.getroot()
+    to_remove = []
+    found = set()
+    for child in root:
+        if child.tag not in [
+            "title",
+            "showtitle",
+            "season",
+            "episode",
+            "plot",
+            "premiered",
+            "aired",
+            "seasonnumber",
+            "namedseason",
+            "showtitle",
+        ]:
+            to_remove.append(child)
+            continue
+        if child.text is None:
+            to_remove.append(child)
+            continue
+        if child.tag not in found:
+            found.add(child.tag)
+        else:
+            to_remove.append(child)
+    for child in to_remove:
+        root.remove(child)
+    return root, tree, len(to_remove) > 0
+
+
+def save_tree(tree, edited: bool, fpath: Path):
+    if edited:
+        ET.indent(tree)
+        tree.write(str(fpath.absolute()), xml_declaration=True, encoding="UTF-8")
+
+
+def fix_season_nfo(fpath: Path, sno: int, sname: str):
+    root, tree, edited = clean_tree(fpath)
+    if root.tag == "season":
+        edited = ensure_tag_value(root, "title", f"{sno}. {sname}") or edited
+        edited = ensure_tag_value(root, "seasonnumber", str(sno)) or edited
+    save_tree(tree, edited, fpath)
+
+
+def fix_episode_nfo(nfo_data: Episode):
+    root, tree, edited = clean_tree(nfo_data.filepath)
+    if root.tag == "episodedetails":
+        edited = (
+            ensure_tag_value(
+                root,
+                "title",
+                nfo_data.title + (" (" + nfo_data.extended + ")" if nfo_data.extended else ""),
+            )
+            or edited
+        )
+        edited = ensure_tag_value(root, "season", str(nfo_data.season)) or edited
+        edited = ensure_tag_value(root, "episode", str(nfo_data.number)) or edited
+    save_tree(tree, edited, nfo_data.filepath)
+
+
+### NFO PATCH METHODS /END ###
+
+
 def main():
+    global args
     parser = argparse.ArgumentParser(
         description="Rename One Pace files to matching .nfo file format"
     )
@@ -85,9 +180,19 @@ def main():
         default=None,
     )
     parser.add_argument(
+        "--keep-original",
+        action="store_true",
+        help="If this flag is passed, the renaming will happen to the .nfo files",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="If this flag is passed, the output will only show how the files would be renamed",
+    )
+    parser.add_argument(
+        "--patch-nfo",
+        action="store_true",
+        help="If this flag is passed, the source .nfo files will be patched if the information is different",
     )
     args = vars(parser.parse_args())
 
@@ -97,47 +202,77 @@ def main():
         show_dir = Path(arg_dir)
 
     dry_run = args.get("dry_run")
+    patch_nfo = args.get("patch_nfo")
 
     if debugger_is_active():
         dry_run = True
         show_dir = Path.cwd() / (SHOW_NAME + " - Debug")
 
-    with open(SEASONS_JSON, "r") as json_file:
+    with open(SCRIPT_DIR / SEASONS_JSON, "r") as json_file:
         seasons: dict[str, int] = json.load(json_file)
 
-    with open(EXCEPTIONS_JSON, "r") as json_file:
-        exceptions: dict[dict[str, int]] = json.load(json_file)
+    with open(SCRIPT_DIR / EXCEPTIONS_JSON, "r") as json_file:
+        exceptions: dict[str, dict[str, int]] = json.load(json_file)
 
     # create a lookup table of nfo data
-    nfo_data_lookup: dict[tuple(int, int), Episode] = {}
-    nfo_files = show_dir.rglob(f"*{NFO_EXT}")
+    nfo_data_lookup: dict[tuple(int, int, bool), Episode] = {}
+    nfo_files = (SCRIPT_DIR.parent / SHOW_NAME).rglob(f"*{NFO_EXT}")
     for filepath in nfo_files:
-        nfo_data = get_episode_from_nfo(filepath.name)
+        nfo_data = get_episode_from_nfo(filepath)
         if nfo_data is not None:
-            nfo_data_lookup[(nfo_data.season, nfo_data.number)] = nfo_data
+            nfo_data_lookup[(nfo_data.season, nfo_data.number, nfo_data.extended)] = (
+                nfo_data
+            )
+            if patch_nfo:
+                fix_episode_nfo(nfo_data)
+            if nfo_data.extended:
+                nfo_data_lookup[(nfo_data.season, nfo_data.number, True)] = Episode(
+                            show=nfo_data.show,
+                            season=nfo_data.season,
+                            number=nfo_data.number,
+                            title=nfo_data.title + " (" + nfo_data.extended + ")",
+                            extended=True,
+                            filepath=filepath,
+                        )
 
     # create a pending rename file list
-    pending: list[tuple[str, Episode]] = []
+    pending: list[Episode] = []
+    pending_snfo: list[tuple(Path, Path)] = []
 
     # iterate over season folders
-    for season_no in seasons.values():
+    for season_title, season_no in seasons.items():
         if season_no == 0:
             season_name = "Specials"
         else:
             season_name = f"Season {season_no}"
         # Get the season folder
-        season_folder = Path(show_dir / season_name)
+        season_folder = list(show_dir.glob(f"*{season_title}*"))
+        if season_folder:
+            season_folder = season_folder[0]
+        else:
+            season_folder = show_dir / season_name
+
+        pending_snfo.append(
+            (
+                SCRIPT_DIR.parent / SHOW_NAME / season_name / "season.nfo",
+                season_folder / "season.nfo",
+                season_no,
+                season_title,
+            )
+        )
+
         # get all exceptions for this folder
         exception_mapping: dict[str, int] = exceptions.get(season_name)
         # get all media files
-        media_files = list(season_folder.rglob(f"*{MKV_EXT}")) + \
-            list(season_folder.rglob(f"*{MP4_EXT}"))
-        # iterate over mkv files
+        media_files = list(season_folder.glob(f"*{MKV_EXT}")) + list(
+            season_folder.glob(f"*{MP4_EXT}")
+        )
+        # iterate over media files
         for filepath in media_files:
-            episode = get_episode_from_media(filepath.name, seasons)
+            episode = get_episode_from_media(filepath, seasons)
             if episode is not None and season_no != 0:
                 # add episode if it exists
-                pending.append((str(filepath), episode))
+                pending.append(episode)
             elif exception_mapping is not None:
                 # otherwise check if an exception
                 matches = set()
@@ -152,31 +287,75 @@ def main():
                     continue
                 elif len(matches) == 1:
                     pending.append(
-                        (
-                            str(filepath),
-                            Episode(SHOW_NAME, season_no, episode_no),
-                        )
+                        Episode(SHOW_NAME, season_no, episode_no, False, None, filepath)
                     )
 
     # rename all files
-    for filepath, episode in pending:
-        nfo_data = nfo_data_lookup.get((episode.season, episode.number))
-        if nfo_data is None:
-            continue
+    copy_if_different(
+        SCRIPT_DIR.parent / SHOW_NAME / "tvshow.nfo", show_dir / "tvshow.nfo", dry_run
+    )
+    for src, dst, sno, sname in pending_snfo:
+        if patch_nfo:
+            fix_season_nfo(src, sno, sname)
+        copy_if_different(src, dst, dry_run)
 
-        episode.title = nfo_data.title
-        new_episode_name = episode.get_file_name(
-            extension=Path(filepath).suffix
+    for poster in (SCRIPT_DIR.parent / SHOW_NAME).glob("*.png"):
+        copy_if_different(poster, show_dir / poster.name, dry_run)
+
+    for episode in pending:
+        nfo_data = nfo_data_lookup.get(
+            (episode.season, episode.number, episode.extended)
         )
-        if Path(filepath).name == new_episode_name:
+        if nfo_data is None:
+            nfo_data = nfo_data_lookup.get(
+                (episode.season, episode.number, True)
+            )
+        if nfo_data is None:
+            print(
+                f"Warning! Episode {episode.number} in season {episode.season} found, but metadata is missing"
+            )
             continue
 
-        if dry_run:
-            print(f'DRYRUN: "{Path(filepath).name}" -> "{new_episode_name}"')
+        if args.get("keep_original"):
+            rename_nfo(episode, nfo_data, dry_run)
+            continue
+        else:
+            rename_media(episode, nfo_data, dry_run)
             continue
 
-        print(f'RENAMING: "{Path(filepath).name}" -> "{new_episode_name}"')
-        os.rename(filepath, Path(filepath).parent.absolute() / new_episode_name)
+
+def copy_if_different(src, dst, dry_run):
+    if dst.is_file():
+        try:
+            if filecmp.cmp(src, dst):
+                return
+        except Exception as e:
+            print(f'Issues comparing {src} with {dst}: {e}')
+    if dry_run:
+        print(f'DRYRUN: copy "{src}" -> "{dst}"')
+        return
+    print(f'COPYING: "{src}" -> "{dst}"')
+    shutil.copy(src, dst)
+
+
+def rename_nfo(episode, nfo_data, dry_run):
+    media = episode.filepath.absolute()
+    nfo_fname = media.with_suffix(".nfo")
+    copy_if_different(nfo_data.filepath, nfo_fname, dry_run)
+
+
+def rename_media(episode, nfo_data, dry_run):
+    episode.title = nfo_data.title
+    new_episode_name = episode.get_file_name(extension=episode.filepath.suffix)
+    if episode.filepath.name == new_episode_name:
+        return
+
+    if dry_run:
+        print(f'DRYRUN: rename "{episode.filepath.name}" -> "{new_episode_name}"')
+        return
+
+    print(f'RENAMING: "{episode.filepath.name}" -> "{new_episode_name}"')
+    episode.filepath.rename(episode.filepath.parent.absolute() / new_episode_name)
 
 
 if __name__ == "__main__":
