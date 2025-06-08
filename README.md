@@ -64,7 +64,7 @@ Download all the One Pace episodes you wish to add and place them in their respe
 One Pace does not currently cover the entire series. Thus, you will need to add missing episodes to fill out your collection.
 
 Current missing episodes:
-- Season 35: 1001-1085
+- Season 35: 1004-1085
 
 See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for up-to-date information on what episodes are available. Check column Q to see which original One Piece episodes need to be added to your library.
 
