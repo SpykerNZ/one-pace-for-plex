@@ -78,6 +78,21 @@ def get_episode_from_media(
             filepath=filepath,
         )
 
+    # workaround for older releases
+    media_pattern_misc = rf"\[One Pace\] Paced One Piece - (.*?) Episode (\d{{2}}) \[(\d+p)\]\[([A-F0-9]{{8}})\]({MKV_EXT}|{MP4_EXT})"
+    match = re.search(media_pattern_misc, filepath.name)
+    if match:
+        season_title = match.group(1)
+        episode_number = int(match.group(2))
+        season_number = seasons.get(season_title)
+        return Episode(
+            show=SHOW_NAME,
+            season_number=season_number,
+            number=episode_number,
+            extended=False,
+            filepath=filepath,
+        )
+
 
 def debugger_is_active() -> bool:
     return hasattr(sys, "gettrace") and sys.gettrace() is not None
@@ -110,6 +125,8 @@ def clean_tree(fpath: Path):
     for child in root:
         if child.tag not in [
             "title",
+            "originaltitle",
+            "sorttitle",
             "showtitle",
             "season",
             "episode",
@@ -118,7 +135,6 @@ def clean_tree(fpath: Path):
             "aired",
             "seasonnumber",
             "namedseason",
-            "showtitle",
         ]:
             to_remove.append(child)
             continue
