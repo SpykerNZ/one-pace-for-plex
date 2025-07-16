@@ -1,50 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-17 12:34:21 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Gaimon 01 (April Fools 2021)</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>0</season>
   <episode>7</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Straw Hats venture to the fabled "Treasure Island" to discover riches, adventure, and... strange creatures. Oh, and everything is in Klingon for some reason.
 
 Manga Chapter(s): 42, 22
 
 Anime Episode(s): 18</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2021-04-01</premiered>
   <aired>2021-04-01</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-17 12:33:45</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>640</width>
-        <height>480</height>
-        <durationinseconds>1235</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][42,22] Gaimon [480p][EFF6059A].mkv</original_filename>
-  <user_note/>
 </episodedetails>

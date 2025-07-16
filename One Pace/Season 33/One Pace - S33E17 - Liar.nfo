@@ -1,56 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-15 12:03:55 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Liar</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>33</season>
   <episode>17</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Nami and co. finally locate Brook using the Mirro-world, but he is in the most inopportune of places! Meanwhile, Luffy is waylaid on his way back to the rendezvous, and Jinbe shares the awful truth about the wedding with the other Straw Hat pirates.
 
 Manga Chapter(s): 855-856
 
 Anime Episode(s): 823-825</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2018-06-15</premiered>
   <aired>2018-06-15</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:55:00</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1280</width>
-        <height>720</height>
-        <durationinseconds>2029</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E823-E825.720p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

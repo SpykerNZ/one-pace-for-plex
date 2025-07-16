@@ -1,53 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-17 10:18:21 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Void</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>35</season>
   <episode>13</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Perona prepares to leave Gloom Island after she finds out that her captain, Gecko Moria, is still alive. Meanwhile, Moria raids the island Hachinosu with his zombie army to retrieve his old friend from Blackbeard.
 
 Manga Chapter(s): 925-926
 
 Anime Episode(s): 917-919, 924</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2020-05-06</premiered>
   <aired>2020-05-06</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:54:58</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>2214</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E917-E919.1080p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

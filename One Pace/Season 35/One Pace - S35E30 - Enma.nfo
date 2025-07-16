@@ -1,56 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2023-09-17 12:07:14 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Enma</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>35</season>
   <episode>30</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>As the day of the raid approaches, Kin’emon discusses the plan, and at Onigashima, Kaido and Big Mom make a stunning declaration! In the meantime, Zoro is stunned by Enma’s demonic power and its ties to him.
 
 Manga Chapter(s): 954-955
 
 Anime Episode(s): 955-956</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-04-06</premiered>
   <aired>2023-04-06</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-17 12:04:10</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1638</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][954-955] Wano 30 [1080p][43A0D1DF].mkv</original_filename>
-  <user_note/>
 </episodedetails>

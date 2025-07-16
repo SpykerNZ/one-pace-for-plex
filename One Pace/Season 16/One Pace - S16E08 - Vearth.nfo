@@ -1,64 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-11-07 01:18:47 - tinyMediaManager 4.3.14-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Vearth</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>16</season>
   <episode>8</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>The Shandians’ attack on Upper Yard commences! At the Sacrificial Altar, the crew is finally reunited, and everyone recounts what has happened. Chopper looks after the injured Gan Fall, and the pirates devise a plan to steal the gold on the island.
 
 Manga Chapter(s): 252-254
 
 Anime Episode(s): 165-167</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-10-28</premiered>
   <aired>2023-10-28</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-11-07 01:16:35</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>2215</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One Pace - S16E08 - Vearth.mkv</original_filename>
-  <user_note/>
 </episodedetails>

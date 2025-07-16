@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-12 12:28:09 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Buster Call</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>19</season>
   <episode>20</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Luffy gives Franky the opening he needs to head for Robin. The cyborg runs into trouble at the start of the bridge, but all is not lost as a lone sniper appears atop the Tower of Justice. Despite these minor victories, the buster call commences.
 
 Manga Chapter(s): 419-420
 
 Anime Episode(s): 301-302</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2020-05-29</premiered>
   <aired>2020-05-29</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-09-12 12:13:05</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>1585</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>One.Piece.E301-E302.1080p.mkv</original_filename>
-  <user_note/>
 </episodedetails>

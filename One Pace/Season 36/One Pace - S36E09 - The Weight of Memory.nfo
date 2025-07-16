@@ -1,51 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2024-06-29 12:47:23 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The Weight of Memory</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>36</season>
   <episode>9</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>To avenge her father, Bonney chases Dr. Vegapunk through the lab, but a familiar symbol catches her eye. As she investigates, the satellites call in an unexpected favor to finally deal with CP0's rampage outside the lab.
 
 Manga Chapter(s): 1071-1072
 
 Anime Episode(s): 1102-1104</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-06-21</premiered>
   <aired>2024-06-21</aired>
-  <watched>false</watched>
-  <dateadded>2024-06-29 12:34:30</dateadded>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.78</aspect>
-        <width>1920</width>
-        <height>1080</height>
-        <durationinseconds>2149</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][1071-1072] Egghead 09 [1080p][ED808618].mkv</original_filename>
-  </episodedetails>
+</episodedetails>

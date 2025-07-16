@@ -1,62 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<!--created on 2024-05-25 03:30:23 - tinyMediaManager 5.0.3-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>Concerto</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>16</season>
   <episode>13</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>While Luffy remains lost in a strange, dark cavern, at the Upper Ruins, Priest Ohm confronts Zoro, Gan Fall, and Wyper with his Ordeal of Iron. As the fight wears on, Shandian warriors, Nami, and Aisa make a sudden appearance.
 
 Manga Chapter(s): 266-269
 
 Anime Episode(s): 175-176</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2024-05-24</premiered>
   <aired>2024-05-24</aired>
-  <watched>false</watched>
-  <dateadded>2024-05-25 03:30:21</dateadded>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1989</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][266-269] Skypiea 13 [1080p][460CC2CD].mkv</original_filename>
-  </episodedetails>
+</episodedetails>

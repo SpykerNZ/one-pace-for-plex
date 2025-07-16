@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--created on 2023-09-21 11:53:53 - tinyMediaManager 4.3.13-->
+<?xml version='1.0' encoding='UTF-8'?>
 <episodedetails>
   <title>The Knock-Up Stream</title>
-  <originaltitle/>
   <showtitle>One Pace</showtitle>
   <season>15</season>
   <episode>8</episode>
-  <displayseason>-1</displayseason>
-  <displayepisode>-1</displayepisode>
-  <id/>
-  <ratings/>
-  <userrating>0.0</userrating>
   <plot>Luffy returns victorious from his showdown with Bellamy, and the Going Merry has been refit by the Saruyama Alliance to handle its upcoming upward flight. The Straw Hats follow their captive south bird and steel themselves for their journey to the sky.
 
 Manga Chapter(s): 235-236
 
 Anime Episode(s): 152</plot>
-  <runtime>0</runtime>
-  <mpaa/>
   <premiered>2023-09-29</premiered>
   <aired>2023-09-29</aired>
-  <watched>false</watched>
-  <playcount>0</playcount>
-  <trailer/>
-  <dateadded>2023-07-10 04:54:27</dateadded>
-  <epbookmark/>
-  <code/>
-  <fileinfo>
-    <streamdetails>
-      <video>
-        <codec>HEVC</codec>
-        <aspect>1.33</aspect>
-        <width>1440</width>
-        <height>1080</height>
-        <durationinseconds>1033</durationinseconds>
-        <stereomode/>
-      </video>
-      <audio>
-        <codec>AAC</codec>
-        <language>jpn</language>
-        <channels>2</channels>
-      </audio>
-      <audio>
-        <codec>AAC</codec>
-        <language>eng</language>
-        <channels>2</channels>
-      </audio>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>eng</language>
-      </subtitle>
-      <subtitle>
-        <language>fra</language>
-      </subtitle>
-      <subtitle>
-        <language>spa</language>
-      </subtitle>
-    </streamdetails>
-  </fileinfo>
-  <!--tinyMediaManager meta data-->
-  <source>UNKNOWN</source>
-  <original_filename>[One Pace][235-236] Jaya 08 [1080p][FA2E5ADD]</original_filename>
-  <user_note/>
 </episodedetails>
