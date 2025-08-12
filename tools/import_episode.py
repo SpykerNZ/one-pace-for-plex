@@ -600,7 +600,7 @@ class DataSourceManager(BaseManager):
         print(f"\n⚠ Title conflict detected for {episode_key}:")
         print(f"  1. From CSV:             {csv_title}")
         print(f"  2. From media/filename:  {media_title}")
-        print(f"\nSanitized filenames:")
+        print(f"\nHow they would appear in filename:")
         print(f"  1. CSV sanitized:        {sanitized_csv}")
         print(f"  2. Media sanitized:      {sanitized_media}")
         print("\nSelect title source:")
@@ -713,8 +713,12 @@ class DataSourceManager(BaseManager):
                 
                 # Only prompt if normalized base titles actually differ
                 if csv_base_normalized != media_base_normalized and csv_title_base and media_title_base:
-                    # Let user choose between the titles
-                    chosen_title = self._handle_title_conflict(csv_title, media_title, key)
+                    # Show both options with the final suffix applied
+                    csv_with_suffix = f"{csv_title_base} ({final_suffix})" if final_suffix else csv_title_base
+                    media_with_suffix = f"{media_title_base} ({final_suffix})" if final_suffix else media_title_base
+                    
+                    # Let user choose between the titles (both showing the same suffix)
+                    chosen_title = self._handle_title_conflict(csv_with_suffix, media_with_suffix, key)
                     # Remove any existing suffix from chosen title
                     chosen_suffix = get_special_episode_suffix(chosen_title)
                     if chosen_suffix:
