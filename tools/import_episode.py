@@ -1122,8 +1122,7 @@ class MetadataProcessor:
             root,
             pretty_print=True,
             xml_declaration=True,
-            encoding='UTF-8',
-            standalone=True
+            encoding='UTF-8'
         ).decode('utf-8')
 
     @handle_file_operation("Check existing NFO")
