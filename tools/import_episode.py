@@ -1415,21 +1415,41 @@ def update_repository_nfos(managers: dict, args) -> None:
             # Generate new NFO content
             new_nfo_content = managers['meta'].generate_nfo_content(episode_data)
             
+            # Check if NFO file needs renaming based on title change
+            expected_nfo_filename = managers['file'].generate_plex_filename(
+                episode_data.season,
+                episode_data.episode,
+                episode_data.title
+            ) + '.nfo'
+            
+            needs_rename = nfo_path.name != expected_nfo_filename
+            
             # Compare with existing content
+            content_changed = False
             try:
                 existing_content = nfo_path.read_text(encoding='utf-8')
-                if new_nfo_content.strip() == existing_content.strip():
-                    # No changes needed
-                    unchanged_count += 1
-                    continue
+                if new_nfo_content.strip() != existing_content.strip():
+                    content_changed = True
             except Exception as e:
                 logger.log(f"Could not read {nfo_path.name}: {e}", "warn")
+                content_changed = True  # Assume it needs updating if we can't read it
+            
+            if not content_changed and not needs_rename:
+                # No changes needed
+                unchanged_count += 1
+                continue
             
             # Show what will change
-            logger.log(f"Update needed: {nfo_path.name}", "info")
+            if needs_rename:
+                logger.log(f"Rename needed: {nfo_path.name} -> {expected_nfo_filename}", "info")
+            if content_changed:
+                logger.log(f"Content update needed: {nfo_path.name}", "info")
             
             if not args.force and not args.dry_run:
-                response = input(f"  Update {nfo_path.name}? (y/n/a for all): ").lower()
+                if needs_rename:
+                    response = input(f"  Rename and update {nfo_path.name}? (y/n/a for all): ").lower()
+                else:
+                    response = input(f"  Update {nfo_path.name}? (y/n/a for all): ").lower()
                 if response == 'a':
                     args.force = True
                 elif response != 'y':
@@ -1437,10 +1457,37 @@ def update_repository_nfos(managers: dict, args) -> None:
                     continue
             
             if not args.dry_run:
-                nfo_path.write_text(new_nfo_content, encoding='utf-8')
-                logger.log(f"  Updated: {nfo_path.name}", "success")
+                # If renaming is needed, handle it
+                if needs_rename:
+                    new_nfo_path = nfo_path.parent / expected_nfo_filename
+                    # Check if target already exists and is different from source
+                    if new_nfo_path.exists() and new_nfo_path != nfo_path:
+                        logger.log(f"  Target NFO already exists: {expected_nfo_filename}", "warn")
+                        response = input(f"    Overwrite existing file? (y/n): ").lower()
+                        if response != 'y':
+                            skipped_count += 1
+                            continue
+                        # Don't delete yet - we'll handle it below
+                    
+                    # Write new content to new filename
+                    new_nfo_path.write_text(new_nfo_content, encoding='utf-8')
+                    
+                    # Only delete old NFO file if it's different from the new one
+                    # (in case of case-insensitive filesystems where old and new might be the same)
+                    if nfo_path != new_nfo_path and nfo_path.exists():
+                        nfo_path.unlink()
+                        logger.log(f"  Renamed: {nfo_path.name} -> {expected_nfo_filename}", "success")
+                    else:
+                        logger.log(f"  Updated: {nfo_path.name}", "success")
+                else:
+                    # Just update content
+                    nfo_path.write_text(new_nfo_content, encoding='utf-8')
+                    logger.log(f"  Updated: {nfo_path.name}", "success")
             else:
-                logger.log(f"  DRY RUN: Would update {nfo_path.name}", "info")
+                if needs_rename:
+                    logger.log(f"  DRY RUN: Would rename {nfo_path.name} -> {expected_nfo_filename}", "info")
+                if content_changed:
+                    logger.log(f"  DRY RUN: Would update content of {nfo_path.name}", "info")
             
             updated_count += 1
         
