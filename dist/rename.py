@@ -91,9 +91,10 @@ def get_episode_from_media(
                     if paren_depth == 0:
                         # Found the matching opening parenthesis
                         suffix = title[i+1:-1]  # Content between parentheses
-                        if suffix.startswith("Extended") or suffix.startswith("Alternate"):
-                            extended = suffix
-                            title = title[:i].strip()
+                        # Consider any parenthetical suffix as "extended" content
+                        # This allows for April Fools, Extended, Alternate, or any other variant
+                        extended = suffix
+                        title = title[:i].strip()
                         break
         return Episode(
             show=SHOW_NAME,
@@ -302,8 +303,8 @@ def main():
         # iterate over media files
         for filepath in media_files:
             episode = get_episode_from_media(filepath, seasons)
-            if episode is not None and season_no != 0:
-                # add episode if it exists
+            if episode is not None:
+                # add episode if it exists (including Specials/Season 0)
                 pending.append(episode)
             elif exception_mapping is not None:
                 # otherwise check if an exception
@@ -343,8 +344,10 @@ def main():
         )
         
         if nfo_data is None:
+            # Use 4 digits for episodes >= 1000, 2 digits otherwise
+            ep_format = "04d" if episode.number >= 1000 else "02d"
             print(
-                f"Warning! S{episode.season:02d}E{episode.number:02d} "
+                f"Warning! S{episode.season:02d}E{episode.number:{ep_format}} "
                 f"({'extended' if is_extended else 'regular'}) - NFO metadata not found in source"
             )
             show_recommendation = True
@@ -358,7 +361,12 @@ def main():
             continue
 
     if show_recommendation:
-        print("\nSome episodes without NFO files were found. Run 'python dist/detect_obsolete.py' for detailed library analysis")
+        print("\nSome episodes without NFO files were found.")
+        print("Run the following command for detailed library analysis:")
+        # Use the same paths relative to where the user is running the command
+        detect_obsolete_path = SCRIPT_DIR / "detect_obsolete.py"
+        library_path = args.get("directory") or "."
+        print(f'python3 {detect_obsolete_path} -d "{library_path}" --verbose')
 
 
 def copy_if_different(src, dst, dry_run):
