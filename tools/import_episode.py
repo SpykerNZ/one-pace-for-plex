@@ -830,10 +830,19 @@ class DataSourceManager(BaseManager):
             
             # Look up season number from arc title
             season = None
+            # First try exact match (case-insensitive)
             for name, number in self.seasons_mapping.items():
                 if name.lower() == arc_title.lower():
                     season = number
                     break
+            
+            # If no exact match, try flexible matching
+            if not season:
+                for name, number in self.seasons_mapping.items():
+                    if flexible_match(arc_title, name, threshold=0.6):
+                        season = number
+                        logger.log(f"Matched arc '{arc_title}' to '{name}' using flexible matching", "debug")
+                        break
             
             if season and arc_part.isdigit():
                 episode = int(arc_part)
@@ -1296,8 +1305,10 @@ class CleanupManager:
             
         # Prompt for confirmation unless force flag is set
         if not config.force_overwrite:
-            response = input(f"\nDelete processed video file '{Path(video_filepath).name}'? (y/n): ").strip().lower()
-            if response not in ['y', 'yes']:
+            response = input(f"\nDelete processed video file '{Path(video_filepath).name}'? (y/n/a for all): ").strip().lower()
+            if response == 'a':
+                config.force_overwrite = True  # Set force flag to skip future prompts
+            elif response not in ['y', 'yes']:
                 logger.log("Skipped deletion of processed video", "skip")
                 return False
         
