@@ -290,9 +290,69 @@ class EpisodeData(BaseModel):
 # FILENAME PARSER  
 # ============================================================================
 
-def is_extended_episode(filename: str) -> bool:
-    """Check if a filename indicates an extended episode."""
-    return "extended" in filename.lower()
+def get_special_episode_suffix(filename: str) -> str:
+    """Extract special episode suffix (Extended, Alternate, etc.) from filename.
+    Returns the full suffix string or empty string if none found."""
+    import re
+    
+    # Look for patterns like (Extended) or (Alternate (G-8))
+    # Handle nested parentheses properly
+    if '(' in filename and ')' in filename:
+        # Find the last complete parenthetical expression
+        pattern = r'\(([^()]*(?:\([^()]*\)[^()]*)*)\)(?:[^()]*?)$'
+        matches = re.findall(pattern, filename)
+        
+        for match in reversed(matches):
+            # Check if this is a special suffix
+            if match.startswith('Extended') or match.startswith('Alternate'):
+                return match
+    
+    # Fallback: check for standalone Extended in filename
+    if 'extended' in filename.lower():
+        return 'Extended'
+    
+    return ''
+
+def is_special_episode(filename: str) -> bool:
+    """Check if a filename indicates a special episode (Extended, Alternate, etc.)."""
+    return bool(get_special_episode_suffix(filename))
+
+
+def apply_title_sanitization(title: str) -> str:
+    """Apply common title sanitization rules for filesystem compatibility.
+    This is the core logic shared by both sanitize_filename and normalize_title_for_comparison."""
+    if not title:
+        return ""
+    
+    # First, normalize Unicode characters to ASCII equivalents
+    # NFD decomposes characters like ō into o + combining macron
+    # We then encode to ASCII ignoring errors to remove combining marks
+    normalized = unicodedata.normalize('NFD', title)
+    ascii_title = normalized.encode('ascii', 'ignore').decode('ascii')
+    
+    # Apply Windows-specific character replacements
+    replacements = {':': ' -', '"': "'", '<': '(', '>': ')', '|': '-',
+                    '?': '', '*': '', '/': '-', '\\': '-'}
+    for old, new in replacements.items():
+        ascii_title = ascii_title.replace(old, new)
+    
+    # Clean up whitespace and trailing dots
+    return re.sub(r'\s+', ' ', ascii_title).strip('. ')
+
+
+def normalize_title_for_comparison(title: str) -> str:
+    """Normalize a title for comparison purposes, applying same rules as sanitize_filename.
+    This ensures that titles match even after filesystem sanitization."""
+    # Apply the same sanitization as filenames get
+    sanitized = apply_title_sanitization(title)
+    
+    # Additionally remove all apostrophes for comparison
+    # This handles cases where apostrophes might be inconsistently present/absent
+    # (e.g., "Red Hair's" vs "Red Hairs" due to various processing)
+    sanitized = sanitized.replace("'", "")
+    
+    # Make it lowercase for case-insensitive comparison
+    return sanitized.lower()
 
 
 def flexible_match(str1: str, str2: str, threshold: float = 0.8) -> bool:
@@ -440,9 +500,10 @@ class FilenameParser:
                     else:
                         episode_title = movie_name
                     
-                    # Check if file is extended version
-                    if is_extended_episode(Path(filepath).name):
-                        episode_title = episode_title + " (Extended)"
+                    # Check if file has special suffix
+                    special_suffix = get_special_episode_suffix(Path(filepath).name)
+                    if special_suffix:
+                        episode_title = f"{episode_title} ({special_suffix})"
                     
                     logger.log(f"Extracted title from media metadata: {episode_title}", "debug")
                     return episode_title
@@ -582,8 +643,8 @@ class DataSourceManager(BaseManager):
             'aired': ''
         }
         
-        # Check if this is an extended episode
-        is_extended = filename and is_extended_episode(filename)
+        # Check if this is a special episode (Extended, Alternate, etc.)
+        special_suffix = get_special_episode_suffix(filename) if filename else ''
 
         # Auto-detect season and arc from arc_name or title
         arc_name = episode_info.arc_name  # Use preserved arc name if available
@@ -630,36 +691,56 @@ class DataSourceManager(BaseManager):
                 csv_title = csv_data['title']
                 media_title = metadata['title']  # This could be from media metadata or filename
                 
-                # Compare base titles (without Extended suffix) to determine if there's a real conflict
-                csv_title_base = csv_title.replace(" (Extended)", "").strip()
-                media_title_base = media_title.replace(" (Extended)", "").strip() if media_title else ""
+                # Extract and compare base titles without special suffixes
+                csv_suffix = get_special_episode_suffix(csv_title)
+                media_suffix = get_special_episode_suffix(media_title) if media_title else ''
                 
-                # Only prompt if base titles actually differ
-                if csv_title_base != media_title_base and csv_title_base and media_title_base:
+                # Remove suffixes for comparison
+                csv_title_base = csv_title
+                if csv_suffix:
+                    csv_title_base = csv_title.replace(f" ({csv_suffix})", "").strip()
+                
+                media_title_base = media_title if media_title else ""
+                if media_suffix:
+                    media_title_base = media_title.replace(f" ({media_suffix})", "").strip()
+                
+                # Determine which suffix to use (prefer the one from filename/media)
+                final_suffix = special_suffix or csv_suffix or media_suffix
+                
+                # Normalize base titles for comparison to handle sanitization differences
+                csv_base_normalized = normalize_title_for_comparison(csv_title_base)
+                media_base_normalized = normalize_title_for_comparison(media_title_base)
+                
+                # Only prompt if normalized base titles actually differ
+                if csv_base_normalized != media_base_normalized and csv_title_base and media_title_base:
                     # Let user choose between the titles
                     chosen_title = self._handle_title_conflict(csv_title, media_title, key)
-                    # Add Extended suffix if needed after selection
-                    if is_extended and not chosen_title.endswith("(Extended)"):
-                        metadata['title'] = chosen_title + " (Extended)"
+                    # Remove any existing suffix from chosen title
+                    chosen_suffix = get_special_episode_suffix(chosen_title)
+                    if chosen_suffix:
+                        chosen_title = chosen_title.replace(f" ({chosen_suffix})", "").strip()
+                    # Add the final suffix if needed
+                    if final_suffix:
+                        metadata['title'] = f"{chosen_title} ({final_suffix})"
                     else:
                         metadata['title'] = chosen_title
                 elif csv_title:  
-                    # Use CSV title and add Extended suffix if needed
-                    if is_extended and not csv_title.endswith("(Extended)"):
-                        metadata['title'] = csv_title + " (Extended)"
+                    # Use CSV title base and add suffix if needed
+                    if final_suffix and not csv_title.endswith(f"({final_suffix})"):
+                        metadata['title'] = f"{csv_title_base} ({final_suffix})"
                     else:
                         metadata['title'] = csv_title
                 elif media_title:  
-                    # Use media title (should already have Extended if applicable)
+                    # Use media title (should already have suffix if applicable)
                     metadata['title'] = media_title
                 
                 # Always use plot from CSV if available
                 if csv_data.get('plot'):
                     metadata['plot'] = csv_data['plot']
-            elif not metadata['title'] and is_extended:
-                # No CSV data, but we know it's extended - ensure Extended suffix
-                if metadata['title'] and not metadata['title'].endswith("(Extended)"):
-                    metadata['title'] = metadata['title'] + " (Extended)"
+            elif not metadata['title'] and special_suffix:
+                # No CSV data, but we have a special suffix - ensure it's added
+                if metadata['title'] and not metadata['title'].endswith(f"({special_suffix})"):
+                    metadata['title'] = f"{metadata['title']} ({special_suffix})"
             
             # Get data from arc HTML if available (dates, chapters, episodes)
             if metadata['episode']:
@@ -1060,24 +1141,8 @@ class FileOperationsManager:
 
     def sanitize_filename(self, title: str) -> str:
         """Sanitize for Windows compatibility and normalize Unicode characters."""
-        if not title:
-            return ""
-        
-        # First, normalize Unicode characters to ASCII equivalents
-        # NFD decomposes characters like ō into o + combining macron
-        # We then encode to ASCII ignoring errors to remove combining marks
-        # This is hopefully overkill - doing it just to be safe
-        normalized = unicodedata.normalize('NFD', title)
-        ascii_title = normalized.encode('ascii', 'ignore').decode('ascii')
-        
-        # Apply Windows-specific character replacements
-        replacements = {':': ' -', '"': "'", '<': '(', '>': ')', '|': '-',
-                        '?': '', '*': '', '/': '-', '\\': '-'}
-        for old, new in replacements.items():
-            ascii_title = ascii_title.replace(old, new)
-        
-        # Clean up whitespace and trailing dots
-        return re.sub(r'\s+', ' ', ascii_title).strip('. ')
+        # Use the shared sanitization logic
+        return apply_title_sanitization(title)
 
     def generate_plex_filename(self, season: int, episode: int, title: str) -> str:
         """Generate Plex-compatible filename."""
@@ -1296,20 +1361,16 @@ def is_one_pace_episode(nfo_path: Path) -> bool:
 def parse_nfo_filename(nfo_path: Path) -> Optional[EpisodeInfo]:
     """Parse episode information from NFO filename."""
     # Pattern: One Pace - S##E## - Title.nfo
-    pattern = r"One Pace - S(\d+)E(\d+) - (.+?)(?:\s\(([^)]+)\))?\.nfo"
+    # The title already includes any special suffix in parentheses
+    pattern = r"One Pace - S(\d+)E(\d+) - (.+?)\.nfo"
     match = re.match(pattern, nfo_path.name)
     
     if match:
         info = EpisodeInfo(
             season=int(match.group(1)),
             episode=int(match.group(2)),
-            title=match.group(3).strip()
+            title=match.group(3).strip()  # Title includes any suffix like (Extended) or (Alternate (G-8))
         )
-        # Check for extended/alternate versions
-        if match.group(4):
-            suffix = match.group(4)
-            if "Extended" in suffix or "Alternate" in suffix:
-                info.title = f"{info.title} ({suffix})"
         return info
     return None
 
