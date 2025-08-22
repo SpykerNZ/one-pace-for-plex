@@ -105,13 +105,44 @@ def get_episode_from_media(
             filepath=filepath,
         )
     
+    # Try "Paced One Piece" format: [One Pace] Paced One Piece - Arc Name Episode ## [quality][hash].mkv
+    paced_pattern = rf"\[One Pace\]\s+Paced One Piece\s*-\s*(.+?)\s+Episode\s+(\d+)"
+    match = re.search(paced_pattern, filepath.name, re.IGNORECASE)
+    if match:
+        season_title = match.group(1).strip()
+        episode_number = int(match.group(2))
+        # Normalize Whiskey to Whisky for season lookup
+        if "Whiskey" in season_title:
+            season_title = season_title.replace("Whiskey", "Whisky")
+        # Case-insensitive season lookup
+        season_number = None
+        for key, value in seasons.items():
+            if key.lower() == season_title.lower():
+                season_number = value
+                break
+        return Episode(
+            show=SHOW_NAME,
+            season=season_number,
+            number=episode_number,
+            extended="",
+            filepath=filepath,
+        )
+    
     # Fall back to original One Pace format
     media_pattern = rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{{1,2}}(?:-\d{{1,2}})?)(?:\s(\w[\w\s\(\)-]+))?\s\[(?:.*?)\]\[(?:.*?)\]({MKV_EXT}|{MP4_EXT})"
     match = re.search(media_pattern, filepath.name)
     if match:
         season_title = match.group(2)
         episode_number = int(match.group(3))
-        season_number = seasons.get(season_title)
+        # Normalize Whiskey to Whisky for season lookup
+        if "Whiskey" in season_title:
+            season_title = season_title.replace("Whiskey", "Whisky")
+        # Case-insensitive season lookup
+        season_number = None
+        for key, value in seasons.items():
+            if key.lower() == season_title.lower():
+                season_number = value
+                break
         return Episode(
             show=SHOW_NAME,
             season=season_number,
@@ -335,7 +366,10 @@ def main():
     for poster in (SCRIPT_DIR.parent / SHOW_NAME).glob("*.png"):
         copy_if_different(poster, show_dir / poster.name, dry_run)
 
-    show_recommendation = False
+    # Collect warnings by type for grouped display
+    warnings_by_type = {}
+    episodes_without_nfo = []
+    
     for episode in pending:
         # Look up NFO data based on whether episode is extended
         is_extended = bool(episode.extended)
@@ -344,13 +378,7 @@ def main():
         )
         
         if nfo_data is None:
-            # Use 4 digits for episodes >= 1000, 2 digits otherwise
-            ep_format = "04d" if episode.number >= 1000 else "02d"
-            print(
-                f"Warning! S{episode.season:02d}E{episode.number:{ep_format}} "
-                f"({'extended' if is_extended else 'regular'}) - NFO metadata not found in source"
-            )
-            show_recommendation = True
+            episodes_without_nfo.append(episode)
             continue
 
         if args.get("keep_original"):
@@ -360,7 +388,16 @@ def main():
             rename_media(episode, nfo_data, dry_run)
             continue
 
-    if show_recommendation:
+    # Display grouped warnings
+    if episodes_without_nfo:
+        print("\nWarning! The following episodes exist in your library but not in the One Pace For Plex NFOs. They may be obsolete One Piece episodes:")
+        for episode in episodes_without_nfo:
+            # Use 4 digits for episodes >= 1000, 2 digits otherwise
+            ep_format = "04d" if episode.number >= 1000 else "02d"
+            # Only show extended type if it's not a regular episode
+            episode_type = f" ({episode.extended})" if episode.extended else ""
+            print(f"  - S{episode.season:02d}E{episode.number:{ep_format}}{episode_type}")
+        
         print("\nSome episodes without NFO files were found.")
         print("Run the following command for detailed library analysis:")
         # Use the same paths relative to where the user is running the command

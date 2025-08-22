@@ -404,6 +404,8 @@ class FilenameParser:
 
     PATTERNS = {
         'original': [
+            # Pattern for: [One Pace] Paced One Piece - Arc Name Episode ##
+            r'\[One Pace\]\s+Paced One Piece\s*-\s*(.+?)\s+Episode\s+(\d+)',
             # Pattern for: [One Pace][chapters] Arc Name Episode [Extended]
             r'\[One Pace\]\[\d+(?:-\d+)?\]\s*(.+?)\s+(\d+)(?:\s+Extended)?',
             # Pattern for: [One Pace] Arc Name Episode [Extended]
@@ -478,8 +480,12 @@ class FilenameParser:
         else:  # original format
             # For original patterns, we now have: (arc_name, episode_number)
             if len(groups) == 2:
-                info.arc_name = groups[0].strip()  # Store arc name separately
-                info.title = groups[0].strip()  # Initially use arc name as title (will be replaced by media title if available)
+                arc_name = groups[0].strip()
+                # Normalize Whiskey to Whisky for consistency
+                if "Whiskey" in arc_name:
+                    arc_name = arc_name.replace("Whiskey", "Whisky")
+                info.arc_name = arc_name  # Store arc name separately
+                info.title = arc_name  # Initially use arc name as title (will be replaced by media title if available)
                 info.episode = int(groups[1]) if groups[1].isdigit() else None
                 # Season will be determined from arc name in get_episode_metadata
                 info.season = None
@@ -652,8 +658,10 @@ class DataSourceManager(BaseManager):
         if not metadata['season']:
             # First try using the preserved arc_name
             if arc_name:
+                # Normalize Whiskey to Whisky for season lookup
+                normalized_arc = arc_name.replace("Whiskey", "Whisky") if "Whiskey" in arc_name else arc_name
                 for name, number in self.seasons_mapping.items():
-                    if name.lower() == arc_name.lower():
+                    if name.lower() == normalized_arc.lower():
                         metadata['season'] = number
                         break
             # Fall back to searching in title if no arc_name
