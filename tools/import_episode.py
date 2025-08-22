@@ -1550,18 +1550,25 @@ def update_repository_nfos(managers: dict, args) -> None:
                         if response != 'y':
                             skipped_count += 1
                             continue
-                        # Don't delete yet - we'll handle it below
+                        # Delete the existing target file
+                        new_nfo_path.unlink()
                     
-                    # Write new content to new filename
-                    new_nfo_path.write_text(new_nfo_content, encoding='utf-8')
+                    # Write new content to the old file first (to preserve it if rename fails)
+                    nfo_path.write_text(new_nfo_content, encoding='utf-8')
                     
-                    # Only delete old NFO file if it's different from the new one
-                    # (in case of case-insensitive filesystems where old and new might be the same)
-                    if nfo_path != new_nfo_path and nfo_path.exists():
-                        nfo_path.unlink()
+                    # Now rename the file (atomic operation)
+                    try:
+                        nfo_path.rename(new_nfo_path)
                         logger.log(f"  Renamed: {nfo_path.name} -> {expected_nfo_filename}", "success")
-                    else:
-                        logger.log(f"  Updated: {nfo_path.name}", "success")
+                    except OSError as e:
+                        # If rename fails (e.g., cross-filesystem), fall back to copy+delete
+                        logger.log(f"  Rename failed, using copy+delete: {e}", "debug")
+                        new_nfo_path.write_text(new_nfo_content, encoding='utf-8')
+                        if nfo_path != new_nfo_path and nfo_path.exists():
+                            nfo_path.unlink()
+                            logger.log(f"  Renamed: {nfo_path.name} -> {expected_nfo_filename}", "success")
+                        else:
+                            logger.log(f"  Updated: {nfo_path.name}", "success")
                 else:
                     # Just update content
                     nfo_path.write_text(new_nfo_content, encoding='utf-8')

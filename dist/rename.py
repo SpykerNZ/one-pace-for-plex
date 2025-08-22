@@ -390,7 +390,7 @@ def main():
 
     # Display grouped warnings
     if episodes_without_nfo:
-        print("\nWarning! The following episodes exist in your library but not in the One Pace For Plex NFOs. They may be obsolete One Piece episodes:")
+        print("\nWarning! The following episodes exist in your library but not in the One-Pace-For-Plex NFOs. They may be obsolete One Piece episodes:")
         for episode in episodes_without_nfo:
             # Use 4 digits for episodes >= 1000, 2 digits otherwise
             ep_format = "04d" if episode.number >= 1000 else "02d"
