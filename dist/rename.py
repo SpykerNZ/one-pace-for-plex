@@ -26,7 +26,7 @@ class Episode:
     show: str
     season: int
     number: int
-    extended: bool = False
+    extended: str = ""  # Empty string for non-extended, or "Extended", "Alternate (G-8)", etc.
     title: Optional[str] = None
     filepath: Optional[Path] = None
 
@@ -35,7 +35,12 @@ class Episode:
         return f"S{self.season:02d}E{self.number:02d}"
 
     def get_file_name(self, extension: str = MKV_EXT):
-        return f"{self.show} - {self.episode_id} - {self.title}{extension}"
+        title_with_extended = self.title
+        if self.extended:
+            # Add the extended suffix if not already in the title
+            if f"({self.extended})" not in self.title:
+                title_with_extended = f"{self.title} ({self.extended})"
+        return f"{self.show} - {self.episode_id} - {title_with_extended}{extension}"
 
 
 def get_episode_from_id(show_name: str, id: str) -> Optional[Episode]:
@@ -56,7 +61,7 @@ def get_episode_from_nfo(filepath: Path) -> Optional[Episode]:
             season=int(match.group(2)),
             number=int(match.group(3)),
             title=match.group(4),
-            extended=match.group(5) or False,
+            extended=match.group(5) or "",
             filepath=filepath,
         )
 
@@ -64,17 +69,85 @@ def get_episode_from_nfo(filepath: Path) -> Optional[Episode]:
 def get_episode_from_media(
     filepath: Path, seasons: dict[str, int]
 ) -> Optional[Episode]:
+    # First try Plex format: One Pace - S##E## - Title.mkv
+    plex_pattern = rf"{SHOW_NAME}\s*-\s*S(\d+)E(\d+)\s*-\s*(.*?)({MKV_EXT}|{MP4_EXT})$"
+    match = re.search(plex_pattern, filepath.name, re.IGNORECASE)
+    if match:
+        season_number = int(match.group(1))
+        episode_number = int(match.group(2))
+        title = match.group(3).strip()
+        # Check if it's an extended episode
+        extended = ""
+        # Match (Extended) or (Alternate ...) - handle nested parentheses
+        # Look for the last parenthesized group that starts with Extended or Alternate
+        if title.endswith(")"):
+            # Find the matching opening parenthesis for the last closing one
+            paren_depth = 0
+            for i in range(len(title) - 1, -1, -1):
+                if title[i] == ")":
+                    paren_depth += 1
+                elif title[i] == "(":
+                    paren_depth -= 1
+                    if paren_depth == 0:
+                        # Found the matching opening parenthesis
+                        suffix = title[i+1:-1]  # Content between parentheses
+                        # Consider any parenthetical suffix as "extended" content
+                        # This allows for April Fools, Extended, Alternate, or any other variant
+                        extended = suffix
+                        title = title[:i].strip()
+                        break
+        return Episode(
+            show=SHOW_NAME,
+            season=season_number,
+            number=episode_number,
+            extended=extended,
+            title=title,
+            filepath=filepath,
+        )
+    
+    # Try "Paced One Piece" format: [One Pace] Paced One Piece - Arc Name Episode ## [quality][hash].mkv
+    paced_pattern = rf"\[One Pace\]\s+Paced One Piece\s*-\s*(.+?)\s+Episode\s+(\d+)"
+    match = re.search(paced_pattern, filepath.name, re.IGNORECASE)
+    if match:
+        season_title = match.group(1).strip()
+        episode_number = int(match.group(2))
+        # Normalize Whiskey to Whisky for season lookup
+        if "Whiskey" in season_title:
+            season_title = season_title.replace("Whiskey", "Whisky")
+        # Case-insensitive season lookup
+        season_number = None
+        for key, value in seasons.items():
+            if key.lower() == season_title.lower():
+                season_number = value
+                break
+        return Episode(
+            show=SHOW_NAME,
+            season=season_number,
+            number=episode_number,
+            extended="",
+            filepath=filepath,
+        )
+    
+    # Fall back to original One Pace format
     media_pattern = rf"\[One Pace\]\[(.*?)\]\s(.*?)\s(\d{{1,2}}(?:-\d{{1,2}})?)(?:\s(\w[\w\s\(\)-]+))?\s\[(?:.*?)\]\[(?:.*?)\]({MKV_EXT}|{MP4_EXT})"
     match = re.search(media_pattern, filepath.name)
     if match:
         season_title = match.group(2)
         episode_number = int(match.group(3))
-        season_number = seasons.get(season_title)
+        # Normalize Whiskey to Whisky for season lookup
+        if "Whiskey" in season_title:
+            season_title = season_title.replace("Whiskey", "Whisky")
+        # Case-insensitive season lookup
+        season_number = None
+        for key, value in seasons.items():
+            if key.lower() == season_title.lower():
+                season_number = value
+                break
         return Episode(
             show=SHOW_NAME,
             season=season_number,
             number=episode_number,
-            extended=match.group(4) or False,
+            extended=match.group(4) or "",
             filepath=filepath,
         )
 
@@ -215,29 +288,20 @@ def main():
         exceptions: dict[str, dict[str, int]] = json.load(json_file)
 
     # create a lookup table of nfo data
+    # Key is (season, episode, is_extended) where is_extended is boolean
     nfo_data_lookup: dict[tuple(int, int, bool), Episode] = {}
     nfo_files = (SCRIPT_DIR.parent / SHOW_NAME).rglob(f"*{NFO_EXT}")
     for filepath in nfo_files:
         nfo_data = get_episode_from_nfo(filepath)
         if nfo_data is not None:
-            nfo_data_lookup[(nfo_data.season, nfo_data.number, nfo_data.extended)] = (
-                nfo_data
-            )
+            is_extended = bool(nfo_data.extended)
+            nfo_data_lookup[(nfo_data.season, nfo_data.number, is_extended)] = nfo_data
             if patch_nfo:
                 fix_episode_nfo(nfo_data)
-            if nfo_data.extended:
-                nfo_data_lookup[(nfo_data.season, nfo_data.number, True)] = Episode(
-                            show=nfo_data.show,
-                            season=nfo_data.season,
-                            number=nfo_data.number,
-                            title=nfo_data.title + " (" + nfo_data.extended + ")",
-                            extended=True,
-                            filepath=filepath,
-                        )
 
     # create a pending rename file list
     pending: list[Episode] = []
-    pending_snfo: list[tuple(Path, Path)] = []
+    pending_snfo: list[tuple[Path, Path]] = []
 
     # iterate over season folders
     for season_title, season_no in seasons.items():
@@ -245,10 +309,10 @@ def main():
             season_name = "Specials"
         else:
             season_name = f"Season {season_no}"
-        # Get the season folder
-        season_folder = list(show_dir.glob(f"*{season_title}*"))
-        if season_folder:
-            season_folder = season_folder[0]
+        # Get the season folder - only look for directories
+        season_folders = [p for p in show_dir.glob(f"*{season_title}*") if p.is_dir()]
+        if season_folders:
+            season_folder = season_folders[0]
         else:
             season_folder = show_dir / season_name
 
@@ -270,8 +334,8 @@ def main():
         # iterate over media files
         for filepath in media_files:
             episode = get_episode_from_media(filepath, seasons)
-            if episode is not None and season_no != 0:
-                # add episode if it exists
+            if episode is not None:
+                # add episode if it exists (including Specials/Season 0)
                 pending.append(episode)
             elif exception_mapping is not None:
                 # otherwise check if an exception
@@ -287,7 +351,7 @@ def main():
                     continue
                 elif len(matches) == 1:
                     pending.append(
-                        Episode(SHOW_NAME, season_no, episode_no, False, None, filepath)
+                        Episode(SHOW_NAME, season_no, episode_no, "", None, filepath)
                     )
 
     # rename all files
@@ -302,18 +366,19 @@ def main():
     for poster in (SCRIPT_DIR.parent / SHOW_NAME).glob("*.png"):
         copy_if_different(poster, show_dir / poster.name, dry_run)
 
+    # Collect warnings by type for grouped display
+    warnings_by_type = {}
+    episodes_without_nfo = []
+    
     for episode in pending:
+        # Look up NFO data based on whether episode is extended
+        is_extended = bool(episode.extended)
         nfo_data = nfo_data_lookup.get(
-            (episode.season, episode.number, episode.extended)
+            (episode.season, episode.number, is_extended)
         )
+        
         if nfo_data is None:
-            nfo_data = nfo_data_lookup.get(
-                (episode.season, episode.number, True)
-            )
-        if nfo_data is None:
-            print(
-                f"Warning! Episode {episode.number} in season {episode.season} found, but metadata is missing"
-            )
+            episodes_without_nfo.append(episode)
             continue
 
         if args.get("keep_original"):
@@ -322,6 +387,23 @@ def main():
         else:
             rename_media(episode, nfo_data, dry_run)
             continue
+
+    # Display grouped warnings
+    if episodes_without_nfo:
+        print("\nWarning! The following episodes exist in your library but not in the One-Pace-For-Plex NFOs. They may be obsolete One Piece episodes:")
+        for episode in episodes_without_nfo:
+            # Use 4 digits for episodes >= 1000, 2 digits otherwise
+            ep_format = "04d" if episode.number >= 1000 else "02d"
+            # Only show extended type if it's not a regular episode
+            episode_type = f" ({episode.extended})" if episode.extended else ""
+            print(f"  - S{episode.season:02d}E{episode.number:{ep_format}}{episode_type}")
+        
+        print("\nSome episodes without NFO files were found.")
+        print("Run the following command for detailed library analysis:")
+        # Use the same paths relative to where the user is running the command
+        detect_obsolete_path = SCRIPT_DIR / "detect_obsolete.py"
+        library_path = args.get("directory") or "."
+        print(f'python3 {detect_obsolete_path} -d "{library_path}" --verbose')
 
 
 def copy_if_different(src, dst, dry_run):
@@ -350,12 +432,20 @@ def rename_media(episode, nfo_data, dry_run):
     if episode.filepath.name == new_episode_name:
         return
 
+    target_path = episode.filepath.parent.absolute() / new_episode_name
+    
     if dry_run:
         print(f'DRYRUN: rename "{episode.filepath.name}" -> "{new_episode_name}"')
         return
 
-    print(f'RENAMING: "{episode.filepath.name}" -> "{new_episode_name}"')
-    episode.filepath.rename(episode.filepath.parent.absolute() / new_episode_name)
+    # Check if target already exists and is different from source
+    if target_path.exists() and target_path != episode.filepath.absolute():
+        print(f'OVERWRITING: "{episode.filepath.name}" -> "{new_episode_name}" (replacing existing file)')
+        target_path.unlink()  # Delete the existing target file
+    else:
+        print(f'RENAMING: "{episode.filepath.name}" -> "{new_episode_name}"')
+    
+    episode.filepath.rename(target_path)
 
 
 if __name__ == "__main__":
