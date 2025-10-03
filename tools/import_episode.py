@@ -51,6 +51,7 @@ class Config:
     library_path: str = "E:\\Anime\\One Pace Team\\One Pace"
     repository_path: str = Path(__file__).parent.parent
     source_path: Path = Path(__file__).parent
+    cache_path: Path = Path(__file__).parent / ".cache"
     seasons_json_path: str = repository_path / "dist/seasons.json"
     ep_guide_url: str = field(
         default="https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/export?format=zip")
@@ -62,6 +63,7 @@ class Config:
     retry_attempts: int = 3
     recursive_scan: bool = False
     force_overwrite: bool = False
+    use_cache: bool = True
 
     @classmethod
     def load(cls, args=None) -> 'Config':
@@ -92,11 +94,15 @@ class Config:
             config.dry_run = args.dry_run
             config.force_overwrite = args.force
             config.verbose_logging = not args.quiet
-            
+
             # Handle no-delete-processed flag
             if hasattr(args, 'no_delete_processed'):
                 config.enable_delete_processed = not args.no_delete_processed
-            
+
+            # Handle refresh-cache flag
+            if hasattr(args, 'refresh_cache') and args.refresh_cache:
+                config.use_cache = False
+
         return config
 
 
@@ -478,6 +484,9 @@ class FilenameParser:
                 # Normalize Whiskey to Whisky for consistency
                 if "Whiskey" in arc_name:
                     arc_name = arc_name.replace("Whiskey", "Whisky")
+                # Normalize Arabasta to Alabasta for consistency
+                if "Arabasta" in arc_name:
+                    arc_name = arc_name.replace("Arabasta", "Alabasta")
                 info.arc_name = arc_name  # Store arc name separately
                 info.title = arc_name  # Initially use arc name as title (will be replaced by media title if available)
                 info.episode = int(groups[1]) if groups[1].isdigit() else None
@@ -528,6 +537,36 @@ class DataSourceManager(BaseManager):
             title_source_preference=None,  # 'csv', 'media', or None for ask each time
             date_cache={}  # Cache for user-entered dates by season/episode
         )
+        # Ensure cache directory exists
+        config.cache_path.mkdir(parents=True, exist_ok=True)
+
+    def _get_cache_filename(self, data_type: str) -> str:
+        """Get the cache filename for a data type."""
+        filenames = {
+            'ep_guide': 'One Pace Episode Guide.zip',
+            'title_plot': 'One Pace Episode Descriptions - Episodes.csv',
+        }
+        return filenames.get(data_type, f'{data_type}.cache')
+
+    def _get_cache_path(self, data_type: str) -> Path:
+        """Get the full cache file path for a data type."""
+        return config.cache_path / self._get_cache_filename(data_type)
+
+    def _cache_exists(self, data_type: str) -> bool:
+        """Check if cached data exists for a data type."""
+        return self._get_cache_path(data_type).exists()
+
+    def _load_from_cache(self, data_type: str) -> bytes:
+        """Load cached data from file."""
+        cache_path = self._get_cache_path(data_type)
+        logger.log(f"Loading {data_type} from cache: {cache_path.name}", "info")
+        return cache_path.read_bytes()
+
+    def _save_to_cache(self, data_type: str, content: bytes) -> None:
+        """Save data to cache file."""
+        cache_path = self._get_cache_path(data_type)
+        cache_path.write_bytes(content)
+        logger.log(f"Saved {data_type} to cache: {cache_path.name}", "success")
 
     @retry(stop=stop_after_attempt(config.retry_attempts), wait=wait_exponential())
     def fetch_data(self, data_type: str) -> dict:
@@ -538,10 +577,25 @@ class DataSourceManager(BaseManager):
         }
 
         url, parser, storage_attr = configs[data_type]
-        logger.log(f"Fetching {data_type} data")
 
-        response = requests.get(url, timeout=30)
-        response.raise_for_status()
+        # Check if we should use cache
+        if config.use_cache and self._cache_exists(data_type):
+            # Load from cache
+            cached_content = self._load_from_cache(data_type)
+            # Create a mock response object with content attribute
+            class CachedResponse:
+                def __init__(self, content):
+                    self.content = content
+            response = CachedResponse(cached_content)
+        else:
+            # Fetch from network
+            logger.log(f"Fetching {data_type} data from network")
+            # 10 min timeout - can take a very, very long time to dl
+            response = requests.get(url, timeout=600, allow_redirects=True)
+            logger.log(f"Download complete, processing...", "debug")
+            response.raise_for_status()
+            # Save to cache
+            self._save_to_cache(data_type, response.content)
 
         data = parser(response)
         setattr(self, storage_attr, data)
@@ -654,6 +708,8 @@ class DataSourceManager(BaseManager):
             if arc_name:
                 # Normalize Whiskey to Whisky for season lookup
                 normalized_arc = arc_name.replace("Whiskey", "Whisky") if "Whiskey" in arc_name else arc_name
+                # Normalize Arabasta to Alabasta for season lookup
+                normalized_arc = normalized_arc.replace("Arabasta", "Alabasta") if "Arabasta" in normalized_arc else normalized_arc
                 for name, number in self.seasons_mapping.items():
                     if name.lower() == normalized_arc.lower():
                         metadata['season'] = number
@@ -789,18 +845,29 @@ class DataSourceManager(BaseManager):
                 
                 # Try to find matching HTML file using flexible matching
                 matching_file = None
-                
-                for html_file in html_files:
-                    file_base = Path(html_file).stem
-                    
-                    # Use flexible matching
-                    if flexible_match(arc_name, file_base):
-                        matching_file = html_file
-                        logger.log(f"Matched arc '{arc_name}' to file '{html_file}'", "debug")
+
+                # Try both original name and alternate spellings (Alabasta/Arabasta)
+                search_names = [arc_name]
+                if "Alabasta" in arc_name:
+                    search_names.append(arc_name.replace("Alabasta", "Arabasta"))
+                elif "Arabasta" in arc_name:
+                    search_names.append(arc_name.replace("Arabasta", "Alabasta"))
+
+                for search_name in search_names:
+                    for html_file in html_files:
+                        file_base = Path(html_file).stem
+
+                        # Use flexible matching
+                        if flexible_match(search_name, file_base):
+                            matching_file = html_file
+                            logger.log(f"Matched arc '{arc_name}' to file '{html_file}'", "debug")
+                            break
+
+                    if matching_file:
                         break
-                
+
                 if not matching_file:
-                    logger.log(f"No HTML file found for arc: {arc_name} (tried {len(html_files)} files)", "debug")
+                    logger.log(f"No HTML file found for arc: {arc_name} (tried {len(html_files)} files with variants: {search_names})", "debug")
                     return {}
                 
                 # Parse the specific HTML file
@@ -829,19 +896,24 @@ class DataSourceManager(BaseManager):
             
             if not arc_title or not arc_part:
                 continue
-            
+
+            # Normalize arc_title for matching
+            normalized_arc_title = arc_title
+            if "Arabasta" in normalized_arc_title:
+                normalized_arc_title = normalized_arc_title.replace("Arabasta", "Alabasta")
+
             # Look up season number from arc title
             season = None
             # First try exact match (case-insensitive)
             for name, number in self.seasons_mapping.items():
-                if name.lower() == arc_title.lower():
+                if name.lower() == normalized_arc_title.lower():
                     season = number
                     break
             
             # If no exact match, try flexible matching
             if not season:
                 for name, number in self.seasons_mapping.items():
-                    if flexible_match(arc_title, name, threshold=0.6):
+                    if flexible_match(normalized_arc_title, name, threshold=0.6):
                         season = number
                         logger.log(f"Matched arc '{arc_title}' to '{name}' using flexible matching", "debug")
                         break
@@ -1687,20 +1759,31 @@ def process_episode(video_file: VideoFile, managers: dict) -> bool:
 
             # Copy files if enabled
             if config.enable_file_copying:
-                target_dirs = [
-                    Path(config.library_path) / f"Season {episode_data.season}",
-                    Path(config.repository_path) / "One Pace" / f"Season {episode_data.season}"
-                ]
+                # Copy MKV only to library
+                library_dir = Path(config.library_path) / f"Season {episode_data.season}"
                 managers['file'].copy_files(
                     video_file.filepath,
-                    [str(d) for d in target_dirs if d.parent],
+                    [str(library_dir)],
                     new_filename or video_file.filename,
                     nfo_content
                 )
+
+                # Copy NFO to repository if NFO generation is enabled
+                if config.enable_nfo_generation and nfo_content:
+                    repo_dir = Path(config.repository_path) / "One Pace" / f"Season {episode_data.season}"
+                    repo_dir.mkdir(parents=True, exist_ok=True)
+                    nfo_filename = (new_filename or video_file.filename).replace(video_file.extension, '.nfo')
+                    nfo_path = repo_dir / nfo_filename
+
+                    if config.dry_run:
+                        logger.log(f"DRY RUN: Would copy NFO to {repo_dir}", "info")
+                    else:
+                        nfo_path.write_text(nfo_content, encoding='utf-8')
+                        logger.log(f"Copied NFO to {repo_dir}", "success")
             # If NFO generation is enabled but file copying is not, write NFO separately
             elif config.enable_nfo_generation and nfo_content:
                 managers['file'].write_nfo(
-                    nfo_content, 
+                    nfo_content,
                     video_file.filepath,
                     new_filename  # Pass new filename if renaming is enabled
                 )
@@ -1767,7 +1850,12 @@ def main():
         action='store_true',
         help='Do not delete processed video files after copying'
     )
-    
+    parser.add_argument(
+        '--refresh-cache',
+        action='store_true',
+        help='Force re-fetch external data from network instead of using cache'
+    )
+
     args = parser.parse_args()
     
     # Load config with CLI overrides
@@ -1798,7 +1886,21 @@ def main():
             'file': FileOperationsManager(),
             'cleanup': CleanupManager()
         }
-        
+
+        # Show cache status
+        if config.use_cache:
+            ep_guide_cached = managers['data']._cache_exists('ep_guide')
+            title_plot_cached = managers['data']._cache_exists('title_plot')
+
+            if ep_guide_cached and title_plot_cached:
+                logger.log("Using cached data (use --refresh-cache to re-fetch)", "info")
+            elif ep_guide_cached or title_plot_cached:
+                logger.log("Partial cache available - will fetch missing data", "info")
+            else:
+                logger.log("No cache found - will fetch from network", "info")
+        else:
+            logger.log("Cache disabled - fetching fresh data from network", "info")
+
         # Load external data sources
         with logger.context("Loading Data"):
             try:
