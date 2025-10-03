@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""One Pace Episode Import Automation Script - Optimized Version.
-
-Enterprise-grade implementation with ~84% code reduction from original.
-"""
+"""One Pace Episode Import Automation Script"""
 
 import sys
 import re
@@ -28,12 +25,10 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 from pymediainfo import MediaInfo
 from lxml import etree as ET
 
-# Type aliases for better readability (Python 3.12+)
 type EpisodeMap = dict[str, list[int]]
 type SeasonData = dict[str, str | int | list[int]]
 type FilePath = Path | str
 
-# NewTypes for semantic clarity
 SeasonNumber = NewType('SeasonNumber', int)
 EpisodeNumber = NewType('EpisodeNumber', int)
 
@@ -44,7 +39,6 @@ EpisodeNumber = NewType('EpisodeNumber', int)
 
 @dataclass(slots=True, kw_only=True)
 class Config:
-    """Centralized configuration with memory optimization."""
     enable_file_discovery: bool = True
     enable_nfo_generation: bool = True
     enable_file_renaming: bool = True

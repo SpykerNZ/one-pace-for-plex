@@ -114,6 +114,9 @@ def get_episode_from_media(
         # Normalize Whiskey to Whisky for season lookup
         if "Whiskey" in season_title:
             season_title = season_title.replace("Whiskey", "Whisky")
+        # Normalize Arabasta to Alabasta for season lookup
+        if "Arabasta" in season_title:
+            season_title = season_title.replace("Arabasta", "Alabasta")
         # Case-insensitive season lookup
         season_number = None
         for key, value in seasons.items():
@@ -137,6 +140,9 @@ def get_episode_from_media(
         # Normalize Whiskey to Whisky for season lookup
         if "Whiskey" in season_title:
             season_title = season_title.replace("Whiskey", "Whisky")
+        # Normalize Arabasta to Alabasta for season lookup
+        if "Arabasta" in season_title:
+            season_title = season_title.replace("Arabasta", "Alabasta")
         # Case-insensitive season lookup
         season_number = None
         for key, value in seasons.items():
